@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopCoreApp.Data\ShopCoreApp.Data.csproj" />
+    <ProjectReference Include="..\ShopCoreApp.Infrastructure\ShopCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\ShopCoreApp.Utilities\ShopCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
