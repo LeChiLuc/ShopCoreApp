@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using TeduCoreApp.Data.Entities;
-using TeduCoreApp.Data.Enums;
-using TeduCoreApp.Data.IRepositories;
+using ShopCoreApp.Data.Entities;
+using ShopCoreApp.Data.Enums;
+using ShopCoreApp.Data.IRepositories;
 
-namespace TeduCoreApp.Data.EF.Repositories
+namespace ShopCoreApp.Data.EF.Repositories
 {
     public class BlogRepository : EFRepository<Blog, int>, IBlogRepository
     {

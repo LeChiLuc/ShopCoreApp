@@ -2,10 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using TeduCoreApp.Data.EF.Extensions;
-using TeduCoreApp.Data.Entities;
+using ShopCoreApp.Data.EF.Extensions;
+using ShopCoreApp.Data.Entities;
 
-namespace TeduCoreApp.Data.EF.Configurations
+namespace ShopCoreApp.Data.EF.Configurations
 {
     public class PageConfiguration : DbEntityConfiguration<Page>
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TeduCoreApp.Data.Entities;
-using TeduCoreApp.Data.IRepositories;
+using ShopCoreApp.Data.Entities;
+using ShopCoreApp.Data.IRepositories;
 
-namespace TeduCoreApp.Data.EF.Repositories
+namespace ShopCoreApp.Data.EF.Repositories
 {
     public class WholePriceRepository : EFRepository<WholePrice, int>, IWholePriceRepository
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using TeduCoreApp.Data.Entities;
-using TeduCoreApp.Data.IRepositories;
+using ShopCoreApp.Data.Entities;
+using ShopCoreApp.Data.IRepositories;
 
-namespace TeduCoreApp.Data.EF.Repositories
+namespace ShopCoreApp.Data.EF.Repositories
 {
     public class ProductCategoryRepository : EFRepository<ProductCategory, int>, IProductCategoryRepository
     {

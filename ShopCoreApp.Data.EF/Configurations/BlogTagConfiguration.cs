@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TeduCoreApp.Data.EF.Extensions;
-using TeduCoreApp.Data.Entities;
+using ShopCoreApp.Data.EF.Extensions;
+using ShopCoreApp.Data.Entities;
 
-namespace TeduCoreApp.Data.EF.Configurations
+namespace ShopCoreApp.Data.EF.Configurations
 {
     public class BlogTagConfiguration : DbEntityConfiguration<BlogTag>
     {
