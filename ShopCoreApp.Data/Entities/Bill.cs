@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using TeduCoreApp.Data.Enums;
-using TeduCoreApp.Data.Interfaces;
-using TeduCoreApp.Infrastructure.SharedKernel;
+using ShopCoreApp.Data.Enums;
+using ShopCoreApp.Data.Interfaces;
+using ShopCoreApp.Infrastructure.SharedKernel;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("Bills")]
     public class Bill : DomainEntity<int>, ISwitchable, IDateTracking

@@ -1,13 +1,13 @@
-﻿using TeduCoreApp.Data.Interfaces;
-using TeduCoreApp.Infrastructure.SharedKernel;
+﻿using ShopCoreApp.Data.Interfaces;
+using ShopCoreApp.Infrastructure.SharedKernel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using TeduCoreApp.Data.Enums;
+using ShopCoreApp.Data.Enums;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("Languages")]
     public class Language : DomainEntity<string>, ISwitchable

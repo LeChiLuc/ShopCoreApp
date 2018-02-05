@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ShopCoreApp.Infrastructure.SharedKernel;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-using TeduCoreApp.Data.Enums;
-using TeduCoreApp.Data.Interfaces;
-using TeduCoreApp.Infrastructure.SharedKernel;
+using ShopCoreApp.Data.Entities;
+using ShopCoreApp.Data.Enums;
+using ShopCoreApp.Data.Interfaces;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("Advertistments")]
     public class Advertistment : DomainEntity<int>, ISwitchable, ISortable
@@ -34,5 +33,6 @@ namespace TeduCoreApp.Data.Entities
 
         [ForeignKey("PositionId")]
         public virtual AdvertistmentPosition AdvertistmentPosition { get; set; }
+
     }
 }

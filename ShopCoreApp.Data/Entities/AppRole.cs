@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("AppRoles")]
     public class AppRole : IdentityRole<Guid>

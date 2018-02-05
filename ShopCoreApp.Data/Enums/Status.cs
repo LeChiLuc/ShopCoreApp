@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TeduCoreApp.Data.Enums
+namespace ShopCoreApp.Data.Enums
 {
     public enum Status
     {

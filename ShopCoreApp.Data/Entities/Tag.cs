@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-using TeduCoreApp.Infrastructure.SharedKernel;
+using ShopCoreApp.Infrastructure.SharedKernel;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     public class Tag : DomainEntity<string>
     {

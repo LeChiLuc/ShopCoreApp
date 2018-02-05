@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using TeduCoreApp.Data.Enums;
-using TeduCoreApp.Data.Interfaces;
-using TeduCoreApp.Infrastructure.SharedKernel;
+using ShopCoreApp.Data.Enums;
+using ShopCoreApp.Data.Interfaces;
+using ShopCoreApp.Infrastructure.SharedKernel;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("Functions")]
     public class Function : DomainEntity<string>, ISwitchable, ISortable

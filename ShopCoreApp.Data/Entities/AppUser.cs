@@ -2,11 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using TeduCoreApp.Data.Interfaces;
-using TeduCoreApp.Data.Enums;
+using ShopCoreApp.Data.Interfaces;
+using ShopCoreApp.Data.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("AppUsers")]
     public class AppUser : IdentityUser<Guid>, IDateTracking, ISwitchable

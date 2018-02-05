@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TeduCoreApp.Data.Entities;
-using TeduCoreApp.Infrastructure.Interfaces;
+using ShopCoreApp.Data.Entities;
+using ShopCoreApp.Infrastructure.Interfaces;
 
-namespace TeduCoreApp.Data.IRepositories
+namespace ShopCoreApp.Data.IRepositories
 {
     public interface IBlogTagRepository : IRepository<BlogTag, int>
     {

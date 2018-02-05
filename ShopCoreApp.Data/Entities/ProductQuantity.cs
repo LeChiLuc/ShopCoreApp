@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using TeduCoreApp.Infrastructure.SharedKernel;
+using ShopCoreApp.Infrastructure.SharedKernel;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("ProductQuantities")]
     public class ProductQuantity : DomainEntity<int>

@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ShopCoreApp.Infrastructure.SharedKernel;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-using TeduCoreApp.Infrastructure.SharedKernel;
+using ShopCoreApp.Data.Entities;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("AnnouncementUsers")]
     public class AnnouncementUser : DomainEntity<int>
@@ -21,5 +20,4 @@ namespace TeduCoreApp.Data.Entities
         [ForeignKey("AnnouncementId")]
         public virtual Announcement Announcement { get; set; }
     }
-    
 }

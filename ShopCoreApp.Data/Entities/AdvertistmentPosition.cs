@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using TeduCoreApp.Infrastructure.SharedKernel;
+using ShopCoreApp.Data.Entities;
+using ShopCoreApp.Infrastructure.SharedKernel;
 
-namespace TeduCoreApp.Data.Entities
+namespace ShopCoreApp.Data.Entities
 {
     [Table("AdvertistmentPositions")]
     public class AdvertistmentPosition : DomainEntity<string>

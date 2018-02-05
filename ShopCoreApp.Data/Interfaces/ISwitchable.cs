@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TeduCoreApp.Data.Enums;
+using ShopCoreApp.Data.Enums;
 
-namespace TeduCoreApp.Data.Interfaces
+namespace ShopCoreApp.Data.Interfaces
 {
     public interface ISwitchable
     {
