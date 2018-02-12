@@ -11,6 +11,13 @@ using Microsoft.Extensions.DependencyInjection;
 using ShopCoreApp.Data;
 using ShopCoreApp.Models;
 using ShopCoreApp.Services;
+using ShopCoreApp.Data.EF;
+using ShopCoreApp.Data.Entities;
+using AutoMapper;
+using ShopCoreApp.Data.IRepositories;
+using ShopCoreApp.Data.EF.Repositories;
+using ShopCoreApp.Application.Interfaces;
+using ShopCoreApp.Application.Implementation;
 
 namespace ShopCoreApp
 {
@@ -26,21 +33,33 @@ namespace ShopCoreApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                o=>o.MigrationsAssembly("ShopCoreApp.Data.EF")));
 
-            //services.AddIdentity<ApplicationUser, IdentityRole>()
-            //    .AddEntityFrameworkStores<ApplicationDbContext>()
-            //    .AddDefaultTokenProviders();
+            services.AddIdentity<AppRole, AppRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+
+            services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
+            services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
+
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp=> new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(),sp.GetService));
+
+            services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,DbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -63,6 +82,7 @@ namespace ShopCoreApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            dbInitializer.Seed().Wait();
         }
     }
 }
