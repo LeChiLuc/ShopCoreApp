@@ -25,6 +25,7 @@ namespace ShopCoreApp.Data.Entities
         public Guid RoleId { get; set; }
 
         [StringLength(128)]
+        [Column(TypeName = "varchar(128)")]
         [Required]
         public string FunctionId { get; set; }
 
