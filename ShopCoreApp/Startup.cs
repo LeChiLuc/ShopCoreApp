@@ -18,6 +18,9 @@ using ShopCoreApp.Data.IRepositories;
 using ShopCoreApp.Data.EF.Repositories;
 using ShopCoreApp.Application.Interfaces;
 using ShopCoreApp.Application.Implementation;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ShopCoreApp
 {
@@ -74,12 +77,13 @@ namespace ShopCoreApp
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver()); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/tedu-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
@@ -100,8 +104,9 @@ namespace ShopCoreApp
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute(name:"areaRoute",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(name: "areaRoute",
+                    template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
