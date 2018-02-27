@@ -52,6 +52,7 @@ namespace ShopCoreApp.Data.EF
                     UserName = "admin",
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
+                    Avatar = "/admin-site/images/img.jpg",
                     Balance = 0,
                     DateCreated = DateTime.Now,
                     DateModified = DateTime.Now,

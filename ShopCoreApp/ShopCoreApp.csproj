@@ -31,8 +31,4 @@
     <ProjectReference Include="..\ShopCoreApp.Utilities\ShopCoreApp.Utilities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\lib\" />
-  </ItemGroup>
-
 </Project>

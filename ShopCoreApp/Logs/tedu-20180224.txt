@@ -2972,3 +2972,186 @@ WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
 2018-02-24T18:10:31.7983842+07:00 0HLBRERIJAO9E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js   (ca22a1cb)
 2018-02-24T18:10:31.8073354+07:00 0HLBRERIJAO9E:00000002 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
 2018-02-24T18:10:31.8172508+07:00 0HLBRERIJAO9E:00000002 [INF] Request finished in 17.4791ms 304 application/javascript (791a596a)
+2018-02-24T23:18:29.9581274+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-02-24T23:18:30.2942855+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-02-24T23:18:30.3331267+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-02-24T23:18:30.3689518+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-02-24T23:18:30.4097633+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-02-24T23:18:30.4381191+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-02-24T23:18:30.4707744+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-02-24T23:18:30.5071614+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-02-24T23:18:30.5449881+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-02-24T23:18:30.5828090+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-02-24T23:18:30.6232562+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-02-24T23:18:30.6574581+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-02-24T23:18:30.6856655+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-02-24T23:18:31.1120144+07:00 0HLBRK8VBC3D0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-02-24T23:18:31.3778424+07:00 0HLBRK8VBC3D0:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-02-24T23:18:34.1600722+07:00 0HLBRK8VBC3D0:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-02-24T23:18:34.7421503+07:00 0HLBRK8VBC3D2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-02-24T23:18:34.7657034+07:00 0HLBRK8VBC3D1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-02-24T23:18:34.7693895+07:00 0HLBRK8VBC3D0:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 3322.9934ms (afa2e885)
+2018-02-24T23:18:34.7994957+07:00 0HLBRK8VBC3D2:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-02-24T23:18:34.8224927+07:00 0HLBRK8VBC3D1:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-02-24T23:18:34.8523021+07:00 0HLBRK8VBC3D0:00000001 [INF] Request finished in 3738.5585ms 200 text/html; charset=utf-8 (791a596a)
+2018-02-24T23:18:34.8674750+07:00 0HLBRK8VBC3D2:00000001 [INF] Request finished in 162.2834ms 304 application/javascript (791a596a)
+2018-02-24T23:18:34.9406443+07:00 0HLBRK8VBC3D1:00000001 [INF] Request finished in 242.577ms 200 text/css (791a596a)
+2018-02-24T23:18:35.0007251+07:00 0HLBRK8VBC3D0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-02-24T23:18:35.0067812+07:00 0HLBRK8VBC3D0:00000002 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2018-02-24T23:18:35.0124869+07:00 0HLBRK8VBC3D0:00000002 [INF] Request finished in 11.3015ms 304 font/woff2 (791a596a)
+2018-02-24T23:18:35.8174088+07:00 0HLBRK8VBC3D2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/favicon.ico   (ca22a1cb)
+2018-02-24T23:18:35.8251639+07:00 0HLBRK8VBC3D2:00000002 [INF] Request finished in 29.937ms 404  (791a596a)
+2018-02-24T23:20:18.2179950+07:00 0HLBRK8VBC3D3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/login   (ca22a1cb)
+2018-02-24T23:20:18.2645501+07:00 0HLBRK8VBC3D3:00000001 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-02-24T23:20:18.5088772+07:00 0HLBRK8VBC3D3:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-02-24T23:20:18.5832097+07:00 0HLBRK8VBC3D3:00000001 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 335.4378ms (afa2e885)
+2018-02-24T23:20:18.7092591+07:00 0HLBRK8VBC3D8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/css/custom.css   (ca22a1cb)
+2018-02-24T23:20:18.7201817+07:00 0HLBRK8VBC3D5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/animate.css/animate.css   (ca22a1cb)
+2018-02-24T23:20:18.7534489+07:00 0HLBRK8VBC3D8:00000001 [INF] Sending file. Request path: '"/admin-site/css/custom.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\css\custom.css"' (27b0a520)
+2018-02-24T23:20:18.7647862+07:00 0HLBRK8VBC3D5:00000001 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-02-24T23:20:18.7681864+07:00 0HLBRK8VBC3D3:00000001 [INF] Request finished in 396.5255ms 200 text/html; charset=utf-8 (791a596a)
+2018-02-24T23:20:18.7695156+07:00 0HLBRK8VBC3D4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-02-24T23:20:18.7937208+07:00 0HLBRK8VBC3D6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-02-24T23:20:18.9089769+07:00 0HLBRK8VBC3DA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-02-24T23:20:18.9341914+07:00 0HLBRK8VBC3DC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-02-24T23:20:19.0088938+07:00 0HLBRK8VBC3D9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/login/index.js   (ca22a1cb)
+2018-02-24T23:20:19.0332444+07:00 0HLBRK8VBC3DA:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-02-24T23:20:19.0344759+07:00 0HLBRK8VBC3D4:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-02-24T23:20:19.0376967+07:00 0HLBRK8VBC3DC:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2018-02-24T23:20:19.0431274+07:00 0HLBRK8VBC3DC:00000001 [INF] Request finished in 328.4602ms 304 application/javascript (791a596a)
+2018-02-24T23:20:19.0939984+07:00 0HLBRK8VBC3D6:00000001 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-02-24T23:20:19.1681541+07:00 0HLBRK8VBC3D7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-02-24T23:20:19.1770878+07:00 0HLBRK8VBC3DB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js   (ca22a1cb)
+2018-02-24T23:20:19.2417099+07:00 0HLBRK8VBC3D4:00000001 [INF] Request finished in 595.1249ms 200 text/css (791a596a)
+2018-02-24T23:20:19.2439815+07:00 0HLBRK8VBC3D6:00000001 [INF] Request finished in 623.3483ms 200 text/css (791a596a)
+2018-02-24T23:20:19.2750464+07:00 0HLBRK8VBC3D9:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-02-24T23:20:19.2911428+07:00 0HLBRK8VBC3D8:00000001 [INF] Request finished in 645.3687ms 200 text/css (791a596a)
+2018-02-24T23:20:19.3386256+07:00 0HLBRK8VBC3D5:00000001 [INF] Request finished in 601.5807ms 200 text/css (791a596a)
+2018-02-24T23:20:19.3431737+07:00 0HLBRK8VBC3D3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/login   (ca22a1cb)
+2018-02-24T23:20:19.3484254+07:00 0HLBRK8VBC3D7:00000001 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2018-02-24T23:20:19.3755862+07:00 0HLBRK8VBC3D3:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-02-24T23:20:19.3823246+07:00 0HLBRK8VBC3D3:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-02-24T23:20:19.3863940+07:00 0HLBRK8VBC3DA:00000001 [INF] Request finished in 526.1854ms 200 text/css (791a596a)
+2018-02-24T23:20:19.3976974+07:00 0HLBRK8VBC3D3:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 45.2601ms (afa2e885)
+2018-02-24T23:20:19.4430093+07:00 0HLBRK8VBC3DB:00000001 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
+2018-02-24T23:20:19.4547729+07:00 0HLBRK8VBC3D7:00000001 [INF] Request finished in 717.5274ms 304 application/javascript (791a596a)
+2018-02-24T23:20:19.5013999+07:00 0HLBRK8VBC3DB:00000001 [INF] Request finished in 373.5533ms 304 application/javascript (791a596a)
+2018-02-24T23:20:19.5289217+07:00 0HLBRK8VBC3DC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-02-24T23:20:19.5487303+07:00 0HLBRK8VBC3DC:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-02-24T23:20:19.5542953+07:00 0HLBRK8VBC3D9:00000001 [INF] Request finished in 634.8814ms 200 application/javascript (791a596a)
+2018-02-24T23:20:19.5661803+07:00 0HLBRK8VBC3D3:00000002 [INF] Request finished in 579.9417ms 200 text/html; charset=utf-8 (791a596a)
+2018-02-24T23:20:19.5847815+07:00 0HLBRK8VBC3DC:00000002 [INF] Request finished in 73.2403ms 200 font/woff2 (791a596a)
+2018-02-24T23:20:20.7839242+07:00 0HLBRK8VBC3DA:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-02-24T23:20:20.9121097+07:00 0HLBRK8VBC3DA:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" with arguments (["ShopCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-02-24T23:20:20.9649916+07:00 0HLBRK8VBC3DA:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-02-24T23:20:21.1820667+07:00 0HLBRK8VBC3DA:00000002 [INF] Executed DbCommand ("75"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-02-24T23:20:21.4151492+07:00 0HLBRK8VBC3DA:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-02-24T23:20:21.5012348+07:00 0HLBRK8VBC3DA:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-02-24T23:20:21.5684146+07:00 0HLBRK8VBC3DA:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-02-24T23:20:21.6272363+07:00 0HLBRK8VBC3DA:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-02-24T23:20:21.6379263+07:00 0HLBRK8VBC3DA:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-02-24T23:20:21.6817467+07:00 0HLBRK8VBC3DA:00000002 [INF] User logged in. (fdce0db4)
+2018-02-24T23:20:21.7287792+07:00 0HLBRK8VBC3DA:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-02-24T23:20:21.8581069+07:00 0HLBRK8VBC3DA:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" in 1014.2951ms (afa2e885)
+2018-02-24T23:20:21.8687776+07:00 0HLBRK8VBC3DA:00000002 [INF] Request finished in 1102.2759ms 200 application/json; charset=utf-8 (791a596a)
+2018-02-24T23:20:21.8839352+07:00 0HLBRK8VBC3D6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Home/Index   (ca22a1cb)
+2018-02-24T23:20:21.9038543+07:00 0HLBRK8VBC3D6:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-02-24T23:20:21.9441743+07:00 0HLBRK8VBC3D6:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-02-24T23:20:21.9694822+07:00 0HLBRK8VBC3D6:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-02-24T23:20:22.1289307+07:00 0HLBRK8VBC3D6:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-02-24T23:20:22.4072194+07:00 0HLBRK8VBC3D6:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" in 490.3334ms (afa2e885)
+2018-02-24T23:20:22.4190344+07:00 0HLBRK8VBC3D6:00000002 [INF] Request finished in 533.8552ms 200 text/html; charset=utf-8 (791a596a)
+2018-02-24T23:20:22.5236033+07:00 0HLBRK8VBC3D8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-02-24T23:20:22.5329846+07:00 0HLBRK8VBC3D4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-02-24T23:20:22.6788946+07:00 0HLBRK8VBC3D3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/moment/moment.js   (ca22a1cb)
+2018-02-24T23:20:22.8257675+07:00 0HLBRK8VBC3DC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/images/img.jpg   (ca22a1cb)
+2018-02-24T23:20:22.8268345+07:00 0HLBRK8VBC3D8:00000002 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2018-02-24T23:20:22.8937241+07:00 0HLBRK8VBC3D6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/js/custom.js   (ca22a1cb)
+2018-02-24T23:20:22.9181396+07:00 0HLBRK8VBC3D7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-02-24T23:20:22.9490802+07:00 0HLBRK8VBC3D5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-02-24T23:20:22.9777974+07:00 0HLBRK8VBC3D6:00000003 [INF] The file "/admin-site/js/custom.js" was not modified (f1f8d725)
+2018-02-24T23:20:23.0609423+07:00 0HLBRK8VBC3D9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-02-24T23:20:23.1219359+07:00 0HLBRK8VBC3DC:00000003 [INF] The file "/admin-site/images/img.jpg" was not modified (f1f8d725)
+2018-02-24T23:20:23.1444599+07:00 0HLBRK8VBC3D8:00000002 [INF] Request finished in 356.3806ms 304 application/javascript (791a596a)
+2018-02-24T23:20:23.1729511+07:00 0HLBRK8VBC3D9:00000002 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2018-02-24T23:20:23.1993416+07:00 0HLBRK8VBC3D7:00000002 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2018-02-24T23:20:23.2100133+07:00 0HLBRK8VBC3D3:00000003 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2018-02-24T23:20:23.2233815+07:00 0HLBRK8VBC3D4:00000002 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2018-02-24T23:20:23.2340226+07:00 0HLBRK8VBC3DA:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-02-24T23:20:23.2414255+07:00 0HLBRK8VBC3D4:00000002 [INF] Request finished in 780.2463ms 304 text/css (791a596a)
+2018-02-24T23:20:23.2627577+07:00 0HLBRK8VBC3DC:00000003 [INF] Request finished in 649.3895ms 304 image/jpeg (791a596a)
+2018-02-24T23:20:23.2759829+07:00 0HLBRK8VBC3D5:00000002 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2018-02-24T23:20:23.3095802+07:00 0HLBRK8VBC3D6:00000003 [INF] Request finished in 505.0406ms 304 application/javascript (791a596a)
+2018-02-24T23:20:23.3679813+07:00 0HLBRK8VBC3D7:00000002 [INF] Request finished in 728.3801ms 304 application/javascript (791a596a)
+2018-02-24T23:20:23.3688752+07:00 0HLBRK8VBC3DA:00000003 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2018-02-24T23:20:23.4244074+07:00 0HLBRK8VBC3D3:00000003 [INF] Request finished in 739.1044ms 304 application/javascript (791a596a)
+2018-02-24T23:20:23.4502659+07:00 0HLBRK8VBC3DA:00000003 [INF] Request finished in 206.0237ms 304 application/javascript (791a596a)
+2018-02-24T23:20:23.4530372+07:00 0HLBRK8VBC3D5:00000002 [INF] Request finished in 806.6303ms 304 application/javascript (791a596a)
+2018-02-24T23:20:23.4783899+07:00 0HLBRK8VBC3D9:00000002 [INF] Request finished in 701.7918ms 304 application/javascript (791a596a)
+2018-02-24T23:20:23.4981573+07:00 0HLBRK8VBC3DB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-02-24T23:20:23.5241504+07:00 0HLBRK8VBC3DB:00000002 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2018-02-24T23:20:23.5294461+07:00 0HLBRK8VBC3DB:00000002 [INF] Request finished in 190.2863ms 304 application/javascript (791a596a)

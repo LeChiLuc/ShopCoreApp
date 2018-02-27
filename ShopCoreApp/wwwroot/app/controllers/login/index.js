@@ -4,11 +4,26 @@
     }
 
     var registerEvents = function () {
+        $('#frmLogin').validate({
+            errorClass: 'red',
+            ignore: [],
+            lang: 'en',
+            rules: {
+                userName: {
+                    required: true
+                },
+                password: {
+                    required: true
+                }
+            }
+        });
         $('#btnLogin').on('click', function (e) {
-            e.preventDefault();
-            var user = $('#txtUserName').val();
-            var password = $('#txtPassword').val();
-            login(user, password);
+            if ($('#frmLogin').valid()) {
+                e.preventDefault();
+                var user = $('#txtUserName').val();
+                var password = $('#txtPassword').val();
+                login(user, password);
+            }         
         })
     }
 
@@ -26,7 +41,7 @@
                     window.location.href = '/Admin/Home/Index';
                 }
                 else {
-                    app.notify('Đăng nhập không đúng', 'error');
+                    app.notify('Login failed', 'error');
                 }
             }
         })
