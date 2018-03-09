@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.System;
 using ShopCoreApp.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace ShopCoreApp.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<ProductCategory, ProductCategoryViewModel>();
+            CreateMap<Function, FunctionViewModel>();
         }
     }
 }

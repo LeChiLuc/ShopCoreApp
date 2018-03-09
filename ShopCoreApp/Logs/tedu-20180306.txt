@@ -1,0 +1,225 @@
+2018-03-06T23:01:19.9616309+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-03-06T23:01:20.7110070+07:00  [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-03-06T23:01:20.8013424+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-03-06T23:01:20.8834114+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-03-06T23:01:20.9725783+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-03-06T23:01:21.0197398+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-03-06T23:01:21.0468882+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-03-06T23:01:21.0873554+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-03-06T23:01:21.1159154+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-03-06T23:01:21.1374592+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-03-06T23:01:21.1830891+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-03-06T23:01:21.1998286+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-03-06T23:01:21.2366611+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-03-06T23:01:21.8056425+07:00 0HLC3FE0KDL17:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-03-06T23:01:22.2079640+07:00 0HLC3FE0KDL17:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-03-06T23:01:31.4376827+07:00 0HLC3FE0KDL17:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-03-06T23:01:33.4983973+07:00 0HLC3FE0KDL17:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 11316.2111ms (afa2e885)
+2018-03-06T23:01:33.6662560+07:00 0HLC3FE0KDL1A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/css/site.css   (ca22a1cb)
+2018-03-06T23:01:33.6967483+07:00 0HLC3FE0KDL17:00000001 [INF] Request finished in 11749.7656ms 200 text/html; charset=utf-8 (791a596a)
+2018-03-06T23:01:33.7677620+07:00 0HLC3FE0KDL1G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-03-06T23:01:33.9868716+07:00 0HLC3FE0KDL19:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-03-06T23:01:34.1389021+07:00 0HLC3FE0KDL1F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-03-06T23:01:34.1758120+07:00 0HLC3FE0KDL1D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner1.svg   (ca22a1cb)
+2018-03-06T23:01:34.2262253+07:00 0HLC3FE0KDL1C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-03-06T23:01:34.3257439+07:00 0HLC3FE0KDL1B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner2.svg   (ca22a1cb)
+2018-03-06T23:01:34.3698242+07:00 0HLC3FE0KDL1G:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-03-06T23:01:34.3755179+07:00 0HLC3FE0KDL1E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner4.svg   (ca22a1cb)
+2018-03-06T23:01:34.4631039+07:00 0HLC3FE0KDL1A:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-03-06T23:01:34.4813557+07:00 0HLC3FE0KDL1B:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-03-06T23:01:34.5259044+07:00 0HLC3FE0KDL19:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-03-06T23:01:34.5311200+07:00 0HLC3FE0KDL1C:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-03-06T23:01:34.5344607+07:00 0HLC3FE0KDL1F:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-03-06T23:01:34.5416651+07:00 0HLC3FE0KDL1D:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-03-06T23:01:34.6033858+07:00 0HLC3FE0KDL1G:00000001 [INF] Request finished in 973.8373ms 200 application/javascript (791a596a)
+2018-03-06T23:01:34.6945752+07:00 0HLC3FE0KDL1D:00000001 [INF] Request finished in 1053.599ms 200 image/svg+xml (791a596a)
+2018-03-06T23:01:34.7804284+07:00 0HLC3FE0KDL1E:00000001 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-03-06T23:01:34.8063238+07:00 0HLC3FE0KDL17:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner3.svg   (ca22a1cb)
+2018-03-06T23:01:34.8466488+07:00 0HLC3FE0KDL1E:00000001 [INF] Request finished in 1253.077ms 200 image/svg+xml (791a596a)
+2018-03-06T23:01:34.9258537+07:00 0HLC3FE0KDL1A:00000001 [INF] Request finished in 1027.3511ms 200 text/css (791a596a)
+2018-03-06T23:01:34.9860318+07:00 0HLC3FE0KDL1B:00000001 [INF] Request finished in 990.7734ms 200 image/svg+xml (791a596a)
+2018-03-06T23:01:34.9950945+07:00 0HLC3FE0KDL1C:00000001 [INF] Request finished in 1287.6559ms 200 application/javascript (791a596a)
+2018-03-06T23:01:35.0062415+07:00 0HLC3FE0KDL1F:00000001 [INF] Request finished in 1188.6975ms 200 application/javascript (791a596a)
+2018-03-06T23:01:35.0761520+07:00 0HLC3FE0KDL19:00000001 [INF] Request finished in 1228.6793ms 200 text/css (791a596a)
+2018-03-06T23:01:35.0833998+07:00 0HLC3FE0KDL17:00000002 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-03-06T23:01:35.1006131+07:00 0HLC3FE0KDL1A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-03-06T23:01:35.1531936+07:00 0HLC3FE0KDL17:00000002 [INF] Request finished in 1234.5768ms 200 image/svg+xml (791a596a)
+2018-03-06T23:01:35.1752169+07:00 0HLC3FE0KDL1A:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-03-06T23:01:35.2146112+07:00 0HLC3FE0KDL1A:00000002 [INF] Request finished in 134.6079ms 200 font/woff2 (791a596a)
+2018-03-06T23:01:36.1893855+07:00 0HLC3FE0KDL1G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/favicon.ico   (ca22a1cb)
+2018-03-06T23:01:36.2110313+07:00 0HLC3FE0KDL1G:00000002 [INF] Request finished in 20.6947ms 404  (791a596a)
+2018-03-06T23:01:56.7290579+07:00 0HLC3FE0KDL1B:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin   (ca22a1cb)
+2018-03-06T23:01:56.7724006+07:00 0HLC3FE0KDL1B:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-03-06T23:01:57.7336250+07:00 0HLC3FE0KDL1B:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-03-06T23:01:57.8906818+07:00 0HLC3FE0KDL1B:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 1142.8612ms (afa2e885)
+2018-03-06T23:01:57.9045397+07:00 0HLC3FE0KDL1B:00000002 [INF] Request finished in 1193.0279ms 200 text/html; charset=utf-8 (791a596a)
+2018-03-06T23:01:58.1477341+07:00 0HLC3FE0KDL1E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-03-06T23:01:58.2067248+07:00 0HLC3FE0KDL1A:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/css/custom.css   (ca22a1cb)
+2018-03-06T23:01:58.2386577+07:00 0HLC3FE0KDL1C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-03-06T23:01:58.2975288+07:00 0HLC3FE0KDL1C:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-03-06T23:01:58.3249780+07:00 0HLC3FE0KDL1D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-03-06T23:01:58.5263114+07:00 0HLC3FE0KDL1F:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-03-06T23:01:58.5967025+07:00 0HLC3FE0KDL1E:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-03-06T23:01:58.6909001+07:00 0HLC3FE0KDL17:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-03-06T23:01:58.7468371+07:00 0HLC3FE0KDL1A:00000003 [INF] Sending file. Request path: '"/admin-site/css/custom.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\css\custom.css"' (27b0a520)
+2018-03-06T23:01:58.7710531+07:00 0HLC3FE0KDL1C:00000002 [INF] Request finished in 282.8466ms 200 application/javascript (791a596a)
+2018-03-06T23:01:58.9046094+07:00 0HLC3FE0KDL1F:00000002 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-03-06T23:01:58.9609460+07:00 0HLC3FE0KDL19:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/animate.css/animate.css   (ca22a1cb)
+2018-03-06T23:01:58.9905982+07:00 0HLC3FE0KDL1B:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-03-06T23:01:59.1814119+07:00 0HLC3FE0KDL1G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-03-06T23:01:59.2826374+07:00 0HLC3FE0KDL1G:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-03-06T23:01:59.3483020+07:00 0HLC3FE0KDL1K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-03-06T23:01:59.4735051+07:00 0HLC3FE0KDL1B:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-03-06T23:01:59.5261633+07:00 0HLC3FE0KDL1D:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-03-06T23:01:59.5741640+07:00 0HLC3FE0KDL17:00000003 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-03-06T23:01:59.6247319+07:00 0HLC3FE0KDL1G:00000003 [INF] Request finished in 1323.3561ms 200 application/javascript (791a596a)
+2018-03-06T23:01:59.6996066+07:00 0HLC3FE0KDL1I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js   (ca22a1cb)
+2018-03-06T23:01:59.7820953+07:00 0HLC3FE0KDL1K:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-03-06T23:01:59.8216911+07:00 0HLC3FE0KDL17:00000003 [INF] Request finished in 1639.937ms 200 application/javascript (791a596a)
+2018-03-06T23:01:59.9696073+07:00 0HLC3FE0KDL19:00000002 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-03-06T23:02:00.0430419+07:00 0HLC3FE0KDL1J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-03-06T23:02:00.0757742+07:00 0HLC3FE0KDL1F:00000002 [INF] Request finished in 1010.0897ms 200 text/css (791a596a)
+2018-03-06T23:02:00.2588302+07:00 0HLC3FE0KDL1K:00000001 [INF] Request finished in 932.4252ms 200 application/javascript (791a596a)
+2018-03-06T23:02:00.2903571+07:00 0HLC3FE0KDL1E:00000002 [INF] Request finished in 1958.9317ms 200 text/css (791a596a)
+2018-03-06T23:02:00.3441849+07:00 0HLC3FE0KDL1H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/login/index.js   (ca22a1cb)
+2018-03-06T23:02:00.3507621+07:00 0HLC3FE0KDL1J:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-03-06T23:02:00.3774481+07:00 0HLC3FE0KDL1H:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-03-06T23:02:00.4736856+07:00 0HLC3FE0KDL1D:00000002 [INF] Request finished in 1695.7759ms 200 text/css (791a596a)
+2018-03-06T23:02:00.4739537+07:00 0HLC3FE0KDL1I:00000001 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-03-06T23:02:00.5857506+07:00 0HLC3FE0KDL1H:00000001 [INF] Request finished in 1550.4754ms 200 application/javascript (791a596a)
+2018-03-06T23:02:00.6604194+07:00 0HLC3FE0KDL1B:00000003 [INF] Request finished in 2087.2028ms 200 application/javascript (791a596a)
+2018-03-06T23:02:00.7976413+07:00 0HLC3FE0KDL1A:00000003 [INF] Request finished in 1997.4348ms 200 text/css (791a596a)
+2018-03-06T23:02:00.8581881+07:00 0HLC3FE0KDL19:00000002 [INF] Request finished in 2415.6337ms 200 text/css (791a596a)
+2018-03-06T23:02:00.9300882+07:00 0HLC3FE0KDL1I:00000001 [INF] Request finished in 1670.991ms 200 application/javascript (791a596a)
+2018-03-06T23:02:00.9859549+07:00 0HLC3FE0KDL1J:00000001 [INF] Request finished in 891.9616ms 200 application/javascript (791a596a)
+2018-03-06T23:02:00.9957124+07:00 0HLC3FE0KDL1C:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-03-06T23:02:01.0046085+07:00 0HLC3FE0KDL1C:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-03-06T23:02:01.0386298+07:00 0HLC3FE0KDL1C:00000003 [INF] Request finished in 401.2438ms 200 font/woff2 (791a596a)
+2018-03-06T23:02:05.7877929+07:00 0HLC3FE0KDL1F:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-03-06T23:02:06.0311125+07:00 0HLC3FE0KDL1F:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" with arguments (["ShopCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-03-06T23:02:06.0906867+07:00 0HLC3FE0KDL1F:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-03-06T23:02:06.3073913+07:00 0HLC3FE0KDL1F:00000003 [INF] Executed DbCommand ("108"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-03-06T23:02:06.7167758+07:00 0HLC3FE0KDL1F:00000003 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-03-06T23:02:06.8296318+07:00 0HLC3FE0KDL1F:00000003 [INF] Executed DbCommand ("10"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-03-06T23:02:06.8689313+07:00 0HLC3FE0KDL1F:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-03-06T23:02:06.9314521+07:00 0HLC3FE0KDL1F:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-03-06T23:02:06.9769146+07:00 0HLC3FE0KDL1F:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-03-06T23:02:07.0300826+07:00 0HLC3FE0KDL1F:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-03-06T23:02:07.0622959+07:00 0HLC3FE0KDL1F:00000003 [INF] User logged in. (fdce0db4)
+2018-03-06T23:02:07.1075590+07:00 0HLC3FE0KDL1F:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-03-06T23:02:07.2410933+07:00 0HLC3FE0KDL1F:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" in 1327.9871ms (afa2e885)
+2018-03-06T23:02:07.2582044+07:00 0HLC3FE0KDL1F:00000003 [INF] Request finished in 1488.1603ms 200 application/json; charset=utf-8 (791a596a)
+2018-03-06T23:02:07.2774434+07:00 0HLC3FE0KDL1G:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Home/Index   (ca22a1cb)
+2018-03-06T23:02:07.2994160+07:00 0HLC3FE0KDL1G:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-03-06T23:02:07.3557938+07:00 0HLC3FE0KDL1G:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-03-06T23:02:07.3867840+07:00 0HLC3FE0KDL1G:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-03-06T23:02:13.1648073+07:00 0HLC3FE0KDL1G:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-03-06T23:02:14.5576593+07:00 0HLC3FE0KDL1G:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" in 7235.7561ms (afa2e885)
+2018-03-06T23:02:14.5720751+07:00 0HLC3FE0KDL1G:00000004 [INF] Request finished in 7295.1243ms 200 text/html; charset=utf-8 (791a596a)
+2018-03-06T23:02:14.7939071+07:00 0HLC3FE0KDL17:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-03-06T23:02:14.9920011+07:00 0HLC3FE0KDL1J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-03-06T23:02:15.1283386+07:00 0HLC3FE0KDL17:00000004 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-03-06T23:02:15.1505884+07:00 0HLC3FE0KDL1A:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-03-06T23:02:15.2411918+07:00 0HLC3FE0KDL1K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/images/img.jpg   (ca22a1cb)
+2018-03-06T23:02:15.4254794+07:00 0HLC3FE0KDL1B:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-03-06T23:02:15.5163380+07:00 0HLC3FE0KDL1I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/js/custom.js   (ca22a1cb)
+2018-03-06T23:02:15.5986688+07:00 0HLC3FE0KDL17:00000004 [INF] Request finished in 660.8218ms 200 text/css (791a596a)
+2018-03-06T23:02:15.6467041+07:00 0HLC3FE0KDL1A:00000004 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2018-03-06T23:02:15.6875437+07:00 0HLC3FE0KDL1D:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-03-06T23:02:15.7754883+07:00 0HLC3FE0KDL1J:00000002 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-03-06T23:02:15.7778076+07:00 0HLC3FE0KDL19:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-03-06T23:02:15.8222461+07:00 0HLC3FE0KDL19:00000003 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2018-03-06T23:02:15.8849189+07:00 0HLC3FE0KDL1E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-03-06T23:02:15.8849430+07:00 0HLC3FE0KDL1J:00000002 [INF] Request finished in 1067.97ms 200 application/javascript (791a596a)
+2018-03-06T23:02:16.0023118+07:00 0HLC3FE0KDL19:00000003 [INF] Request finished in 201.601ms 200 application/javascript (791a596a)
+2018-03-06T23:02:16.0067998+07:00 0HLC3FE0KDL1E:00000003 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2018-03-06T23:02:16.0347698+07:00 0HLC3FE0KDL1K:00000002 [INF] Sending file. Request path: '"/admin-site/images/img.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\images\img.jpg"' (27b0a520)
+2018-03-06T23:02:16.0600470+07:00 0HLC3FE0KDL1B:00000004 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-03-06T23:02:16.1010026+07:00 0HLC3FE0KDL1E:00000003 [INF] Request finished in 1403.7035ms 200 application/javascript (791a596a)
+2018-03-06T23:02:16.2187360+07:00 0HLC3FE0KDL1I:00000002 [INF] Sending file. Request path: '"/admin-site/js/custom.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\js\custom.js"' (27b0a520)
+2018-03-06T23:02:16.2574314+07:00 0HLC3FE0KDL1H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/moment/moment.js   (ca22a1cb)
+2018-03-06T23:02:16.3188282+07:00 0HLC3FE0KDL1K:00000002 [INF] Request finished in 1443.662ms 200 image/jpeg (791a596a)
+2018-03-06T23:02:16.3646015+07:00 0HLC3FE0KDL1D:00000003 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2018-03-06T23:02:16.4305555+07:00 0HLC3FE0KDL1D:00000003 [INF] Request finished in 1754.4005ms 200 application/javascript (791a596a)
+2018-03-06T23:02:16.5407488+07:00 0HLC3FE0KDL1B:00000004 [INF] Request finished in 1598.5206ms 200 application/javascript (791a596a)
+2018-03-06T23:02:16.6625746+07:00 0HLC3FE0KDL1I:00000002 [INF] Request finished in 1681.9115ms 200 application/javascript (791a596a)
+2018-03-06T23:02:16.7175303+07:00 0HLC3FE0KDL1A:00000004 [INF] Request finished in 1788.0681ms 200 application/javascript (791a596a)
+2018-03-06T23:02:16.7601038+07:00 0HLC3FE0KDL1H:00000002 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\moment\moment.js"' (27b0a520)
+2018-03-06T23:02:16.7921348+07:00 0HLC3FE0KDL1H:00000002 [INF] Request finished in 1055.9063ms 200 application/javascript (791a596a)
+2018-03-06T23:02:17.5044945+07:00 0HLC3FE0KDL1C:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Home/login.html   (ca22a1cb)
+2018-03-06T23:02:17.5258596+07:00 0HLC3FE0KDL1C:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-03-06T23:02:17.5615022+07:00 0HLC3FE0KDL1C:00000004 [INF] Request finished in 40.2152ms 404  (791a596a)
+2018-03-06T23:02:21.0069945+07:00 0HLC3FE0KDL1F:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin   (ca22a1cb)
+2018-03-06T23:02:21.0248434+07:00 0HLC3FE0KDL1F:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-03-06T23:02:21.0461031+07:00 0HLC3FE0KDL1F:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-03-06T23:02:21.0624141+07:00 0HLC3FE0KDL1F:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-03-06T23:02:21.1020648+07:00 0HLC3FE0KDL1F:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 39.3068ms (afa2e885)
+2018-03-06T23:02:21.1202043+07:00 0HLC3FE0KDL1F:00000004 [INF] Request finished in 112.2652ms 200 text/html; charset=utf-8 (791a596a)
