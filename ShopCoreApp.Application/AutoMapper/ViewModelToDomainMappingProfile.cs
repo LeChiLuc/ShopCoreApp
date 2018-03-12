@@ -13,6 +13,8 @@ namespace ShopCoreApp.Application.AutoMapper
         {
             CreateMap<ProductCategoryViewModel, ProductCategory>()
                 .ConstructUsing(c => new ProductCategory());
+            CreateMap<ProductViewModel, Product>()
+                .ConstructUsing(c => new Product());
         }
     }
 }

@@ -80,10 +80,12 @@ namespace ShopCoreApp
 
             //Repositories
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
 
             //Services
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IFunctionService, FunctionService>();
 
         }
