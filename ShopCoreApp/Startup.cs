@@ -22,6 +22,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using ShopCoreApp.Helpers;
+using ShopCoreApp.Infrastructure.Interfaces;
 
 namespace ShopCoreApp
 {
@@ -74,6 +75,9 @@ namespace ShopCoreApp
             services.AddScoped<IMapper>(sp=> new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(),sp.GetService));
 
             services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IUnitOfWork, EFUnitOfWork>();
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
