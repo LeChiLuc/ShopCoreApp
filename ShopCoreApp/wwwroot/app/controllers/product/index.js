@@ -28,7 +28,6 @@
             url: '/admin/product/GetAllCategory',
             dataType: 'json',
             success: function (response) {
-                console.log(response);
                 var render = "<option value=''>--Select category--</option>";
                 $.each(response, function (i, item) {
                     render += "<option value='" + item.Id + "'>" + item.Name + "</option>"
@@ -71,7 +70,7 @@
                 if (render != '') {
                     $('#tbl-content').html(render);
                 }
-                wrapPaging(response.RowCount, function () {
+                wrapPaging(response.PageCount, function () {
                     loadData();
                 }, isPageChanged);
 
@@ -83,8 +82,8 @@
         });
     }
 
-    function wrapPaging(recordCount, callBack, changePageSize) {
-        var totalsize = Math.ceil(recordCount / app.configs.pageSize);
+    function wrapPaging(pageCount, callBack, changePageSize) {
+        var totalsize = pageCount;
         //Unbind pagination if it existed or click change pagesize
         if ($('#paginationUL a').length === 0 || changePageSize === true) {
             $('#paginationUL').empty();

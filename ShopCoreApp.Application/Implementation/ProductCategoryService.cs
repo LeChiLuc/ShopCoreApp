@@ -94,6 +94,7 @@ namespace ShopCoreApp.Application.Implementation
             int tempOrder = source.SortOrder;
             source.SortOrder = target.SortOrder;
             target.SortOrder = tempOrder;
+            source.ParentId = target.ParentId;
 
             _productCategoryRepository.Update(source);
             _productCategoryRepository.Update(target);

@@ -33,7 +33,7 @@ namespace ShopCoreApp.Application.Implementation
             var query = _productRepository.FindAll(x => x.Status == Status.Active);
             if (!string.IsNullOrEmpty(keyword))
             {
-                query = query.Where(x => x.Name.Contains(keyword));
+                query = query.Where(x => x.Name.Contains(keyword) || x.ProductCategory.Name.Contains(keyword));
             }
             if (categoryId.HasValue)
             {
