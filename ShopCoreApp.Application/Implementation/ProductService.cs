@@ -65,6 +65,11 @@ namespace ShopCoreApp.Application.Implementation
                 _productRepository.Add(product);
 
             }
+            else
+            {
+                var product = Mapper.Map<ProductViewModel, Product>(productVm);
+                _productRepository.Add(product);
+            }
             return productVm;
         }
 
