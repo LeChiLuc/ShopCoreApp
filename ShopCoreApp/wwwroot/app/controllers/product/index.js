@@ -51,6 +51,31 @@
             var that = $(this).data('id');
             deleteProduct(that);
         });
+        $('#btnSelectImg').on('click', function () {
+            $('#fileInputImage').click();
+        });
+        $('#fileInputImage').on('change', function () {
+            var fileUpload = $(this).get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                data.append(files[i].name, files[i]);
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Upload/UploadImage",
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (path) {
+                    $('#txtImage').val(path);
+                    app.notify('Upload image successful!','success');
+                },
+                error: function () {
+                    app.notify('There was error uploading files!', 'error');
+                }
+            });
+        });
     }
     function saveProduct() {
         if ($('#frmMaintainance').valid()) {
@@ -65,7 +90,7 @@
             var originalPrice = $('#txtOriginalPriceM').val();
             var promotionPrice = $('#txtPromotionPriceM').val();
 
-            //var image = $('#txtImageM').val();
+            var image = $('#txtImage').val();
 
             var tags = $('#txtTagM').val();
             var seoKeyword = $('#txtMetakeywordM').val();
@@ -85,7 +110,7 @@
                     Id: id,
                     Name: name,
                     CategoryId: categoryId,
-                    Image: '',
+                    Image: image,
                     Price: price,
                     OriginalPrice: originalPrice,
                     PromotionPrice: promotionPrice,
@@ -166,7 +191,7 @@
                 $('#txtOriginalPriceM').val(data.OriginalPrice);
                 $('#txtPromotionPriceM').val(data.PromotionPrice);
 
-                // $('#txtImageM').val(data.ThumbnailImage);
+                $('#txtImage').val(data.Image);
 
                 $('#txtTagM').val(data.Tags);
                 $('#txtMetakeywordM').val(data.SeoKeywords);
@@ -232,7 +257,7 @@
         $('#txtOriginalPriceM').val('');
         $('#txtPromotionPriceM').val('');
 
-        //$('#txtImageM').val('');
+        $('#txtImage').val('');
 
         $('#txtTagM').val('');
         $('#txtMetakeywordM').val('');
