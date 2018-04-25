@@ -12,7 +12,7 @@ using System;
 namespace ShopCoreApp.Data.EF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20180221033309_initial")]
+    [Migration("20180425055528_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

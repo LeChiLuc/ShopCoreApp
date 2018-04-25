@@ -127,6 +127,7 @@ namespace ShopCoreApp
                 routes.MapRoute(name: "areaRoute",
                     template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
+            
         }
     }
 }
