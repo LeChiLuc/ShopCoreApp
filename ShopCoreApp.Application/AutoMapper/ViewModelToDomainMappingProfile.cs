@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ShopCoreApp.Application.AutoMapper
 {
-    public class ViewModelToDomainMappingProfile: Profile
+    public class ViewModelToDomainMappingProfile : Profile
     {
         public ViewModelToDomainMappingProfile()
         {
@@ -24,6 +24,9 @@ namespace ShopCoreApp.Application.AutoMapper
             CreateMap<AppUserViewModel, AppUser>()
            .ConstructUsing(c => new AppUser(c.Id.GetValueOrDefault(Guid.Empty), c.FullName, c.UserName,
            c.Email, c.PhoneNumber, c.Avatar, c.Status));
+
+            CreateMap<PermissionViewModel, Permission>()
+                .ConstructUsing(c => new Permission(c.RoleId, c.FunctionId, c.CanDelete, c.CanRead, c.CanUpdate, c.CanCreate));
         }
     }
 }

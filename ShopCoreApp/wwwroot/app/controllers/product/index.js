@@ -297,7 +297,7 @@
             url: '/admin/product/GetAllCategory',
             dataType: 'json',
             success: function (response) {
-                var render = "<option value=''>--Select category--</option>";
+                var render = "<option value=''>--Chọn danh mục--</option>";
                 $.each(response, function (i, item) {
                     render += "<option value='" + item.Id + "'>" + item.Name + "</option>"
                 });
