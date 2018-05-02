@@ -23,37 +23,45 @@
             app.configs.pageIndex = 1;
             loadData(true);
         });
+
         $('#btnSearch').on('click', function () {
             loadData();
         });
+
         $('#txtKeyword').on('keypress', function (e) {
             if (e.which === 13) {
                 loadData();
             }
         });
+
         $("#btnCreate").on('click', function () {
             resetFormMaintainance();
             initTreeDropDownCategory();
             $('#modal-add-edit').modal('show');
 
         });
+
         $('body').on('click', '.btn-edit', function (e) {
             e.preventDefault();
             var that = $(this).data('id');
             loadDetails(that);
         });
+
         $('#btnSave').on('click', function () {
             saveProduct();
             $('#modal-add-edit').modal('hide');
         });
+
         $('body').on('click', '.btn-delete', function (e) {
             e.preventDefault();
             var that = $(this).data('id');
             deleteProduct(that);
         });
+
         $('#btnSelectImg').on('click', function () {
             $('#fileInputImage').click();
         });
+
         $('#fileInputImage').on('change', function () {
             var fileUpload = $(this).get(0);
             var files = fileUpload.files;
@@ -75,6 +83,38 @@
                     app.notify('There was error uploading files!', 'error');
                 }
             });
+        });
+
+        $('#btn-import').on('click', function () {
+            initTreeDropDownCategory();
+            $('#modal-import-excel').modal('show');
+        });
+
+        $('#btnImportExcel').on('click', function () {
+            var fileUpload = $("#fileInputExcel").get(0);
+            var files = fileUpload.files;
+
+            // Create FormData object  
+            var fileData = new FormData();
+            // Looping over all files and add it to FormData object  
+            for (var i = 0; i < files.length; i++) {
+                fileData.append("files", files[i]);
+            }
+            // Adding one more key to FormData object  
+            fileData.append('categoryId', $('#ddlCategoryIdImportExcel').combotree('getValue'));
+            $.ajax({
+                url: '/Admin/Product/ImportExcel',
+                type: 'POST',
+                data: fileData,
+                processData: false,  // tell jQuery not to process the data
+                contentType: false,  // tell jQuery not to set contentType
+                success: function (data) {
+                    $('#modal-import-excel').modal('hide');
+                    loadData();
+
+                }
+            });
+            return false;
         });
     }
     function saveProduct() {
@@ -169,6 +209,7 @@
             });
         });
     }
+
     function loadDetails(id) {
         $.ajax({
             type: "GET",
@@ -214,6 +255,7 @@
             }
         });
     }
+
     function initTreeDropDownCategory(selectedId) {
         $.ajax({
             url: "/Admin/ProductCategory/GetAll",
@@ -271,6 +313,7 @@
         $('#ckShowHomeM').prop('checked', false);
 
     }
+
     function registerControls() {
         CKEDITOR.replace('txtContent', {});
 
@@ -291,6 +334,7 @@
         };
 
     }
+
     function loadCategories() {
         $.ajax({
             type: 'GET',
@@ -331,7 +375,7 @@
                         Name: item.Name,
                         Category: item.ProductCategory.Name,
                         Price: app.formatNumber(item.Price, 0),
-                        Image: item.Image == null ? '<img src="/admin-side/images/user.png" width=55px />' : '<img src="' + item.Image + '" width=55 />',
+                        Image: item.Image == null ? '<img src="/admin-site/images/user.png" width=55px />' : '<img src="' + item.Image + '" width=55 />',
                         CreatedDate: app.dateTimeFormatJson(item.DateCreated),
                         Status: app.getStatus(item.Status)
                     });

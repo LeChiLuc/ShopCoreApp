@@ -507,7 +507,7 @@ body {
     padding: 10px 0
 }
 .page-title .title_left {
-    width: 35%;
+    width: 15%;
     float: left;
     display: block
 }
@@ -515,7 +515,7 @@ body {
     margin: 9px 0
 }
 .page-title .title_right {
-    width: 65%;
+    width: 85%;
     float: left;
     display: block
 }
