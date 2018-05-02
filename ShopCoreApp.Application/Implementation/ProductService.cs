@@ -118,6 +118,21 @@ namespace ShopCoreApp.Application.Implementation
             return paginationSet;
         }
 
+        public List<ProductViewModel> GetAllToExport(int? categoryId, string keyword)
+        {
+            var query = _productRepository.FindAll();
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                query = query.Where(x => x.Name.Contains(keyword) || x.ProductCategory.Name.Contains(keyword));
+            }
+            if (categoryId.HasValue)
+            {
+                query = query.Where(x => x.CategoryId == categoryId.Value);
+            }
+
+            return query.ProjectTo<ProductViewModel>().ToList();
+        }
+
         public ProductViewModel GetById(int id)
         {
             return Mapper.Map<Product, ProductViewModel>(_productRepository.FindById(id));

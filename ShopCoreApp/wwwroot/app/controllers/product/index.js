@@ -116,6 +116,35 @@
             });
             return false;
         });
+
+        $('#btn-export').on('click', function () {
+            $.ajax({
+                type: "POST",
+                data: {
+                    categoryId: $('#ddlCategorySearch').val(),
+                    keyword: $('#txtKeyword').val(),
+                    page: app.configs.pageIndex,
+                    pageSize: app.configs.pageSize
+                },
+                url: "/Admin/Product/ExportExcel",
+                beforeSend: function () {
+                    app.startLoading();
+                },
+                success: function (response) {
+                    window.location.href = response;
+                    app.stopLoading();
+                    $('#lblTotalRecords').text(response.RowCount);
+
+                    wrapPaging(response.PageCount, function () {
+                        loadData();
+                    }, isPageChanged);
+                },
+                error: function () {
+                    app.notify('Có lỗi trong quá trình xử lý', 'error');
+                    app.stopLoading();
+                }
+            });
+        });
     }
     function saveProduct() {
         if ($('#frmMaintainance').valid()) {

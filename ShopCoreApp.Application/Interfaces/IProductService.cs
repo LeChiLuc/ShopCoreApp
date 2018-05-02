@@ -22,6 +22,7 @@ namespace ShopCoreApp.Application.Interfaces
 
         void ImportExcel(string filePath, int categoryId);
 
+        List<ProductViewModel> GetAllToExport(int? categoryId, string keyword);
         void Save();
     }
 }
