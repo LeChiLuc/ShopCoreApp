@@ -25,7 +25,7 @@
         });
 
         $('#btnSearch').on('click', function () {
-            loadData();
+            loadData(true);
         });
 
         $('#txtKeyword').on('keypress', function (e) {
