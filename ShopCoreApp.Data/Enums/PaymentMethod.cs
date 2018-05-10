@@ -7,15 +7,15 @@ namespace ShopCoreApp.Data.Enums
 {
     public enum PaymentMethod
     {
-        [Description("Cash on delivery")]
+        [Description("Thanh toán khi giao hàng")]
         CashOnDelivery,
-        [Description("Onlin Banking")]
+        [Description("Ngân hàng trực tuyến")]
         OnlinBanking,
-        [Description("Payment Gateway")]
+        [Description("Cổng thanh toán")]
         PaymentGateway,
         [Description("Visa")]
         Visa,
-        [Description("Master Card")]
+        [Description("Thẻ Master")]
         MasterCard,
         [Description("PayPal")]
         PayPal,

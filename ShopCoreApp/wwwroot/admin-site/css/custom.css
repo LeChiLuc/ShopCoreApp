@@ -14,7 +14,12 @@ html , body{
 .full-height{
  height:100%;
  }
-
+#billdetail .title_left{
+    width: 35%;
+}
+#billdetail .title_right{
+    width: 65%;
+}
 .daterangepicker .ranges li {
     color: #73879C
 }

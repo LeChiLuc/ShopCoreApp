@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.Product;
 using ShopCoreApp.Application.ViewModels.System;
 using ShopCoreApp.Data.Entities;
 using System;
@@ -17,7 +18,10 @@ namespace ShopCoreApp.Application.AutoMapper
             CreateMap<Product, ProductViewModel>();
             CreateMap<AppUser, AppUserViewModel>();
             CreateMap<AppRole, AppRoleViewModel>();
-
+            CreateMap<Bill, BillViewModel>().MaxDepth(2);
+            CreateMap<BillDetail, BillDetailViewModel>().MaxDepth(2);
+            CreateMap<Color, ColorViewModel>().MaxDepth(2);
+            CreateMap<Size, SizeViewModel>().MaxDepth(2);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.Product;
 using ShopCoreApp.Application.ViewModels.System;
 using ShopCoreApp.Data.Entities;
 using System;
@@ -27,6 +28,16 @@ namespace ShopCoreApp.Application.AutoMapper
 
             CreateMap<PermissionViewModel, Permission>()
                 .ConstructUsing(c => new Permission(c.RoleId, c.FunctionId, c.CanDelete, c.CanRead, c.CanUpdate, c.CanCreate));
+
+
+            CreateMap<BillViewModel, Bill>()
+              .ConstructUsing(c => new Bill(c.Id, c.CustomerName, c.CustomerAddress,
+              c.CustomerMobile, c.CustomerMessage, c.BillStatus,
+              c.PaymentMethod, c.Status, c.CustomerId));
+
+            CreateMap<BillDetailViewModel, BillDetail>()
+              .ConstructUsing(c => new BillDetail(c.Id, c.BillId, c.ProductId,
+              c.Quantity, c.Price, c.ColorId, c.SizeId));
         }
     }
 }
