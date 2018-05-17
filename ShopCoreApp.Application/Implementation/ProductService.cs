@@ -3,6 +3,7 @@ using AutoMapper.QueryableExtensions;
 using OfficeOpenXml;
 using ShopCoreApp.Application.Interfaces;
 using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.Product;
 using ShopCoreApp.Data.Entities;
 using ShopCoreApp.Data.Enums;
 using ShopCoreApp.Data.IRepositories;
@@ -22,14 +23,18 @@ namespace ShopCoreApp.Application.Implementation
     {
         IProductRepository _productRepository;
         IProductTagRepository _productTagRepository;
+        IProductQuantityRepository _productQuantityRepository;
         ITagRepository _tagRepository;
+        IProductImageRepository _productImageRepository;
         IUnitOfWork _unitOfWork;
         public ProductService(IProductRepository productRepository, IProductTagRepository productTagRepository, ITagRepository tagRepository,
-            IUnitOfWork unitOfWork)
+            IProductQuantityRepository productQuantityRepository, IProductImageRepository productImageRepository, IUnitOfWork unitOfWork)
         {
             _productRepository = productRepository;
             _productTagRepository = productTagRepository;
             _tagRepository = tagRepository;
+            _productQuantityRepository = productQuantityRepository;
+            _productImageRepository = productImageRepository;
             _unitOfWork = unitOfWork;
         }
 
@@ -118,6 +123,26 @@ namespace ShopCoreApp.Application.Implementation
             return paginationSet;
         }
 
+        public void AddQuantity(int productId, List<ProductQuantityViewModel> quantities)
+        {
+            _productQuantityRepository.RemoveMultiple(_productQuantityRepository.FindAll(x => x.ProductId == productId).ToList());
+            foreach (var quantity in quantities)
+            {
+                _productQuantityRepository.Add(new ProductQuantity()
+                {
+                    ProductId = productId,
+                    ColorId = quantity.ColorId,
+                    SizeId = quantity.SizeId,
+                    Quantity = quantity.Quantity
+                });
+            }
+        }
+
+        public List<ProductQuantityViewModel> GetQuantities(int productId)
+        {
+            return _productQuantityRepository.FindAll(x => x.ProductId == productId).ProjectTo<ProductQuantityViewModel>().ToList();
+        }
+
         public List<ProductViewModel> GetAllToExport(int? categoryId, string keyword)
         {
             var query = _productRepository.FindAll();
@@ -177,7 +202,26 @@ namespace ShopCoreApp.Application.Implementation
                 }
             }
         }
+        public List<ProductImageViewModel> GetImages(int productId)
+        {
+            return _productImageRepository.FindAll(x => x.ProductId == productId)
+                .ProjectTo<ProductImageViewModel>().ToList();
+        }
 
+        public void AddImages(int productId, string[] images)
+        {
+            _productImageRepository.RemoveMultiple(_productImageRepository.FindAll(x => x.ProductId == productId).ToList());
+            foreach (var image in images)
+            {
+                _productImageRepository.Add(new ProductImage()
+                {
+                    Path = image,
+                    ProductId = productId,
+                    Caption = string.Empty
+                });
+            }
+
+        }
         public void Save()
         {
             _unitOfWork.Commit();

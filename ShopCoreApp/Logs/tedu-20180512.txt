@@ -1,0 +1,722 @@
+2018-05-12T23:25:36.8909746+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:25:37.4786987+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-12T23:25:37.5310758+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-12T23:25:37.5773961+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-05-12T23:25:37.6384236+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-05-12T23:25:37.6511252+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-05-12T23:25:37.6650842+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-05-12T23:25:37.6786142+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-05-12T23:25:37.6908767+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-05-12T23:25:37.7025301+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-05-12T23:25:37.7260858+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-12T23:25:37.7401921+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-12T23:25:37.7538286+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-12T23:25:38.3160705+07:00 0HLDO4JVHVEGF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-05-12T23:25:38.7711885+07:00 0HLDO4JVHVEGF:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:25:46.7127045+07:00 0HLDO4JVHVEGF:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-12T23:25:48.2236687+07:00 0HLDO4JVHVEGF:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 9455.4636ms (afa2e885)
+2018-05-12T23:25:48.2378622+07:00 0HLDO4JVHVEGF:00000001 [INF] Request finished in 9941.4113ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-12T23:25:48.2450506+07:00 0HLDO4JVHVEGG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/css/site.css   (ca22a1cb)
+2018-05-12T23:25:48.2478305+07:00 0HLDO4JVHVEGH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-05-12T23:25:48.2525110+07:00 0HLDO4JVHVEGG:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-05-12T23:25:48.2525351+07:00 0HLDO4JVHVEGH:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-05-12T23:25:48.2553402+07:00 0HLDO4JVHVEGJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner2.svg   (ca22a1cb)
+2018-05-12T23:25:48.2555663+07:00 0HLDO4JVHVEGI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner1.svg   (ca22a1cb)
+2018-05-12T23:25:48.2561553+07:00 0HLDO4JVHVEGJ:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-05-12T23:25:48.2568058+07:00 0HLDO4JVHVEGI:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-05-12T23:25:48.2682003+07:00 0HLDO4JVHVEGK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner3.svg   (ca22a1cb)
+2018-05-12T23:25:48.2701908+07:00 0HLDO4JVHVEGK:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-05-12T23:25:48.2718664+07:00 0HLDO4JVHVEGF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner4.svg   (ca22a1cb)
+2018-05-12T23:25:48.2728411+07:00 0HLDO4JVHVEGF:00000002 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-05-12T23:25:48.2994415+07:00 0HLDO4JVHVEGH:00000001 [INF] Request finished in 51.8392ms 200 application/javascript (791a596a)
+2018-05-12T23:25:48.2994415+07:00 0HLDO4JVHVEGI:00000001 [INF] Request finished in 43.8481ms 200 image/svg+xml (791a596a)
+2018-05-12T23:25:48.2994415+07:00 0HLDO4JVHVEGJ:00000001 [INF] Request finished in 44.0593ms 200 image/svg+xml (791a596a)
+2018-05-12T23:25:48.2994415+07:00 0HLDO4JVHVEGF:00000002 [INF] Request finished in 29.0917ms 200 image/svg+xml (791a596a)
+2018-05-12T23:25:48.2995556+07:00 0HLDO4JVHVEGK:00000001 [INF] Request finished in 31.2958ms 200 image/svg+xml (791a596a)
+2018-05-12T23:25:48.3093336+07:00 0HLDO4JVHVEGG:00000001 [INF] Request finished in 64.5404ms 200 text/css (791a596a)
+2018-05-12T23:25:48.7342723+07:00 0HLDO4JVHVEGH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/favicon.ico   (ca22a1cb)
+2018-05-12T23:25:48.7408360+07:00 0HLDO4JVHVEGH:00000002 [INF] Request finished in 6.5265ms 404  (791a596a)
+2018-05-12T23:26:25.4844638+07:00 0HLDO4JVHVEGG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin   (ca22a1cb)
+2018-05-12T23:26:25.4961858+07:00 0HLDO4JVHVEGG:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:26.1244320+07:00 0HLDO4JVHVEGG:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-05-12T23:26:26.2412788+07:00 0HLDO4JVHVEGG:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 747.6602ms (afa2e885)
+2018-05-12T23:26:26.2418864+07:00 0HLDO4JVHVEGG:00000002 [INF] Request finished in 757.6085ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-12T23:26:26.2864201+07:00 0HLDO4JVHVEGK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/css/custom.css   (ca22a1cb)
+2018-05-12T23:26:26.2938704+07:00 0HLDO4JVHVEGK:00000002 [INF] The file "/admin-site/css/custom.css" was not modified (f1f8d725)
+2018-05-12T23:26:26.2983274+07:00 0HLDO4JVHVEGK:00000002 [INF] Request finished in 12.3332ms 304 text/css (791a596a)
+2018-05-12T23:26:28.6244093+07:00 0HLDO4JVHVEGF:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-05-12T23:26:28.8750935+07:00 0HLDO4JVHVEGF:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" with arguments (["ShopCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:28.8914162+07:00 0HLDO4JVHVEGF:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:29.0813128+07:00 0HLDO4JVHVEGF:00000003 [INF] Executed DbCommand ("85"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-12T23:26:29.3402815+07:00 0HLDO4JVHVEGF:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-12T23:26:29.4287010+07:00 0HLDO4JVHVEGF:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-12T23:26:29.4568614+07:00 0HLDO4JVHVEGF:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-05-12T23:26:29.5088910+07:00 0HLDO4JVHVEGF:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-05-12T23:26:29.5134665+07:00 0HLDO4JVHVEGF:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-12T23:26:29.5235690+07:00 0HLDO4JVHVEGF:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-05-12T23:26:29.5242769+07:00 0HLDO4JVHVEGF:00000003 [INF] User logged in. (fdce0db4)
+2018-05-12T23:26:29.5347131+07:00 0HLDO4JVHVEGF:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:29.6195712+07:00 0HLDO4JVHVEGF:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" in 865.6379ms (afa2e885)
+2018-05-12T23:26:29.6222417+07:00 0HLDO4JVHVEGF:00000003 [INF] Request finished in 997.9709ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:29.6366659+07:00 0HLDO4JVHVEGI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Home/Index   (ca22a1cb)
+2018-05-12T23:26:29.6459144+07:00 0HLDO4JVHVEGI:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:29.6712482+07:00 0HLDO4JVHVEGI:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:29.6736325+07:00 0HLDO4JVHVEGI:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:30.0727797+07:00 0HLDO4JVHVEGI:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-05-12T23:26:30.4474857+07:00 0HLDO4JVHVEGJ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-05-12T23:26:30.4494020+07:00 0HLDO4JVHVEGJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:30.5136182+07:00 0HLDO4JVHVEGJ:00000002 [INF] Antiforgery token validation failed. "The provided antiforgery token was meant for a different claims-based user than the current user." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The provided antiforgery token was meant for a different claims-based user than the current user.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateTokens(HttpContext httpContext, AntiforgeryTokenSet antiforgeryTokenSet)
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2018-05-12T23:26:30.5208424+07:00 0HLDO4JVHVEGJ:00000002 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-05-12T23:26:30.5322949+07:00 0HLDO4JVHVEGJ:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-05-12T23:26:30.5326589+07:00 0HLDO4JVHVEGJ:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" in 82.1858ms (afa2e885)
+2018-05-12T23:26:30.5341737+07:00 0HLDO4JVHVEGJ:00000002 [INF] Request finished in 86.8379ms 400  (791a596a)
+2018-05-12T23:26:30.8697834+07:00 0HLDO4JVHVEGI:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:30.9861919+07:00 0HLDO4JVHVEGI:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-12T23:26:32.1858165+07:00 0HLDO4JVHVEGI:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" in 2534.6449ms (afa2e885)
+2018-05-12T23:26:32.1889647+07:00 0HLDO4JVHVEGI:00000002 [INF] Request finished in 2552.4125ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-12T23:26:35.9351652+07:00 0HLDO4JVHVEGH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/bill/index   (ca22a1cb)
+2018-05-12T23:26:35.9370754+07:00 0HLDO4JVHVEGH:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:35.9443013+07:00 0HLDO4JVHVEGH:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:35.9506626+07:00 0HLDO4JVHVEGH:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:36.3158039+07:00 0HLDO4JVHVEGH:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Bill/Index.cshtml". (9707eebe)
+2018-05-12T23:26:36.6755374+07:00 0HLDO4JVHVEGH:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:36.6814543+07:00 0HLDO4JVHVEGH:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-12T23:26:36.7042660+07:00 0HLDO4JVHVEGH:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.Index (ShopCoreApp)" in 761.6399ms (afa2e885)
+2018-05-12T23:26:36.7059424+07:00 0HLDO4JVHVEGH:00000003 [INF] Request finished in 770.8395ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-12T23:26:36.7511819+07:00 0HLDO4JVHVEGG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css   (ca22a1cb)
+2018-05-12T23:26:36.7521504+07:00 0HLDO4JVHVEGG:00000003 [INF] The file "/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" was not modified (f1f8d725)
+2018-05-12T23:26:36.7522923+07:00 0HLDO4JVHVEGK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.js   (ca22a1cb)
+2018-05-12T23:26:36.7528334+07:00 0HLDO4JVHVEGG:00000003 [INF] Request finished in 1.7161ms 304 text/css (791a596a)
+2018-05-12T23:26:36.7542257+07:00 0HLDO4JVHVEGK:00000003 [INF] The file "/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.js" was not modified (f1f8d725)
+2018-05-12T23:26:36.7547009+07:00 0HLDO4JVHVEGK:00000003 [INF] Request finished in 2.4422ms 304 application/javascript (791a596a)
+2018-05-12T23:26:36.7551812+07:00 0HLDO4JVHVEGF:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/bill/index.js?v=MJfQ6rktGyKHew8WsioKe7r7DYDMc-o3P2eDoV7i7bc   (ca22a1cb)
+2018-05-12T23:26:36.7559569+07:00 0HLDO4JVHVEGF:00000004 [INF] The file "/app/controllers/bill/index.js" was not modified (f1f8d725)
+2018-05-12T23:26:36.7563471+07:00 0HLDO4JVHVEGF:00000004 [INF] Request finished in 1.3748ms 304 application/javascript (791a596a)
+2018-05-12T23:26:36.9480119+07:00 0HLDO4JVHVEGJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/bill/GetBillStatus   (ca22a1cb)
+2018-05-12T23:26:36.9495176+07:00 0HLDO4JVHVEGJ:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:36.9495373+07:00 0HLDO4JVHVEGI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/bill/GetPaymentMethod   (ca22a1cb)
+2018-05-12T23:26:36.9510303+07:00 0HLDO4JVHVEGI:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:36.9573639+07:00 0HLDO4JVHVEGJ:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:36.9578548+07:00 0HLDO4JVHVEGH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Bill/GetColors   (ca22a1cb)
+2018-05-12T23:26:36.9578453+07:00 0HLDO4JVHVEGJ:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetBillStatus (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:36.9584309+07:00 0HLDO4JVHVEGI:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:36.9588383+07:00 0HLDO4JVHVEGI:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetPaymentMethod (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:36.9597255+07:00 0HLDO4JVHVEGG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Bill/GetSizes   (ca22a1cb)
+2018-05-12T23:26:36.9610810+07:00 0HLDO4JVHVEGG:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:36.9641253+07:00 0HLDO4JVHVEGF:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Product/GetAll   (ca22a1cb)
+2018-05-12T23:26:36.9662203+07:00 0HLDO4JVHVEGF:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:36.9678883+07:00 0HLDO4JVHVEGG:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:36.9695957+07:00 0HLDO4JVHVEGG:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetSizes (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:36.9744958+07:00 0HLDO4JVHVEGF:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:36.9761117+07:00 0HLDO4JVHVEGH:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:36.9802431+07:00 0HLDO4JVHVEGF:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:36.9828482+07:00 0HLDO4JVHVEGG:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:36.9882075+07:00 0HLDO4JVHVEGH:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:36.9912310+07:00 0HLDO4JVHVEGF:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:36.9931653+07:00 0HLDO4JVHVEGH:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetColors (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:36.9936323+07:00 0HLDO4JVHVEGJ:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:36.9954627+07:00 0HLDO4JVHVEGI:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:36.9983640+07:00 0HLDO4JVHVEGH:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:37.0142320+07:00 0HLDO4JVHVEGJ:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetBillStatus (ShopCoreApp)" in 56.9782ms (afa2e885)
+2018-05-12T23:26:37.0143498+07:00 0HLDO4JVHVEGI:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetPaymentMethod (ShopCoreApp)" in 55.7923ms (afa2e885)
+2018-05-12T23:26:37.0147192+07:00 0HLDO4JVHVEGJ:00000003 [INF] Request finished in 66.9246ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:37.0147356+07:00 0HLDO4JVHVEGI:00000003 [INF] Request finished in 65.3664ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:37.0385414+07:00 0HLDO4JVHVEGG:00000004 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name]
+FROM [Sizes] AS [dto]" (0723d8ff)
+2018-05-12T23:26:37.0439010+07:00 0HLDO4JVHVEGG:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:37.0592938+07:00 0HLDO4JVHVEGG:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetSizes (ShopCoreApp)" in 91.738ms (afa2e885)
+2018-05-12T23:26:37.0598193+07:00 0HLDO4JVHVEGG:00000004 [INF] Request finished in 100.1973ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:37.0735255+07:00 0HLDO4JVHVEGH:00000004 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Code]
+FROM [Colors] AS [dto]" (0723d8ff)
+2018-05-12T23:26:37.0761033+07:00 0HLDO4JVHVEGF:00000005 [WRN] The Include operation for navigation '"[x].ProductCategory"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-05-12T23:26:37.0929691+07:00 0HLDO4JVHVEGH:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:37.1082627+07:00 0HLDO4JVHVEGH:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetColors (ShopCoreApp)" in 120.5624ms (afa2e885)
+2018-05-12T23:26:37.1087495+07:00 0HLDO4JVHVEGH:00000004 [INF] Request finished in 150.9798ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:37.2113538+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]" (0723d8ff)
+2018-05-12T23:26:37.2880728+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.2994337+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3012149+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3035662+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3052113+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3068632+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3086057+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3101636+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3115012+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3130773+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3144496+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3157149+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3170919+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3187089+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3205954+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3224198+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3241203+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3257066+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3273326+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3288727+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3304886+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3320275+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.3363649+07:00 0HLDO4JVHVEGF:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:37.4855217+07:00 0HLDO4JVHVEGF:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAll (ShopCoreApp)" in 510.0306ms (afa2e885)
+2018-05-12T23:26:37.4905283+07:00 0HLDO4JVHVEGF:00000005 [INF] Request finished in 526.361ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:37.5133575+07:00 0HLDO4JVHVEGK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/bill/GetAllPaging?startDate=&endDate=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-12T23:26:37.5146970+07:00 0HLDO4JVHVEGK:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:37.5274291+07:00 0HLDO4JVHVEGK:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:37.5301178+07:00 0HLDO4JVHVEGK:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetAllPaging (ShopCoreApp)" with arguments (["", "", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:37.5427486+07:00 0HLDO4JVHVEGK:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:37.5538193+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [b]" (0723d8ff)
+2018-05-12T23:26:37.7442107+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CustomerName], [x].[CustomerAddress], [x].[CustomerMobile], [x].[CustomerMessage], [x].[PaymentMethod], [x].[BillStatus], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[CustomerId] AS [Id0], CASE
+    WHEN [x].[CustomerId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.User].[FullName], CONVERT(VARCHAR(100), [x.User].[BirthDay]) AS [BirthDay], [x.User].[Email], [x.User].[UserName], [x.User].[PhoneNumber], [x.User].[Avatar], [x.User].[Status] AS [Status0], [x.User].[DateCreated] AS [DateCreated0]
+FROM [Bills] AS [x]
+LEFT JOIN [AppUsers] AS [x.User] ON [x].[CustomerId] = [x.User].[Id]
+ORDER BY [x].[DateCreated] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-12T23:26:37.8428360+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed DbCommand ("44"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:26:37.8637617+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.8699195+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:26:37.8712896+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.8724397+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.8763567+07:00 0HLDO4JVHVEGK:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:37.9383403+07:00 0HLDO4JVHVEGK:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetAllPaging (ShopCoreApp)" in 411.0786ms (afa2e885)
+2018-05-12T23:26:37.9387739+07:00 0HLDO4JVHVEGK:00000004 [INF] Request finished in 425.5864ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:37.9626064+07:00 0HLDO4JVHVEGJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/bill/GetAllPaging?startDate=&endDate=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-12T23:26:37.9638226+07:00 0HLDO4JVHVEGJ:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:37.9644178+07:00 0HLDO4JVHVEGJ:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:37.9650541+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetAllPaging (ShopCoreApp)" with arguments (["", "", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:37.9660770+07:00 0HLDO4JVHVEGJ:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:37.9681032+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [b]" (0723d8ff)
+2018-05-12T23:26:37.9719992+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CustomerName], [x].[CustomerAddress], [x].[CustomerMobile], [x].[CustomerMessage], [x].[PaymentMethod], [x].[BillStatus], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[CustomerId] AS [Id0], CASE
+    WHEN [x].[CustomerId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.User].[FullName], CONVERT(VARCHAR(100), [x.User].[BirthDay]) AS [BirthDay], [x.User].[Email], [x.User].[UserName], [x.User].[PhoneNumber], [x.User].[Avatar], [x.User].[Status] AS [Status0], [x.User].[DateCreated] AS [DateCreated0]
+FROM [Bills] AS [x]
+LEFT JOIN [AppUsers] AS [x.User] ON [x].[CustomerId] = [x.User].[Id]
+ORDER BY [x].[DateCreated] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-12T23:26:37.9738117+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:26:37.9755151+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.9776185+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:26:37.9790352+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.9806121+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:37.9813746+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:37.9826127+07:00 0HLDO4JVHVEGJ:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetAllPaging (ShopCoreApp)" in 18.2598ms (afa2e885)
+2018-05-12T23:26:37.9829811+07:00 0HLDO4JVHVEGJ:00000004 [INF] Request finished in 20.5638ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:52.9447747+07:00 0HLDO4JVHVEGI:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Bill/GetById?id=2   (ca22a1cb)
+2018-05-12T23:26:52.9462943+07:00 0HLDO4JVHVEGI:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:26:52.9514748+07:00 0HLDO4JVHVEGI:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:26:52.9520266+07:00 0HLDO4JVHVEGI:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetById (ShopCoreApp)" with arguments (["2"]) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:26:52.9594042+07:00 0HLDO4JVHVEGI:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:26:52.9826671+07:00 0HLDO4JVHVEGI:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__billId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerId], [x].[CustomerMessage], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[PaymentMethod], [x].[Status]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__billId_0" (0723d8ff)
+2018-05-12T23:26:53.3946873+07:00 0HLDO4JVHVEGI:00000004 [INF] Executed DbCommand ("26"ms) [Parameters=["@__billId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id6], [x].[BillId] AS [Id1], [x].[ProductId] AS [Id3], [x].[Quantity], [x].[Price], [x].[ColorId] AS [Id4], [x].[SizeId] AS [Id5], CASE
+    WHEN [x].[BillId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Bill].[CustomerName], [x.Bill].[CustomerAddress], [x.Bill].[CustomerMobile], [x.Bill].[CustomerMessage], [x.Bill].[PaymentMethod], [x.Bill].[BillStatus], [x.Bill].[DateCreated], [x.Bill].[DateModified], [x.Bill].[Status], [x.Bill].[CustomerId], CASE
+    WHEN [x.Bill].[CustomerId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, CASE
+    WHEN [x].[BillId] IS NULL
+    THEN NULL ELSE CASE
+        WHEN [x.Bill].[CustomerId] IS NULL
+        THEN NULL ELSE [x.Bill.User].[Id]
+    END
+END AS [Id0], [x.Bill.User].[FullName], CONVERT(VARCHAR(100), [x.Bill.User].[BirthDay]) AS [BirthDay], [x.Bill.User].[Email], [x.Bill.User].[UserName], [x.Bill.User].[PhoneNumber], [x.Bill.User].[Avatar], [x.Bill.User].[Status] AS [Status0], [x.Bill.User].[DateCreated] AS [DateCreated0], [x.Bill].[Id], CASE
+    WHEN [x].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product].[Name], [x.Product].[CategoryId], [x.Product].[Image], [x.Product].[Price] AS [Price0], [x.Product].[PromotionPrice], [x.Product].[OriginalPrice], [x.Product].[Description], [x.Product].[Content], [x.Product].[HomeFlag], [x.Product].[HotFlag], [x.Product].[ViewCount], [x.Product].[Tags], [x.Product].[Unit], CASE
+    WHEN [x.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product.ProductCategory].[Id] AS [Id2], [x.Product.ProductCategory].[Name] AS [Name0], [x.Product.ProductCategory].[Description] AS [Description0], [x.Product.ProductCategory].[ParentId], [x.Product.ProductCategory].[HomeOrder], [x.Product.ProductCategory].[Image] AS [Image0], [x.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.Product.ProductCategory].[DateCreated] AS [DateCreated1], [x.Product.ProductCategory].[DateModified] AS [DateModified0], [x.Product.ProductCategory].[SortOrder], [x.Product.ProductCategory].[Status] AS [Status1], [x.Product.ProductCategory].[SeoPageTitle], [x.Product.ProductCategory].[SeoAlias], [x.Product.ProductCategory].[SeoKeywords], [x.Product.ProductCategory].[SeoDescription], [x.Product].[SeoPageTitle] AS [SeoPageTitle0], [x.Product].[SeoAlias] AS [SeoAlias0], [x.Product].[SeoKeywords] AS [SeoKeywords0], [x.Product].[SeoDescription] AS [SeoDescription0], [x.Product].[DateCreated] AS [DateCreated2], [x.Product].[DateModified] AS [DateModified1], [x.Product].[Status] AS [Status2], CASE
+    WHEN [x].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Color].[Name] AS [Name1], [x.Color].[Code], CASE
+    WHEN [x].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [x]
+INNER JOIN [Sizes] AS [x.Size] ON [x].[SizeId] = [x.Size].[Id]
+INNER JOIN [Colors] AS [x.Color] ON [x].[ColorId] = [x.Color].[Id]
+INNER JOIN [Products] AS [x.Product] ON [x].[ProductId] = [x.Product].[Id]
+INNER JOIN [ProductCategories] AS [x.Product.ProductCategory] ON [x.Product].[CategoryId] = [x.Product.ProductCategory].[Id]
+INNER JOIN [Bills] AS [x.Bill] ON [x].[BillId] = [x.Bill].[Id]
+LEFT JOIN [AppUsers] AS [x.Bill.User] ON [x.Bill].[CustomerId] = [x.Bill.User].[Id]
+WHERE [x].[BillId] = @__billId_0" (0723d8ff)
+2018-05-12T23:26:53.4266866+07:00 0HLDO4JVHVEGI:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:26:53.4349398+07:00 0HLDO4JVHVEGI:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:53.4468205+07:00 0HLDO4JVHVEGI:00000004 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto1].[Id], [dto1].[Name], [dto1].[CategoryId], [dto1].[Image], [dto1].[Price], [dto1].[PromotionPrice], [dto1].[OriginalPrice], [dto1].[Description], [dto1].[Content], [dto1].[HomeFlag], [dto1].[HotFlag], [dto1].[ViewCount], [dto1].[Tags], [dto1].[Unit], [dto1].[SeoPageTitle], [dto1].[SeoAlias], [dto1].[SeoKeywords], [dto1].[SeoDescription], [dto1].[DateCreated], [dto1].[DateModified], [dto1].[Status]
+FROM [Products] AS [dto1]
+WHERE @_outer_Id2 = [dto1].[CategoryId]" (0723d8ff)
+2018-05-12T23:26:53.4478288+07:00 0HLDO4JVHVEGI:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:26:53.4487821+07:00 0HLDO4JVHVEGI:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetById (ShopCoreApp)" in 497.3922ms (afa2e885)
+2018-05-12T23:26:53.4492146+07:00 0HLDO4JVHVEGI:00000004 [INF] Request finished in 504.5511ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:26:57.1974025+07:00 0HLDO4JVHVEGG:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css.map   (ca22a1cb)
+2018-05-12T23:26:57.1997032+07:00 0HLDO4JVHVEGG:00000005 [INF] The file "/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css.map" was not modified (f1f8d725)
+2018-05-12T23:26:57.2007505+07:00 0HLDO4JVHVEGG:00000005 [INF] Request finished in 3.4439ms 304 text/plain (791a596a)
+2018-05-12T23:27:08.1212071+07:00 0HLDO4JVHVEGH:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Bill/GetById?id=2   (ca22a1cb)
+2018-05-12T23:27:08.1226848+07:00 0HLDO4JVHVEGH:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:27:08.1233007+07:00 0HLDO4JVHVEGH:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:27:08.1238033+07:00 0HLDO4JVHVEGH:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetById (ShopCoreApp)" with arguments (["2"]) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:27:08.1250858+07:00 0HLDO4JVHVEGH:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:27:08.1276097+07:00 0HLDO4JVHVEGH:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__billId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerId], [x].[CustomerMessage], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[PaymentMethod], [x].[Status]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__billId_0" (0723d8ff)
+2018-05-12T23:27:08.1347219+07:00 0HLDO4JVHVEGH:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__billId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id6], [x].[BillId] AS [Id1], [x].[ProductId] AS [Id3], [x].[Quantity], [x].[Price], [x].[ColorId] AS [Id4], [x].[SizeId] AS [Id5], CASE
+    WHEN [x].[BillId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Bill].[CustomerName], [x.Bill].[CustomerAddress], [x.Bill].[CustomerMobile], [x.Bill].[CustomerMessage], [x.Bill].[PaymentMethod], [x.Bill].[BillStatus], [x.Bill].[DateCreated], [x.Bill].[DateModified], [x.Bill].[Status], [x.Bill].[CustomerId], CASE
+    WHEN [x.Bill].[CustomerId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, CASE
+    WHEN [x].[BillId] IS NULL
+    THEN NULL ELSE CASE
+        WHEN [x.Bill].[CustomerId] IS NULL
+        THEN NULL ELSE [x.Bill.User].[Id]
+    END
+END AS [Id0], [x.Bill.User].[FullName], CONVERT(VARCHAR(100), [x.Bill.User].[BirthDay]) AS [BirthDay], [x.Bill.User].[Email], [x.Bill.User].[UserName], [x.Bill.User].[PhoneNumber], [x.Bill.User].[Avatar], [x.Bill.User].[Status] AS [Status0], [x.Bill.User].[DateCreated] AS [DateCreated0], [x.Bill].[Id], CASE
+    WHEN [x].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product].[Name], [x.Product].[CategoryId], [x.Product].[Image], [x.Product].[Price] AS [Price0], [x.Product].[PromotionPrice], [x.Product].[OriginalPrice], [x.Product].[Description], [x.Product].[Content], [x.Product].[HomeFlag], [x.Product].[HotFlag], [x.Product].[ViewCount], [x.Product].[Tags], [x.Product].[Unit], CASE
+    WHEN [x.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product.ProductCategory].[Id] AS [Id2], [x.Product.ProductCategory].[Name] AS [Name0], [x.Product.ProductCategory].[Description] AS [Description0], [x.Product.ProductCategory].[ParentId], [x.Product.ProductCategory].[HomeOrder], [x.Product.ProductCategory].[Image] AS [Image0], [x.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.Product.ProductCategory].[DateCreated] AS [DateCreated1], [x.Product.ProductCategory].[DateModified] AS [DateModified0], [x.Product.ProductCategory].[SortOrder], [x.Product.ProductCategory].[Status] AS [Status1], [x.Product.ProductCategory].[SeoPageTitle], [x.Product.ProductCategory].[SeoAlias], [x.Product.ProductCategory].[SeoKeywords], [x.Product.ProductCategory].[SeoDescription], [x.Product].[SeoPageTitle] AS [SeoPageTitle0], [x.Product].[SeoAlias] AS [SeoAlias0], [x.Product].[SeoKeywords] AS [SeoKeywords0], [x.Product].[SeoDescription] AS [SeoDescription0], [x.Product].[DateCreated] AS [DateCreated2], [x.Product].[DateModified] AS [DateModified1], [x.Product].[Status] AS [Status2], CASE
+    WHEN [x].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Color].[Name] AS [Name1], [x.Color].[Code], CASE
+    WHEN [x].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [x]
+INNER JOIN [Sizes] AS [x.Size] ON [x].[SizeId] = [x.Size].[Id]
+INNER JOIN [Colors] AS [x.Color] ON [x].[ColorId] = [x.Color].[Id]
+INNER JOIN [Products] AS [x.Product] ON [x].[ProductId] = [x.Product].[Id]
+INNER JOIN [ProductCategories] AS [x.Product.ProductCategory] ON [x.Product].[CategoryId] = [x.Product.ProductCategory].[Id]
+INNER JOIN [Bills] AS [x.Bill] ON [x].[BillId] = [x.Bill].[Id]
+LEFT JOIN [AppUsers] AS [x.Bill.User] ON [x.Bill].[CustomerId] = [x.Bill.User].[Id]
+WHERE [x].[BillId] = @__billId_0" (0723d8ff)
+2018-05-12T23:27:08.1364895+07:00 0HLDO4JVHVEGH:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:27:08.1376389+07:00 0HLDO4JVHVEGH:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:27:08.1389704+07:00 0HLDO4JVHVEGH:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto1].[Id], [dto1].[Name], [dto1].[CategoryId], [dto1].[Image], [dto1].[Price], [dto1].[PromotionPrice], [dto1].[OriginalPrice], [dto1].[Description], [dto1].[Content], [dto1].[HomeFlag], [dto1].[HotFlag], [dto1].[ViewCount], [dto1].[Tags], [dto1].[Unit], [dto1].[SeoPageTitle], [dto1].[SeoAlias], [dto1].[SeoKeywords], [dto1].[SeoDescription], [dto1].[DateCreated], [dto1].[DateModified], [dto1].[Status]
+FROM [Products] AS [dto1]
+WHERE @_outer_Id2 = [dto1].[CategoryId]" (0723d8ff)
+2018-05-12T23:27:08.1395429+07:00 0HLDO4JVHVEGH:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:27:08.1405450+07:00 0HLDO4JVHVEGH:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetById (ShopCoreApp)" in 17.3095ms (afa2e885)
+2018-05-12T23:27:08.1409680+07:00 0HLDO4JVHVEGH:00000005 [INF] Request finished in 19.8684ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-12T23:36:44.9018148+07:00 0HLDO4JVHVEGL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Bill/GetById?id=1   (ca22a1cb)
+2018-05-12T23:36:44.9036440+07:00 0HLDO4JVHVEGL:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-12T23:36:44.9044579+07:00 0HLDO4JVHVEGL:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-12T23:36:44.9052745+07:00 0HLDO4JVHVEGL:00000001 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetById (ShopCoreApp)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2018-05-12T23:36:44.9068751+07:00 0HLDO4JVHVEGL:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-12T23:36:44.9187612+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__billId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[BillStatus], [x].[CustomerAddress], [x].[CustomerId], [x].[CustomerMessage], [x].[CustomerMobile], [x].[CustomerName], [x].[DateCreated], [x].[DateModified], [x].[PaymentMethod], [x].[Status]
+FROM [Bills] AS [x]
+WHERE [x].[Id] = @__billId_0" (0723d8ff)
+2018-05-12T23:36:44.9513012+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("28"ms) [Parameters=["@__billId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id6], [x].[BillId] AS [Id1], [x].[ProductId] AS [Id3], [x].[Quantity], [x].[Price], [x].[ColorId] AS [Id4], [x].[SizeId] AS [Id5], CASE
+    WHEN [x].[BillId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Bill].[CustomerName], [x.Bill].[CustomerAddress], [x.Bill].[CustomerMobile], [x.Bill].[CustomerMessage], [x.Bill].[PaymentMethod], [x.Bill].[BillStatus], [x.Bill].[DateCreated], [x.Bill].[DateModified], [x.Bill].[Status], [x.Bill].[CustomerId], CASE
+    WHEN [x.Bill].[CustomerId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, CASE
+    WHEN [x].[BillId] IS NULL
+    THEN NULL ELSE CASE
+        WHEN [x.Bill].[CustomerId] IS NULL
+        THEN NULL ELSE [x.Bill.User].[Id]
+    END
+END AS [Id0], [x.Bill.User].[FullName], CONVERT(VARCHAR(100), [x.Bill.User].[BirthDay]) AS [BirthDay], [x.Bill.User].[Email], [x.Bill.User].[UserName], [x.Bill.User].[PhoneNumber], [x.Bill.User].[Avatar], [x.Bill.User].[Status] AS [Status0], [x.Bill.User].[DateCreated] AS [DateCreated0], [x.Bill].[Id], CASE
+    WHEN [x].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product].[Name], [x.Product].[CategoryId], [x.Product].[Image], [x.Product].[Price] AS [Price0], [x.Product].[PromotionPrice], [x.Product].[OriginalPrice], [x.Product].[Description], [x.Product].[Content], [x.Product].[HomeFlag], [x.Product].[HotFlag], [x.Product].[ViewCount], [x.Product].[Tags], [x.Product].[Unit], CASE
+    WHEN [x.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product.ProductCategory].[Id] AS [Id2], [x.Product.ProductCategory].[Name] AS [Name0], [x.Product.ProductCategory].[Description] AS [Description0], [x.Product.ProductCategory].[ParentId], [x.Product.ProductCategory].[HomeOrder], [x.Product.ProductCategory].[Image] AS [Image0], [x.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.Product.ProductCategory].[DateCreated] AS [DateCreated1], [x.Product.ProductCategory].[DateModified] AS [DateModified0], [x.Product.ProductCategory].[SortOrder], [x.Product.ProductCategory].[Status] AS [Status1], [x.Product.ProductCategory].[SeoPageTitle], [x.Product.ProductCategory].[SeoAlias], [x.Product.ProductCategory].[SeoKeywords], [x.Product.ProductCategory].[SeoDescription], [x.Product].[SeoPageTitle] AS [SeoPageTitle0], [x.Product].[SeoAlias] AS [SeoAlias0], [x.Product].[SeoKeywords] AS [SeoKeywords0], [x.Product].[SeoDescription] AS [SeoDescription0], [x.Product].[DateCreated] AS [DateCreated2], [x.Product].[DateModified] AS [DateModified1], [x.Product].[Status] AS [Status2], CASE
+    WHEN [x].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Color].[Name] AS [Name1], [x.Color].[Code], CASE
+    WHEN [x].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [x]
+INNER JOIN [Sizes] AS [x.Size] ON [x].[SizeId] = [x.Size].[Id]
+INNER JOIN [Colors] AS [x.Color] ON [x].[ColorId] = [x.Color].[Id]
+INNER JOIN [Products] AS [x.Product] ON [x].[ProductId] = [x.Product].[Id]
+INNER JOIN [ProductCategories] AS [x.Product.ProductCategory] ON [x.Product].[CategoryId] = [x.Product.ProductCategory].[Id]
+INNER JOIN [Bills] AS [x.Bill] ON [x].[BillId] = [x.Bill].[Id]
+LEFT JOIN [AppUsers] AS [x.Bill.User] ON [x.Bill].[CustomerId] = [x.Bill.User].[Id]
+WHERE [x].[BillId] = @__billId_0" (0723d8ff)
+2018-05-12T23:36:44.9710253+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("19"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:36:44.9753419+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:36:44.9765427+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:36:44.9810968+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@_outer_Id2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto1].[Id], [dto1].[Name], [dto1].[CategoryId], [dto1].[Image], [dto1].[Price], [dto1].[PromotionPrice], [dto1].[OriginalPrice], [dto1].[Description], [dto1].[Content], [dto1].[HomeFlag], [dto1].[HotFlag], [dto1].[ViewCount], [dto1].[Tags], [dto1].[Unit], [dto1].[SeoPageTitle], [dto1].[SeoAlias], [dto1].[SeoKeywords], [dto1].[SeoDescription], [dto1].[DateCreated], [dto1].[DateModified], [dto1].[Status]
+FROM [Products] AS [dto1]
+WHERE @_outer_Id2 = [dto1].[CategoryId]" (0723d8ff)
+2018-05-12T23:36:44.9825882+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[BillId], [dto].[ProductId] AS [Id1], [dto].[Quantity], [dto].[Price], [dto].[ColorId] AS [Id2], [dto].[SizeId] AS [Id3], CASE
+    WHEN [dto].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product].[Name], [dto.Product].[CategoryId], [dto.Product].[Image], [dto.Product].[Price] AS [Price0], [dto.Product].[PromotionPrice], [dto.Product].[OriginalPrice], [dto.Product].[Description], [dto.Product].[Content], [dto.Product].[HomeFlag], [dto.Product].[HotFlag], [dto.Product].[ViewCount], [dto.Product].[Tags], [dto.Product].[Unit], CASE
+    WHEN [dto.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Product.ProductCategory].[Id] AS [Id0], [dto.Product.ProductCategory].[Name] AS [Name0], [dto.Product.ProductCategory].[Description] AS [Description0], [dto.Product.ProductCategory].[ParentId], [dto.Product.ProductCategory].[HomeOrder], [dto.Product.ProductCategory].[Image] AS [Image0], [dto.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [dto.Product.ProductCategory].[DateCreated], [dto.Product.ProductCategory].[DateModified], [dto.Product.ProductCategory].[SortOrder], [dto.Product.ProductCategory].[Status], [dto.Product.ProductCategory].[SeoPageTitle], [dto.Product.ProductCategory].[SeoAlias], [dto.Product.ProductCategory].[SeoKeywords], [dto.Product.ProductCategory].[SeoDescription], [dto.Product].[SeoPageTitle] AS [SeoPageTitle0], [dto.Product].[SeoAlias] AS [SeoAlias0], [dto.Product].[SeoKeywords] AS [SeoKeywords0], [dto.Product].[SeoDescription] AS [SeoDescription0], [dto.Product].[DateCreated] AS [DateCreated0], [dto.Product].[DateModified] AS [DateModified0], [dto.Product].[Status] AS [Status0], CASE
+    WHEN [dto].[ColorId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Color].[Name] AS [Name1], [dto.Color].[Code], CASE
+    WHEN [dto].[SizeId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [dto.Size].[Name] AS [Name2]
+FROM [BillDetails] AS [dto]
+INNER JOIN [Sizes] AS [dto.Size] ON [dto].[SizeId] = [dto.Size].[Id]
+INNER JOIN [Colors] AS [dto.Color] ON [dto].[ColorId] = [dto.Color].[Id]
+INNER JOIN [Products] AS [dto.Product] ON [dto].[ProductId] = [dto.Product].[Id]
+INNER JOIN [ProductCategories] AS [dto.Product.ProductCategory] ON [dto.Product].[CategoryId] = [dto.Product.ProductCategory].[Id]
+WHERE @_outer_Id = [dto].[BillId]" (0723d8ff)
+2018-05-12T23:36:44.9835601+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:36:44.9846833+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto0].[Id], [dto0].[Name], [dto0].[CategoryId], [dto0].[Image], [dto0].[Price], [dto0].[PromotionPrice], [dto0].[OriginalPrice], [dto0].[Description], [dto0].[Content], [dto0].[HomeFlag], [dto0].[HotFlag], [dto0].[ViewCount], [dto0].[Tags], [dto0].[Unit], [dto0].[SeoPageTitle], [dto0].[SeoAlias], [dto0].[SeoKeywords], [dto0].[SeoDescription], [dto0].[DateCreated], [dto0].[DateModified], [dto0].[Status]
+FROM [Products] AS [dto0]
+WHERE @_outer_Id1 = [dto0].[CategoryId]" (0723d8ff)
+2018-05-12T23:36:44.9856620+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id2='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto1].[Id], [dto1].[Name], [dto1].[CategoryId], [dto1].[Image], [dto1].[Price], [dto1].[PromotionPrice], [dto1].[OriginalPrice], [dto1].[Description], [dto1].[Content], [dto1].[HomeFlag], [dto1].[HotFlag], [dto1].[ViewCount], [dto1].[Tags], [dto1].[Unit], [dto1].[SeoPageTitle], [dto1].[SeoAlias], [dto1].[SeoKeywords], [dto1].[SeoDescription], [dto1].[DateCreated], [dto1].[DateModified], [dto1].[Status]
+FROM [Products] AS [dto1]
+WHERE @_outer_Id2 = [dto1].[CategoryId]" (0723d8ff)
+2018-05-12T23:36:44.9861814+07:00 0HLDO4JVHVEGL:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-12T23:36:44.9881298+07:00 0HLDO4JVHVEGL:00000001 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetById (ShopCoreApp)" in 83.7535ms (afa2e885)
+2018-05-12T23:36:44.9884817+07:00 0HLDO4JVHVEGL:00000001 [INF] Request finished in 87.0126ms 200 application/json; charset=utf-8 (791a596a)

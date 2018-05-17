@@ -1,4 +1,5 @@
 ﻿using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.Product;
 using ShopCoreApp.Utilities.Dtos;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,14 @@ namespace ShopCoreApp.Application.Interfaces
         void Delete(int id);
 
         ProductViewModel GetById(int id);
+
+        void AddQuantity(int productId, List<ProductQuantityViewModel> quantities);
+
+        List<ProductQuantityViewModel> GetQuantities(int productId);
+
+        void AddImages(int productId, string[] images);
+
+        List<ProductImageViewModel> GetImages(int productId);
 
         void ImportExcel(string filePath, int categoryId);
 

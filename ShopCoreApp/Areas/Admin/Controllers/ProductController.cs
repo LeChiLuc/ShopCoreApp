@@ -12,6 +12,7 @@ using OfficeOpenXml;
 using OfficeOpenXml.Table;
 using ShopCoreApp.Application.Interfaces;
 using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.Product;
 using ShopCoreApp.Utilities.Helpers;
 
 namespace ShopCoreApp.Areas.Admin.Controllers
@@ -126,7 +127,33 @@ namespace ShopCoreApp.Areas.Admin.Controllers
             }
             return new NoContentResult();
         }
+        [HttpPost]
+        public IActionResult SaveQuantities(int productId, List<ProductQuantityViewModel> quantities)
+        {
+            _productService.AddQuantity(productId, quantities);
+            _productService.Save();
+            return new OkObjectResult(quantities);
+        }
+        [HttpGet]
+        public IActionResult GetQuantities(int productId)
+        {
+            var quantities = _productService.GetQuantities(productId);
+            return new OkObjectResult(quantities);
+        }
+        [HttpPost]
+        public IActionResult SaveImages(int productId, string[] images)
+        {
+            _productService.AddImages(productId, images);
+            _productService.Save();
+            return new OkObjectResult(images);
+        }
 
+        [HttpGet]
+        public IActionResult GetImages(int productId)
+        {
+            var images = _productService.GetImages(productId);
+            return new OkObjectResult(images);
+        }
         [HttpPost]
         public IActionResult ExportExcel(int? categoryId, string keyword)
         {
@@ -154,6 +181,7 @@ namespace ShopCoreApp.Areas.Admin.Controllers
                 package.Save(); //Save the workbook.
             }
             return new OkObjectResult(fileUrl);
+
         }
         #endregion
     }
