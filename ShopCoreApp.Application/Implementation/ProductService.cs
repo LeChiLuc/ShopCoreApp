@@ -109,7 +109,7 @@ namespace ShopCoreApp.Application.Implementation
 
             int totalRow = query.Count();
 
-            query = query.OrderByDescending(x => x.DateCreated).Skip((page - 1) * pageSize).Take(pageSize);
+            query = query.OrderByDescending(x => x.DateModified).Skip((page - 1) * pageSize).Take(pageSize);
 
             var data = query.ProjectTo<ProductViewModel>().ToList();
 

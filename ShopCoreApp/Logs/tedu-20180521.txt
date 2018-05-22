@@ -1,0 +1,126 @@
+2018-05-21T21:31:01.3066485+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-21T21:31:01.4678169+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-21T21:31:01.4831678+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-21T21:31:01.4970370+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-05-21T21:31:01.5128641+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-05-21T21:31:01.5164992+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-05-21T21:31:01.5194680+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-05-21T21:31:01.5240344+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-05-21T21:31:01.5280640+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-05-21T21:31:01.5312265+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-05-21T21:31:01.5362094+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-21T21:31:01.5420091+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-21T21:31:01.5453922+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-21T21:31:01.8671221+07:00 0HLDV4TT3NS32:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-05-21T21:31:01.9823845+07:00 0HLDV4TT3NS32:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-21T21:31:04.4690612+07:00 0HLDV4TT3NS32:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-21T21:31:05.0318490+07:00 0HLDV4TT3NS32:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 3052.4778ms (afa2e885)
+2018-05-21T21:31:05.0373107+07:00 0HLDV4TT3NS32:00000001 [INF] Request finished in 3175.2341ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-21T21:31:05.1936650+07:00 0HLDV4TT3NS32:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/favicon.ico   (ca22a1cb)
+2018-05-21T21:31:05.1967023+07:00 0HLDV4TT3NS32:00000002 [INF] Request finished in 3.6846ms 404  (791a596a)
+2018-05-21T21:31:19.3654684+07:00 0HLDV4TT3NS32:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin   (ca22a1cb)
+2018-05-21T21:31:19.3729478+07:00 0HLDV4TT3NS32:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-21T21:31:19.7047000+07:00 0HLDV4TT3NS32:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-05-21T21:31:19.7453792+07:00 0HLDV4TT3NS32:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 373.823ms (afa2e885)
+2018-05-21T21:31:19.7455608+07:00 0HLDV4TT3NS32:00000003 [INF] Request finished in 380.2405ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-21T21:31:19.7668435+07:00 0HLDV4TT3NS32:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js   (ca22a1cb)
+2018-05-21T21:31:19.7741205+07:00 0HLDV4TT3NS32:00000004 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
+2018-05-21T21:31:19.7766119+07:00 0HLDV4TT3NS32:00000004 [INF] Request finished in 9.8581ms 304 application/javascript (791a596a)
+2018-05-21T21:31:23.2455809+07:00 0HLDV4TT3NS32:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-05-21T21:31:23.3259090+07:00 0HLDV4TT3NS32:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" with arguments (["ShopCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-05-21T21:31:23.3322587+07:00 0HLDV4TT3NS32:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-21T21:31:23.3996360+07:00 0HLDV4TT3NS32:00000005 [INF] Executed DbCommand ("31"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-21T21:31:23.4980884+07:00 0HLDV4TT3NS32:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-21T21:31:23.5305398+07:00 0HLDV4TT3NS32:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-21T21:31:23.5407685+07:00 0HLDV4TT3NS32:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-05-21T21:31:23.5584482+07:00 0HLDV4TT3NS32:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-05-21T21:31:23.5605239+07:00 0HLDV4TT3NS32:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-21T21:31:23.5643420+07:00 0HLDV4TT3NS32:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-05-21T21:31:23.5645780+07:00 0HLDV4TT3NS32:00000005 [INF] User logged in. (fdce0db4)
+2018-05-21T21:31:23.5683045+07:00 0HLDV4TT3NS32:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-21T21:31:23.6108534+07:00 0HLDV4TT3NS32:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" in 324.0386ms (afa2e885)
+2018-05-21T21:31:23.6120189+07:00 0HLDV4TT3NS32:00000005 [INF] Request finished in 366.5073ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-21T21:31:23.6190185+07:00 0HLDV4TT3NS32:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Home/Index   (ca22a1cb)
+2018-05-21T21:31:23.6238726+07:00 0HLDV4TT3NS32:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-21T21:31:23.6336406+07:00 0HLDV4TT3NS32:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-21T21:31:23.6341863+07:00 0HLDV4TT3NS32:00000006 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-21T21:31:23.8674769+07:00 0HLDV4TT3NS32:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-05-21T21:31:24.1150154+07:00 0HLDV4TT3NS32:00000006 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-21T21:31:24.1521164+07:00 0HLDV4TT3NS32:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-21T21:31:24.4982666+07:00 0HLDV4TT3NS32:00000006 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" in 871.791ms (afa2e885)
+2018-05-21T21:31:24.4991284+07:00 0HLDV4TT3NS32:00000006 [INF] Request finished in 880.2755ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-21T21:31:24.5307469+07:00 0HLDV4TT3NS32:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js?v=cgfnhrnVYQI_T3mjJJqOVidXQEogrPjPBW6HD6I3k08   (ca22a1cb)
+2018-05-21T21:31:24.5318282+07:00 0HLDV4TT3NS32:00000007 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
+2018-05-21T21:31:24.5322100+07:00 0HLDV4TT3NS32:00000007 [INF] Request finished in 1.5298ms 304 application/javascript (791a596a)

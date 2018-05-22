@@ -1,0 +1,1490 @@
+2018-05-20T22:30:45.9354493+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:30:46.1260635+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-20T22:30:46.1466172+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-20T22:30:46.1580923+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-05-20T22:30:46.1741696+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-05-20T22:30:46.1793250+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-05-20T22:30:46.1826078+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-05-20T22:30:46.1859398+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-05-20T22:30:46.1889680+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-05-20T22:30:46.1939826+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-05-20T22:30:46.1986490+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-20T22:30:46.2023333+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-20T22:30:46.2059413+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-20T22:30:46.5243050+07:00 0HLDUCQK70MT4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-05-20T22:30:46.6580420+07:00 0HLDUCQK70MT4:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:30:50.3474728+07:00 0HLDUCQK70MT4:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-20T22:30:51.1644839+07:00 0HLDUCQK70MT4:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 4510.1357ms (afa2e885)
+2018-05-20T22:30:51.1692663+07:00 0HLDUCQK70MT4:00000001 [INF] Request finished in 4651.5114ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:30:51.2046723+07:00 0HLDUCQK70MT4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-05-20T22:30:51.2099870+07:00 0HLDUCQK70MT4:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-05-20T22:30:51.2229664+07:00 0HLDUCQK70MT4:00000002 [INF] Request finished in 18.4651ms 200 font/woff2 (791a596a)
+2018-05-20T22:30:51.3288104+07:00 0HLDUCQK70MT4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/favicon.ico   (ca22a1cb)
+2018-05-20T22:30:51.3312890+07:00 0HLDUCQK70MT4:00000003 [INF] Request finished in 2.2584ms 404  (791a596a)
+2018-05-20T22:30:58.5563272+07:00 0HLDUCQK70MT4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin   (ca22a1cb)
+2018-05-20T22:30:58.5621787+07:00 0HLDUCQK70MT4:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:30:58.8897110+07:00 0HLDUCQK70MT4:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-05-20T22:30:58.9318324+07:00 0HLDUCQK70MT4:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 370.7513ms (afa2e885)
+2018-05-20T22:30:58.9320563+07:00 0HLDUCQK70MT4:00000004 [INF] Request finished in 375.8637ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:30:58.9544663+07:00 0HLDUCQK70MT4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/css/custom.css   (ca22a1cb)
+2018-05-20T22:30:58.9585378+07:00 0HLDUCQK70MT4:00000005 [INF] The file "/admin-site/css/custom.css" was not modified (f1f8d725)
+2018-05-20T22:30:58.9620423+07:00 0HLDUCQK70MT4:00000005 [INF] Request finished in 7.51ms 304 text/css (791a596a)
+2018-05-20T22:30:58.9623836+07:00 0HLDUCQK70MT5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js   (ca22a1cb)
+2018-05-20T22:30:58.9626739+07:00 0HLDUCQK70MT5:00000001 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
+2018-05-20T22:30:58.9628165+07:00 0HLDUCQK70MT5:00000001 [INF] Request finished in 0.4835ms 304 application/javascript (791a596a)
+2018-05-20T22:30:59.0103121+07:00 0HLDUCQK70MT4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-05-20T22:30:59.0106524+07:00 0HLDUCQK70MT4:00000006 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-05-20T22:30:59.0233824+07:00 0HLDUCQK70MT4:00000006 [INF] Request finished in 13.1945ms 200 font/woff2 (791a596a)
+2018-05-20T22:31:03.5346970+07:00 0HLDUCQK70MT5:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-05-20T22:31:03.6063737+07:00 0HLDUCQK70MT5:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" with arguments (["ShopCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:31:03.6109238+07:00 0HLDUCQK70MT5:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:31:03.6659240+07:00 0HLDUCQK70MT5:00000002 [INF] Executed DbCommand ("28"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-20T22:31:03.7548942+07:00 0HLDUCQK70MT5:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-20T22:31:03.7860245+07:00 0HLDUCQK70MT5:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-20T22:31:03.7962454+07:00 0HLDUCQK70MT5:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-05-20T22:31:03.8147891+07:00 0HLDUCQK70MT5:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-05-20T22:31:03.8171708+07:00 0HLDUCQK70MT5:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-20T22:31:03.8242698+07:00 0HLDUCQK70MT5:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-05-20T22:31:03.8250320+07:00 0HLDUCQK70MT5:00000002 [INF] User logged in. (fdce0db4)
+2018-05-20T22:31:03.8336036+07:00 0HLDUCQK70MT5:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:31:03.8969796+07:00 0HLDUCQK70MT5:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" in 322.9833ms (afa2e885)
+2018-05-20T22:31:03.8983369+07:00 0HLDUCQK70MT5:00000002 [INF] Request finished in 363.6822ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:31:03.9061012+07:00 0HLDUCQK70MT4:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Home/Index   (ca22a1cb)
+2018-05-20T22:31:03.9104040+07:00 0HLDUCQK70MT4:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:31:03.9232185+07:00 0HLDUCQK70MT4:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:31:03.9239016+07:00 0HLDUCQK70MT4:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:31:04.1831274+07:00 0HLDUCQK70MT4:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-05-20T22:31:04.4030216+07:00 0HLDUCQK70MT4:00000007 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:31:04.4581337+07:00 0HLDUCQK70MT4:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:31:04.8606137+07:00 0HLDUCQK70MT4:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" in 946.1626ms (afa2e885)
+2018-05-20T22:31:04.8615743+07:00 0HLDUCQK70MT4:00000007 [INF] Request finished in 955.5216ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:31:04.9082772+07:00 0HLDUCQK70MT5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/images/img.jpg   (ca22a1cb)
+2018-05-20T22:31:04.9094627+07:00 0HLDUCQK70MT5:00000003 [INF] Sending file. Request path: '"/admin-site/images/img.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\images\img.jpg"' (27b0a520)
+2018-05-20T22:31:04.9127225+07:00 0HLDUCQK70MT5:00000003 [INF] Request finished in 3.6711ms 200 image/jpeg (791a596a)
+2018-05-20T22:31:04.9158785+07:00 0HLDUCQK70MT4:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js?v=cgfnhrnVYQI_T3mjJJqOVidXQEogrPjPBW6HD6I3k08   (ca22a1cb)
+2018-05-20T22:31:04.9163307+07:00 0HLDUCQK70MT4:00000008 [INF] The file "/app/shared/app.js" was not modified (f1f8d725)
+2018-05-20T22:31:04.9165546+07:00 0HLDUCQK70MT4:00000008 [INF] Request finished in 0.8701ms 304 application/javascript (791a596a)
+2018-05-20T22:31:17.0291237+07:00 0HLDUCQK70MT5:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/role/index   (ca22a1cb)
+2018-05-20T22:31:17.0302947+07:00 0HLDUCQK70MT5:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:31:17.0346215+07:00 0HLDUCQK70MT5:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:31:17.0368475+07:00 0HLDUCQK70MT5:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:31:17.1441473+07:00 0HLDUCQK70MT5:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-05-20T22:31:17.5246773+07:00 0HLDUCQK70MT5:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:31:17.5270848+07:00 0HLDUCQK70MT5:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:31:17.5360722+07:00 0HLDUCQK70MT5:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.Index (ShopCoreApp)" in 502.6686ms (afa2e885)
+2018-05-20T22:31:17.5369591+07:00 0HLDUCQK70MT5:00000004 [INF] Request finished in 507.9203ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:31:17.5533661+07:00 0HLDUCQK70MT4:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-treegrid/css/jquery.treegrid.css   (ca22a1cb)
+2018-05-20T22:31:17.5538803+07:00 0HLDUCQK70MT4:00000009 [INF] Sending file. Request path: '"/lib/jquery-treegrid/css/jquery.treegrid.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-treegrid\css\jquery.treegrid.css"' (27b0a520)
+2018-05-20T22:31:17.5542811+07:00 0HLDUCQK70MT5:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-treegrid/js/jquery.treegrid.js   (ca22a1cb)
+2018-05-20T22:31:17.5542986+07:00 0HLDUCQK70MT4:00000009 [INF] Request finished in 1.0524ms 200 text/css (791a596a)
+2018-05-20T22:31:17.5545506+07:00 0HLDUCQK70MT5:00000005 [INF] Sending file. Request path: '"/lib/jquery-treegrid/js/jquery.treegrid.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-treegrid\js\jquery.treegrid.js"' (27b0a520)
+2018-05-20T22:31:17.5545593+07:00 0HLDUCQK70MT6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/role/index.js?v=I6gkiVXurnJCer5dMljYWfhB8pBOM-boPuCiwoHVVwE   (ca22a1cb)
+2018-05-20T22:31:17.5547300+07:00 0HLDUCQK70MT6:00000001 [INF] Sending file. Request path: '"/app/controllers/role/index.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\role\index.js"' (27b0a520)
+2018-05-20T22:31:17.5549521+07:00 0HLDUCQK70MT5:00000005 [INF] Request finished in 0.7085ms 200 application/javascript (791a596a)
+2018-05-20T22:31:17.5549896+07:00 0HLDUCQK70MT6:00000001 [INF] Request finished in 0.4627ms 200 application/javascript (791a596a)
+2018-05-20T22:31:17.6285827+07:00 0HLDUCQK70MT4:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-20T22:31:17.6307313+07:00 0HLDUCQK70MT4:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:31:17.6360034+07:00 0HLDUCQK70MT4:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:31:17.6370405+07:00 0HLDUCQK70MT4:0000000A [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:31:17.6392792+07:00 0HLDUCQK70MT4:0000000A [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:31:17.6429843+07:00 0HLDUCQK70MT4:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-05-20T22:31:17.6561723+07:00 0HLDUCQK70MT4:0000000A [WRN] Query: '"(from AppRole dto in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Id = (Nullable<Guid>)[dto]...."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-05-20T22:31:17.6673907+07:00 0HLDUCQK70MT4:0000000A [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-20T22:31:17.6698654+07:00 0HLDUCQK70MT4:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:31:17.6877037+07:00 0HLDUCQK70MT4:0000000A [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" in 51.7499ms (afa2e885)
+2018-05-20T22:31:17.6879757+07:00 0HLDUCQK70MT4:0000000A [INF] Request finished in 59.8285ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:31:17.7268804+07:00 0HLDUCQK70MT6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-20T22:31:17.7280036+07:00 0HLDUCQK70MT6:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:31:17.7289135+07:00 0HLDUCQK70MT6:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:31:17.7292107+07:00 0HLDUCQK70MT6:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:31:17.7296578+07:00 0HLDUCQK70MT6:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:31:17.7304334+07:00 0HLDUCQK70MT6:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-05-20T22:31:17.7318995+07:00 0HLDUCQK70MT6:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-20T22:31:17.7330212+07:00 0HLDUCQK70MT6:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:31:17.7343705+07:00 0HLDUCQK70MT6:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" in 5.524ms (afa2e885)
+2018-05-20T22:31:17.7345703+07:00 0HLDUCQK70MT6:00000002 [INF] Request finished in 7.847ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:31:21.5469179+07:00 0HLDUCQK70MT5:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/function/index   (ca22a1cb)
+2018-05-20T22:31:21.5475641+07:00 0HLDUCQK70MT5:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:31:21.5501168+07:00 0HLDUCQK70MT5:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:31:21.5508425+07:00 0HLDUCQK70MT5:00000006 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:31:21.5519245+07:00 0HLDUCQK70MT5:00000006 [ERR] The view '"Index"' was not found. Searched locations: ["/Areas/Admin/Views/Function/Index.cshtml", "/Areas/Admin/Views/Shared/Index.cshtml", "/Views/Shared/Index.cshtml"] (9bb2756c)
+2018-05-20T22:31:21.5537884+07:00 0HLDUCQK70MT5:00000006 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.Index (ShopCoreApp)" in 3.8491ms (afa2e885)
+2018-05-20T22:31:21.5895598+07:00 0HLDUCQK70MT5:00000006 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Areas/Admin/Views/Function/Index.cshtml
+/Areas/Admin/Views/Shared/Index.cshtml
+/Views/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-05-20T22:31:21.6362634+07:00 0HLDUCQK70MT5:00000006 [INF] Request finished in 89.4814ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:32:36.9030329+07:00 0HLDUCQK70MT7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/user/index   (ca22a1cb)
+2018-05-20T22:32:36.9040288+07:00 0HLDUCQK70MT7:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:36.9068644+07:00 0HLDUCQK70MT7:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:36.9077240+07:00 0HLDUCQK70MT7:00000001 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.UserController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:37.0102913+07:00 0HLDUCQK70MT7:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/User/Index.cshtml". (9707eebe)
+2018-05-20T22:32:37.1167753+07:00 0HLDUCQK70MT7:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:37.1191913+07:00 0HLDUCQK70MT7:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:32:37.1239324+07:00 0HLDUCQK70MT7:00000001 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.UserController.Index (ShopCoreApp)" in 217.1441ms (afa2e885)
+2018-05-20T22:32:37.1241628+07:00 0HLDUCQK70MT7:00000001 [INF] Request finished in 221.1671ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:32:37.1412944+07:00 0HLDUCQK70MT7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/user/index.js?v=MD7n7f67LOvcOkSa6lHrlGm71UTVzvYrh2bkGXwbhyc   (ca22a1cb)
+2018-05-20T22:32:37.1415281+07:00 0HLDUCQK70MT7:00000002 [INF] Sending file. Request path: '"/app/controllers/user/index.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\user\index.js"' (27b0a520)
+2018-05-20T22:32:37.1417772+07:00 0HLDUCQK70MT7:00000002 [INF] Request finished in 0.6246ms 200 application/javascript (791a596a)
+2018-05-20T22:32:37.2083110+07:00 0HLDUCQK70MT7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-20T22:32:37.2087978+07:00 0HLDUCQK70MT7:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:37.2106602+07:00 0HLDUCQK70MT7:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:37.2108878+07:00 0HLDUCQK70MT7:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (ShopCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:37.2179474+07:00 0HLDUCQK70MT7:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:37.2217444+07:00 0HLDUCQK70MT7:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-05-20T22:32:37.2248754+07:00 0HLDUCQK70MT7:00000003 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-05-20T22:32:37.2489654+07:00 0HLDUCQK70MT7:00000003 [INF] Executed DbCommand ("13"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-20T22:32:37.2527368+07:00 0HLDUCQK70MT7:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:32:37.2755332+07:00 0HLDUCQK70MT7:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (ShopCoreApp)" in 64.8595ms (afa2e885)
+2018-05-20T22:32:37.2758220+07:00 0HLDUCQK70MT7:00000003 [INF] Request finished in 67.5963ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:32:37.2900311+07:00 0HLDUCQK70MT7:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-20T22:32:37.2902474+07:00 0HLDUCQK70MT8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/user/null   (ca22a1cb)
+2018-05-20T22:32:37.2905665+07:00 0HLDUCQK70MT7:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:37.2906489+07:00 0HLDUCQK70MT8:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:37.2907594+07:00 0HLDUCQK70MT7:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:37.2907816+07:00 0HLDUCQK70MT8:00000001 [INF] Request finished in 0.5816ms 404  (791a596a)
+2018-05-20T22:32:37.2910132+07:00 0HLDUCQK70MT7:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (ShopCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:37.2914158+07:00 0HLDUCQK70MT7:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:37.2923037+07:00 0HLDUCQK70MT7:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-05-20T22:32:37.2935298+07:00 0HLDUCQK70MT7:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], CONVERT(VARCHAR(100), [x].[BirthDay]) AS [BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[DateCreated]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-20T22:32:37.2937828+07:00 0HLDUCQK70MT7:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:32:37.2940870+07:00 0HLDUCQK70MT7:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (ShopCoreApp)" in 3.3021ms (afa2e885)
+2018-05-20T22:32:37.2942576+07:00 0HLDUCQK70MT7:00000004 [INF] Request finished in 4.3213ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:32:37.3067754+07:00 0HLDUCQK70MT8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/user/null   (ca22a1cb)
+2018-05-20T22:32:37.3076039+07:00 0HLDUCQK70MT8:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:37.3079022+07:00 0HLDUCQK70MT8:00000002 [INF] Request finished in 1.2767ms 404  (791a596a)
+2018-05-20T22:32:38.3261245+07:00 0HLDUCQK70MT7:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/activity/index   (ca22a1cb)
+2018-05-20T22:32:38.3268867+07:00 0HLDUCQK70MT7:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:38.3271846+07:00 0HLDUCQK70MT7:00000005 [INF] Request finished in 1.2099ms 404  (791a596a)
+2018-05-20T22:32:42.0891379+07:00 0HLDUCQK70MT8:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/function/index   (ca22a1cb)
+2018-05-20T22:32:42.0898935+07:00 0HLDUCQK70MT8:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:42.0903231+07:00 0HLDUCQK70MT8:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:42.0904766+07:00 0HLDUCQK70MT8:00000003 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:42.0909540+07:00 0HLDUCQK70MT8:00000003 [ERR] The view '"Index"' was not found. Searched locations: ["/Areas/Admin/Views/Function/Index.cshtml", "/Areas/Admin/Views/Shared/Index.cshtml", "/Views/Shared/Index.cshtml"] (9bb2756c)
+2018-05-20T22:32:42.0920936+07:00 0HLDUCQK70MT8:00000003 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.Index (ShopCoreApp)" in 1.7792ms (afa2e885)
+2018-05-20T22:32:42.1066797+07:00 0HLDUCQK70MT8:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Areas/Admin/Views/Function/Index.cshtml
+/Areas/Admin/Views/Shared/Index.cshtml
+/Views/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-05-20T22:32:42.1360022+07:00 0HLDUCQK70MT8:00000003 [INF] Request finished in 46.8115ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:32:46.0330491+07:00 0HLDUCQK70MT7:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/role/index   (ca22a1cb)
+2018-05-20T22:32:46.0337650+07:00 0HLDUCQK70MT7:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:46.0341078+07:00 0HLDUCQK70MT7:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:46.0342609+07:00 0HLDUCQK70MT7:00000006 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:46.0344144+07:00 0HLDUCQK70MT7:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Role/Index.cshtml". (9707eebe)
+2018-05-20T22:32:46.0357243+07:00 0HLDUCQK70MT7:00000006 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:46.0402473+07:00 0HLDUCQK70MT7:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:32:46.0415500+07:00 0HLDUCQK70MT7:00000006 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.Index (ShopCoreApp)" in 7.5002ms (afa2e885)
+2018-05-20T22:32:46.0417359+07:00 0HLDUCQK70MT7:00000006 [INF] Request finished in 8.7948ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-20T22:32:46.1158034+07:00 0HLDUCQK70MT8:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-20T22:32:46.1163512+07:00 0HLDUCQK70MT8:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:46.1165445+07:00 0HLDUCQK70MT8:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:46.1167239+07:00 0HLDUCQK70MT8:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:46.1170554+07:00 0HLDUCQK70MT8:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:46.1185173+07:00 0HLDUCQK70MT8:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-05-20T22:32:46.1204366+07:00 0HLDUCQK70MT8:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-20T22:32:46.1206941+07:00 0HLDUCQK70MT8:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:32:46.1209534+07:00 0HLDUCQK70MT8:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" in 4.3953ms (afa2e885)
+2018-05-20T22:32:46.1211295+07:00 0HLDUCQK70MT8:00000004 [INF] Request finished in 5.4201ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:32:46.1558955+07:00 0HLDUCQK70MT7:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-20T22:32:46.1564137+07:00 0HLDUCQK70MT7:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:46.1566763+07:00 0HLDUCQK70MT7:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:46.1569661+07:00 0HLDUCQK70MT7:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" with arguments (["", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:46.1572856+07:00 0HLDUCQK70MT7:00000007 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:46.1580149+07:00 0HLDUCQK70MT7:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-05-20T22:32:46.1590036+07:00 0HLDUCQK70MT7:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-20T22:32:46.1591885+07:00 0HLDUCQK70MT7:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:32:46.1595243+07:00 0HLDUCQK70MT7:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (ShopCoreApp)" in 2.851ms (afa2e885)
+2018-05-20T22:32:46.1597832+07:00 0HLDUCQK70MT7:00000007 [INF] Request finished in 3.9147ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:32:49.0895146+07:00 0HLDUCQK70MT8:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:32:49.0902279+07:00 0HLDUCQK70MT8:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:49.0902975+07:00 0HLDUCQK70MT7:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:32:49.0908468+07:00 0HLDUCQK70MT7:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:32:49.0929889+07:00 0HLDUCQK70MT7:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:49.0937178+07:00 0HLDUCQK70MT7:00000008 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["86b53da4-4284-401b-f39d-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:49.0947753+07:00 0HLDUCQK70MT8:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:32:49.0949008+07:00 0HLDUCQK70MT8:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:32:49.0972033+07:00 0HLDUCQK70MT8:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:49.0986530+07:00 0HLDUCQK70MT8:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:32:49.1021323+07:00 0HLDUCQK70MT8:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:32:49.1026938+07:00 0HLDUCQK70MT7:00000008 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:32:49.1097860+07:00 0HLDUCQK70MT8:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 15.0099ms (afa2e885)
+2018-05-20T22:32:49.1099771+07:00 0HLDUCQK70MT8:00000005 [INF] Request finished in 20.5937ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:32:49.1402660+07:00 0HLDUCQK70MT7:00000008 [INF] Executed DbCommand ("10"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:32:49.1420748+07:00 0HLDUCQK70MT7:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:32:49.1493566+07:00 0HLDUCQK70MT7:00000008 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 56.3535ms (afa2e885)
+2018-05-20T22:32:49.1495685+07:00 0HLDUCQK70MT7:00000008 [INF] Request finished in 59.3259ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:32:49.2559540+07:00 0HLDUCQK70MT8:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-treegrid/img/collapse.png   (ca22a1cb)
+2018-05-20T22:32:49.2574426+07:00 0HLDUCQK70MT8:00000006 [INF] Sending file. Request path: '"/lib/jquery-treegrid/img/collapse.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-treegrid\img\collapse.png"' (27b0a520)
+2018-05-20T22:32:49.3684426+07:00 0HLDUCQK70MT8:00000006 [INF] Request finished in 112.8135ms 200 image/png (791a596a)
+2018-05-20T22:32:58.4817561+07:00 0HLDUCQK70MT7:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-treegrid/img/expand.png   (ca22a1cb)
+2018-05-20T22:32:58.4820019+07:00 0HLDUCQK70MT7:00000009 [INF] Sending file. Request path: '"/lib/jquery-treegrid/img/expand.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-treegrid\img\expand.png"' (27b0a520)
+2018-05-20T22:32:58.5756180+07:00 0HLDUCQK70MT7:00000009 [INF] Request finished in 93.8684ms 200 image/png (791a596a)
+2018-05-20T22:33:05.9368146+07:00 0HLDUCQK70MT8:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7071 (ca22a1cb)
+2018-05-20T22:33:05.9374823+07:00 0HLDUCQK70MT8:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:05.9507425+07:00 0HLDUCQK70MT8:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:05.9621177+07:00 0HLDUCQK70MT8:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" with arguments (["System.Collections.Generic.List`1[ShopCoreApp.Application.ViewModels.System.PermissionViewModel]", "86b53da4-4284-401b-f39d-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:05.9924877+07:00 0HLDUCQK70MT8:00000007 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:05.9997286+07:00 0HLDUCQK70MT8:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-05-20T22:33:06.1952236+07:00 0HLDUCQK70MT8:00000007 [INF] Executed DbCommand ("97"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?', @p18='?', @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?' (Size = 128), @p29='?', @p30='?', @p31='?', @p32='?', @p33='?', @p34='?' (Size = 128), @p35='?', @p36='?', @p37='?', @p38='?', @p39='?', @p40='?' (Size = 128), @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?' (Size = 128), @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?' (Size = 128), @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?' (Size = 128), @p59='?', @p60='?', @p61='?', @p62='?', @p63='?', @p64='?' (Size = 128), @p65='?', @p66='?', @p67='?', @p68='?', @p69='?', @p70='?' (Size = 128), @p71='?', @p72='?', @p73='?', @p74='?', @p75='?', @p76='?' (Size = 128), @p77='?', @p78='?', @p79='?', @p80='?', @p81='?', @p82='?' (Size = 128), @p83='?', @p84='?', @p85='?', @p86='?', @p87='?', @p88='?' (Size = 128), @p89='?', @p90='?', @p91='?', @p92='?', @p93='?', @p94='?' (Size = 128), @p95='?', @p96='?', @p97='?', @p98='?', @p99='?', @p100='?' (Size = 128), @p101='?', @p102='?', @p103='?', @p104='?', @p105='?', @p106='?' (Size = 128), @p107='?', @p108='?', @p109='?', @p110='?', @p111='?', @p112='?' (Size = 128), @p113='?', @p114='?', @p115='?', @p116='?', @p117='?', @p118='?' (Size = 128), @p119='?', @p120='?', @p121='?', @p122='?', @p123='?', @p124='?' (Size = 128), @p125='?', @p126='?', @p127='?', @p128='?', @p129='?', @p130='?' (Size = 128), @p131='?', @p132='?', @p133='?', @p134='?', @p135='?', @p136='?' (Size = 128), @p137='?', @p138='?', @p139='?', @p140='?', @p141='?', @p142='?' (Size = 128), @p143='?', @p144='?', @p145='?', @p146='?', @p147='?', @p148='?' (Size = 128), @p149='?', @p150='?', @p151='?', @p152='?', @p153='?', @p154='?' (Size = 128), @p155='?', @p156='?', @p157='?', @p158='?', @p159='?', @p160='?' (Size = 128), @p161='?', @p162='?', @p163='?', @p164='?', @p165='?', @p166='?' (Size = 128), @p167='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Permissions]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p10;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p16;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p18;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p19;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p20;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p22;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;
+
+DECLARE @inserted24 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, 0),
+(@p30, @p31, @p32, @p33, @p34, @p35, 1),
+(@p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, 4),
+(@p54, @p55, @p56, @p57, @p58, @p59, 5),
+(@p60, @p61, @p62, @p63, @p64, @p65, 6),
+(@p66, @p67, @p68, @p69, @p70, @p71, 7),
+(@p72, @p73, @p74, @p75, @p76, @p77, 8),
+(@p78, @p79, @p80, @p81, @p82, @p83, 9),
+(@p84, @p85, @p86, @p87, @p88, @p89, 10),
+(@p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, 12),
+(@p102, @p103, @p104, @p105, @p106, @p107, 13),
+(@p108, @p109, @p110, @p111, @p112, @p113, 14),
+(@p114, @p115, @p116, @p117, @p118, @p119, 15),
+(@p120, @p121, @p122, @p123, @p124, @p125, 16),
+(@p126, @p127, @p128, @p129, @p130, @p131, 17),
+(@p132, @p133, @p134, @p135, @p136, @p137, 18),
+(@p138, @p139, @p140, @p141, @p142, @p143, 19),
+(@p144, @p145, @p146, @p147, @p148, @p149, 20),
+(@p150, @p151, @p152, @p153, @p154, @p155, 21),
+(@p156, @p157, @p158, @p159, @p160, @p161, 22),
+(@p162, @p163, @p164, @p165, @p166, @p167, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted24;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted24 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-05-20T22:33:06.2333738+07:00 0HLDUCQK70MT8:00000007 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-05-20T22:33:06.2336780+07:00 0HLDUCQK70MT8:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" in 282.8525ms (afa2e885)
+2018-05-20T22:33:06.2341404+07:00 0HLDUCQK70MT8:00000007 [INF] Request finished in 297.2206ms 200  (791a596a)
+2018-05-20T22:33:08.1304998+07:00 0HLDUCQK70MT7:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:08.1312794+07:00 0HLDUCQK70MT8:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:08.1312794+07:00 0HLDUCQK70MT7:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:08.1315190+07:00 0HLDUCQK70MT7:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:08.1316302+07:00 0HLDUCQK70MT7:0000000A [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:08.1317178+07:00 0HLDUCQK70MT8:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:08.1318600+07:00 0HLDUCQK70MT8:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:08.1319909+07:00 0HLDUCQK70MT7:0000000A [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:08.1320813+07:00 0HLDUCQK70MT8:00000008 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["86b53da4-4284-401b-f39d-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:08.1323392+07:00 0HLDUCQK70MT8:00000008 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:08.1335440+07:00 0HLDUCQK70MT7:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:08.1340622+07:00 0HLDUCQK70MT7:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:08.1343889+07:00 0HLDUCQK70MT7:0000000A [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 2.8586ms (afa2e885)
+2018-05-20T22:33:08.1345990+07:00 0HLDUCQK70MT7:0000000A [INF] Request finished in 4.1857ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:08.1378632+07:00 0HLDUCQK70MT8:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:08.1381900+07:00 0HLDUCQK70MT8:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:08.1385116+07:00 0HLDUCQK70MT8:00000008 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 6.6286ms (afa2e885)
+2018-05-20T22:33:08.1386849+07:00 0HLDUCQK70MT8:00000008 [INF] Request finished in 7.487ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:14.3211930+07:00 0HLDUCQK70MT7:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7070 (ca22a1cb)
+2018-05-20T22:33:14.3217893+07:00 0HLDUCQK70MT7:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:14.3220168+07:00 0HLDUCQK70MT7:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:14.3242133+07:00 0HLDUCQK70MT7:0000000B [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" with arguments (["System.Collections.Generic.List`1[ShopCoreApp.Application.ViewModels.System.PermissionViewModel]", "86b53da4-4284-401b-f39d-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:14.3260567+07:00 0HLDUCQK70MT7:0000000B [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:14.3277597+07:00 0HLDUCQK70MT7:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-05-20T22:33:14.3460666+07:00 0HLDUCQK70MT7:0000000B [INF] Executed DbCommand ("14"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?', @p18='?', @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?' (Size = 128), @p29='?', @p30='?', @p31='?', @p32='?', @p33='?', @p34='?' (Size = 128), @p35='?', @p36='?', @p37='?', @p38='?', @p39='?', @p40='?' (Size = 128), @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?' (Size = 128), @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?' (Size = 128), @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?' (Size = 128), @p59='?', @p60='?', @p61='?', @p62='?', @p63='?', @p64='?' (Size = 128), @p65='?', @p66='?', @p67='?', @p68='?', @p69='?', @p70='?' (Size = 128), @p71='?', @p72='?', @p73='?', @p74='?', @p75='?', @p76='?' (Size = 128), @p77='?', @p78='?', @p79='?', @p80='?', @p81='?', @p82='?' (Size = 128), @p83='?', @p84='?', @p85='?', @p86='?', @p87='?', @p88='?' (Size = 128), @p89='?', @p90='?', @p91='?', @p92='?', @p93='?', @p94='?' (Size = 128), @p95='?', @p96='?', @p97='?', @p98='?', @p99='?', @p100='?' (Size = 128), @p101='?', @p102='?', @p103='?', @p104='?', @p105='?', @p106='?' (Size = 128), @p107='?', @p108='?', @p109='?', @p110='?', @p111='?', @p112='?' (Size = 128), @p113='?', @p114='?', @p115='?', @p116='?', @p117='?', @p118='?' (Size = 128), @p119='?', @p120='?', @p121='?', @p122='?', @p123='?', @p124='?' (Size = 128), @p125='?', @p126='?', @p127='?', @p128='?', @p129='?', @p130='?' (Size = 128), @p131='?', @p132='?', @p133='?', @p134='?', @p135='?', @p136='?' (Size = 128), @p137='?', @p138='?', @p139='?', @p140='?', @p141='?', @p142='?' (Size = 128), @p143='?', @p144='?', @p145='?', @p146='?', @p147='?', @p148='?' (Size = 128), @p149='?', @p150='?', @p151='?', @p152='?', @p153='?', @p154='?' (Size = 128), @p155='?', @p156='?', @p157='?', @p158='?', @p159='?', @p160='?' (Size = 128), @p161='?', @p162='?', @p163='?', @p164='?', @p165='?', @p166='?' (Size = 128), @p167='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Permissions]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p10;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p16;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p18;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p19;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p20;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p22;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;
+
+DECLARE @inserted24 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, 0),
+(@p30, @p31, @p32, @p33, @p34, @p35, 1),
+(@p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, 4),
+(@p54, @p55, @p56, @p57, @p58, @p59, 5),
+(@p60, @p61, @p62, @p63, @p64, @p65, 6),
+(@p66, @p67, @p68, @p69, @p70, @p71, 7),
+(@p72, @p73, @p74, @p75, @p76, @p77, 8),
+(@p78, @p79, @p80, @p81, @p82, @p83, 9),
+(@p84, @p85, @p86, @p87, @p88, @p89, 10),
+(@p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, 12),
+(@p102, @p103, @p104, @p105, @p106, @p107, 13),
+(@p108, @p109, @p110, @p111, @p112, @p113, 14),
+(@p114, @p115, @p116, @p117, @p118, @p119, 15),
+(@p120, @p121, @p122, @p123, @p124, @p125, 16),
+(@p126, @p127, @p128, @p129, @p130, @p131, 17),
+(@p132, @p133, @p134, @p135, @p136, @p137, 18),
+(@p138, @p139, @p140, @p141, @p142, @p143, 19),
+(@p144, @p145, @p146, @p147, @p148, @p149, 20),
+(@p150, @p151, @p152, @p153, @p154, @p155, 21),
+(@p156, @p157, @p158, @p159, @p160, @p161, 22),
+(@p162, @p163, @p164, @p165, @p166, @p167, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted24;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted24 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-05-20T22:33:14.3494785+07:00 0HLDUCQK70MT7:0000000B [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-05-20T22:33:14.3496054+07:00 0HLDUCQK70MT7:0000000B [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" in 27.6005ms (afa2e885)
+2018-05-20T22:33:14.3497545+07:00 0HLDUCQK70MT7:0000000B [INF] Request finished in 28.6796ms 200  (791a596a)
+2018-05-20T22:33:16.8047278+07:00 0HLDUCQK70MT8:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:16.8047278+07:00 0HLDUCQK70MT7:0000000C [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:16.8052908+07:00 0HLDUCQK70MT8:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:16.8052908+07:00 0HLDUCQK70MT7:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:16.8055071+07:00 0HLDUCQK70MT8:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:16.8055271+07:00 0HLDUCQK70MT7:0000000C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:16.8056172+07:00 0HLDUCQK70MT8:00000009 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:16.8058630+07:00 0HLDUCQK70MT7:0000000C [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["789aca41-541b-473e-f39f-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:16.8059786+07:00 0HLDUCQK70MT8:00000009 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:16.8061493+07:00 0HLDUCQK70MT7:0000000C [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:16.8074766+07:00 0HLDUCQK70MT8:00000009 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:16.8076677+07:00 0HLDUCQK70MT7:0000000C [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:16.8078709+07:00 0HLDUCQK70MT7:0000000C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:16.8079124+07:00 0HLDUCQK70MT8:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:16.8081046+07:00 0HLDUCQK70MT7:0000000C [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 2.5855ms (afa2e885)
+2018-05-20T22:33:16.8081166+07:00 0HLDUCQK70MT8:00000009 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 2.6322ms (afa2e885)
+2018-05-20T22:33:16.8082326+07:00 0HLDUCQK70MT7:0000000C [INF] Request finished in 3.5953ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:16.8082421+07:00 0HLDUCQK70MT8:00000009 [INF] Request finished in 3.5916ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:25.1805886+07:00 0HLDUCQK70MT7:0000000D [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7141 (ca22a1cb)
+2018-05-20T22:33:25.1812549+07:00 0HLDUCQK70MT7:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:25.1814704+07:00 0HLDUCQK70MT7:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:25.1834254+07:00 0HLDUCQK70MT7:0000000D [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" with arguments (["System.Collections.Generic.List`1[ShopCoreApp.Application.ViewModels.System.PermissionViewModel]", "789aca41-541b-473e-f39f-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:25.1838612+07:00 0HLDUCQK70MT7:0000000D [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:25.1848130+07:00 0HLDUCQK70MT7:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-05-20T22:33:25.1924240+07:00 0HLDUCQK70MT7:0000000D [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?', @p18='?', @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?' (Size = 128), @p29='?', @p30='?', @p31='?', @p32='?', @p33='?', @p34='?' (Size = 128), @p35='?', @p36='?', @p37='?', @p38='?', @p39='?', @p40='?' (Size = 128), @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?' (Size = 128), @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?' (Size = 128), @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?' (Size = 128), @p59='?', @p60='?', @p61='?', @p62='?', @p63='?', @p64='?' (Size = 128), @p65='?', @p66='?', @p67='?', @p68='?', @p69='?', @p70='?' (Size = 128), @p71='?', @p72='?', @p73='?', @p74='?', @p75='?', @p76='?' (Size = 128), @p77='?', @p78='?', @p79='?', @p80='?', @p81='?', @p82='?' (Size = 128), @p83='?', @p84='?', @p85='?', @p86='?', @p87='?', @p88='?' (Size = 128), @p89='?', @p90='?', @p91='?', @p92='?', @p93='?', @p94='?' (Size = 128), @p95='?', @p96='?', @p97='?', @p98='?', @p99='?', @p100='?' (Size = 128), @p101='?', @p102='?', @p103='?', @p104='?', @p105='?', @p106='?' (Size = 128), @p107='?', @p108='?', @p109='?', @p110='?', @p111='?', @p112='?' (Size = 128), @p113='?', @p114='?', @p115='?', @p116='?', @p117='?', @p118='?' (Size = 128), @p119='?', @p120='?', @p121='?', @p122='?', @p123='?', @p124='?' (Size = 128), @p125='?', @p126='?', @p127='?', @p128='?', @p129='?', @p130='?' (Size = 128), @p131='?', @p132='?', @p133='?', @p134='?', @p135='?', @p136='?' (Size = 128), @p137='?', @p138='?', @p139='?', @p140='?', @p141='?', @p142='?' (Size = 128), @p143='?', @p144='?', @p145='?', @p146='?', @p147='?', @p148='?' (Size = 128), @p149='?', @p150='?', @p151='?', @p152='?', @p153='?', @p154='?' (Size = 128), @p155='?', @p156='?', @p157='?', @p158='?', @p159='?', @p160='?' (Size = 128), @p161='?', @p162='?', @p163='?', @p164='?', @p165='?', @p166='?' (Size = 128), @p167='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Permissions]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p10;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p16;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p18;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p19;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p20;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p22;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;
+
+DECLARE @inserted24 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, 0),
+(@p30, @p31, @p32, @p33, @p34, @p35, 1),
+(@p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, 4),
+(@p54, @p55, @p56, @p57, @p58, @p59, 5),
+(@p60, @p61, @p62, @p63, @p64, @p65, 6),
+(@p66, @p67, @p68, @p69, @p70, @p71, 7),
+(@p72, @p73, @p74, @p75, @p76, @p77, 8),
+(@p78, @p79, @p80, @p81, @p82, @p83, 9),
+(@p84, @p85, @p86, @p87, @p88, @p89, 10),
+(@p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, 12),
+(@p102, @p103, @p104, @p105, @p106, @p107, 13),
+(@p108, @p109, @p110, @p111, @p112, @p113, 14),
+(@p114, @p115, @p116, @p117, @p118, @p119, 15),
+(@p120, @p121, @p122, @p123, @p124, @p125, 16),
+(@p126, @p127, @p128, @p129, @p130, @p131, 17),
+(@p132, @p133, @p134, @p135, @p136, @p137, 18),
+(@p138, @p139, @p140, @p141, @p142, @p143, 19),
+(@p144, @p145, @p146, @p147, @p148, @p149, 20),
+(@p150, @p151, @p152, @p153, @p154, @p155, 21),
+(@p156, @p157, @p158, @p159, @p160, @p161, 22),
+(@p162, @p163, @p164, @p165, @p166, @p167, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted24;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted24 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-05-20T22:33:25.2037788+07:00 0HLDUCQK70MT7:0000000D [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-05-20T22:33:25.2038714+07:00 0HLDUCQK70MT7:0000000D [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" in 22.4393ms (afa2e885)
+2018-05-20T22:33:25.2040188+07:00 0HLDUCQK70MT7:0000000D [INF] Request finished in 23.5355ms 200  (791a596a)
+2018-05-20T22:33:26.8699217+07:00 0HLDUCQK70MT8:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:26.8699217+07:00 0HLDUCQK70MT7:0000000E [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:26.8704315+07:00 0HLDUCQK70MT7:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:26.8704315+07:00 0HLDUCQK70MT8:0000000A [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:26.8706470+07:00 0HLDUCQK70MT8:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:26.8706758+07:00 0HLDUCQK70MT7:0000000E [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:26.8707582+07:00 0HLDUCQK70MT8:0000000A [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:26.8708877+07:00 0HLDUCQK70MT7:0000000E [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["9b58fd6b-305a-42c5-f39e-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:26.8711061+07:00 0HLDUCQK70MT8:0000000A [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:26.8711229+07:00 0HLDUCQK70MT7:0000000E [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:26.8726436+07:00 0HLDUCQK70MT8:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:26.8728030+07:00 0HLDUCQK70MT7:0000000E [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:26.8730790+07:00 0HLDUCQK70MT7:0000000E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:26.8730962+07:00 0HLDUCQK70MT8:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:26.8733992+07:00 0HLDUCQK70MT8:0000000A [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 2.7609ms (afa2e885)
+2018-05-20T22:33:26.8733992+07:00 0HLDUCQK70MT7:0000000E [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 2.7576ms (afa2e885)
+2018-05-20T22:33:26.8735331+07:00 0HLDUCQK70MT8:0000000A [INF] Request finished in 3.6955ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:26.8735619+07:00 0HLDUCQK70MT7:0000000E [INF] Request finished in 3.6558ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:32.3135393+07:00 0HLDUCQK70MT8:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7165 (ca22a1cb)
+2018-05-20T22:33:32.3141319+07:00 0HLDUCQK70MT8:0000000B [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:32.3144109+07:00 0HLDUCQK70MT8:0000000B [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:32.3167904+07:00 0HLDUCQK70MT8:0000000B [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" with arguments (["System.Collections.Generic.List`1[ShopCoreApp.Application.ViewModels.System.PermissionViewModel]", "9b58fd6b-305a-42c5-f39e-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:32.3173016+07:00 0HLDUCQK70MT8:0000000B [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:32.3183388+07:00 0HLDUCQK70MT8:0000000B [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-05-20T22:33:32.3251691+07:00 0HLDUCQK70MT8:0000000B [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?', @p18='?', @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?' (Size = 128), @p29='?', @p30='?', @p31='?', @p32='?', @p33='?', @p34='?' (Size = 128), @p35='?', @p36='?', @p37='?', @p38='?', @p39='?', @p40='?' (Size = 128), @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?' (Size = 128), @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?' (Size = 128), @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?' (Size = 128), @p59='?', @p60='?', @p61='?', @p62='?', @p63='?', @p64='?' (Size = 128), @p65='?', @p66='?', @p67='?', @p68='?', @p69='?', @p70='?' (Size = 128), @p71='?', @p72='?', @p73='?', @p74='?', @p75='?', @p76='?' (Size = 128), @p77='?', @p78='?', @p79='?', @p80='?', @p81='?', @p82='?' (Size = 128), @p83='?', @p84='?', @p85='?', @p86='?', @p87='?', @p88='?' (Size = 128), @p89='?', @p90='?', @p91='?', @p92='?', @p93='?', @p94='?' (Size = 128), @p95='?', @p96='?', @p97='?', @p98='?', @p99='?', @p100='?' (Size = 128), @p101='?', @p102='?', @p103='?', @p104='?', @p105='?', @p106='?' (Size = 128), @p107='?', @p108='?', @p109='?', @p110='?', @p111='?', @p112='?' (Size = 128), @p113='?', @p114='?', @p115='?', @p116='?', @p117='?', @p118='?' (Size = 128), @p119='?', @p120='?', @p121='?', @p122='?', @p123='?', @p124='?' (Size = 128), @p125='?', @p126='?', @p127='?', @p128='?', @p129='?', @p130='?' (Size = 128), @p131='?', @p132='?', @p133='?', @p134='?', @p135='?', @p136='?' (Size = 128), @p137='?', @p138='?', @p139='?', @p140='?', @p141='?', @p142='?' (Size = 128), @p143='?', @p144='?', @p145='?', @p146='?', @p147='?', @p148='?' (Size = 128), @p149='?', @p150='?', @p151='?', @p152='?', @p153='?', @p154='?' (Size = 128), @p155='?', @p156='?', @p157='?', @p158='?', @p159='?', @p160='?' (Size = 128), @p161='?', @p162='?', @p163='?', @p164='?', @p165='?', @p166='?' (Size = 128), @p167='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Permissions]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p10;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p16;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p18;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p19;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p20;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p22;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;
+
+DECLARE @inserted24 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, 0),
+(@p30, @p31, @p32, @p33, @p34, @p35, 1),
+(@p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, 4),
+(@p54, @p55, @p56, @p57, @p58, @p59, 5),
+(@p60, @p61, @p62, @p63, @p64, @p65, 6),
+(@p66, @p67, @p68, @p69, @p70, @p71, 7),
+(@p72, @p73, @p74, @p75, @p76, @p77, 8),
+(@p78, @p79, @p80, @p81, @p82, @p83, 9),
+(@p84, @p85, @p86, @p87, @p88, @p89, 10),
+(@p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, 12),
+(@p102, @p103, @p104, @p105, @p106, @p107, 13),
+(@p108, @p109, @p110, @p111, @p112, @p113, 14),
+(@p114, @p115, @p116, @p117, @p118, @p119, 15),
+(@p120, @p121, @p122, @p123, @p124, @p125, 16),
+(@p126, @p127, @p128, @p129, @p130, @p131, 17),
+(@p132, @p133, @p134, @p135, @p136, @p137, 18),
+(@p138, @p139, @p140, @p141, @p142, @p143, 19),
+(@p144, @p145, @p146, @p147, @p148, @p149, 20),
+(@p150, @p151, @p152, @p153, @p154, @p155, 21),
+(@p156, @p157, @p158, @p159, @p160, @p161, 22),
+(@p162, @p163, @p164, @p165, @p166, @p167, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted24;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted24 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-05-20T22:33:32.3368091+07:00 0HLDUCQK70MT8:0000000B [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-05-20T22:33:32.3369283+07:00 0HLDUCQK70MT8:0000000B [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" in 22.5593ms (afa2e885)
+2018-05-20T22:33:32.3370855+07:00 0HLDUCQK70MT8:0000000B [INF] Request finished in 23.7215ms 200  (791a596a)
+2018-05-20T22:33:34.5236880+07:00 0HLDUCQK70MT7:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:34.5237296+07:00 0HLDUCQK70MT8:0000000C [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:34.5242361+07:00 0HLDUCQK70MT8:0000000C [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:34.5242361+07:00 0HLDUCQK70MT7:0000000F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:34.5244403+07:00 0HLDUCQK70MT8:0000000C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:34.5244469+07:00 0HLDUCQK70MT7:0000000F [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:34.5245402+07:00 0HLDUCQK70MT7:0000000F [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:34.5246584+07:00 0HLDUCQK70MT8:0000000C [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["9b58fd6b-305a-42c5-f39e-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:34.5248805+07:00 0HLDUCQK70MT8:0000000C [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:34.5248863+07:00 0HLDUCQK70MT7:0000000F [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:34.5265287+07:00 0HLDUCQK70MT7:0000000F [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:34.5267971+07:00 0HLDUCQK70MT8:0000000C [INF] Executed DbCommand ("1"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:34.5270305+07:00 0HLDUCQK70MT7:0000000F [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:34.5270305+07:00 0HLDUCQK70MT8:0000000C [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:34.5273146+07:00 0HLDUCQK70MT8:0000000C [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 2.8794ms (afa2e885)
+2018-05-20T22:33:34.5273146+07:00 0HLDUCQK70MT7:0000000F [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 2.886ms (afa2e885)
+2018-05-20T22:33:34.5274754+07:00 0HLDUCQK70MT8:0000000C [INF] Request finished in 3.7798ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:34.5275250+07:00 0HLDUCQK70MT7:0000000F [INF] Request finished in 3.9202ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:39.7648501+07:00 0HLDUCQK70MT7:00000010 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:39.7648501+07:00 0HLDUCQK70MT8:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:39.7653895+07:00 0HLDUCQK70MT7:00000010 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:39.7653898+07:00 0HLDUCQK70MT8:0000000D [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:39.7656652+07:00 0HLDUCQK70MT7:00000010 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:39.7656907+07:00 0HLDUCQK70MT8:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:39.7658037+07:00 0HLDUCQK70MT8:0000000D [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:39.7658905+07:00 0HLDUCQK70MT7:00000010 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["9b58fd6b-305a-42c5-f39e-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:39.7661582+07:00 0HLDUCQK70MT7:00000010 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:39.7661611+07:00 0HLDUCQK70MT8:0000000D [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:39.7675020+07:00 0HLDUCQK70MT8:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:39.7677110+07:00 0HLDUCQK70MT7:00000010 [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:39.7679746+07:00 0HLDUCQK70MT8:0000000D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:39.7679746+07:00 0HLDUCQK70MT7:00000010 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:39.7682288+07:00 0HLDUCQK70MT7:00000010 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 2.6015ms (afa2e885)
+2018-05-20T22:33:39.7682700+07:00 0HLDUCQK70MT8:0000000D [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 2.6048ms (afa2e885)
+2018-05-20T22:33:39.7683878+07:00 0HLDUCQK70MT8:0000000D [INF] Request finished in 3.6332ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:39.7683878+07:00 0HLDUCQK70MT7:00000010 [INF] Request finished in 3.6299ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:44.5242853+07:00 0HLDUCQK70MT8:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:44.5242853+07:00 0HLDUCQK70MT7:00000011 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:44.5249008+07:00 0HLDUCQK70MT8:0000000E [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:44.5249008+07:00 0HLDUCQK70MT7:00000011 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:44.5251050+07:00 0HLDUCQK70MT8:0000000E [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:44.5251098+07:00 0HLDUCQK70MT7:00000011 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:44.5252323+07:00 0HLDUCQK70MT8:0000000E [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:44.5253395+07:00 0HLDUCQK70MT7:00000011 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["86b53da4-4284-401b-f39d-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:44.5255700+07:00 0HLDUCQK70MT7:00000011 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:44.5256214+07:00 0HLDUCQK70MT8:0000000E [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:44.5403130+07:00 0HLDUCQK70MT8:0000000E [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:44.5421119+07:00 0HLDUCQK70MT8:0000000E [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:44.5421615+07:00 0HLDUCQK70MT7:00000011 [INF] Executed DbCommand ("15"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:44.5424682+07:00 0HLDUCQK70MT8:0000000E [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 17.3376ms (afa2e885)
+2018-05-20T22:33:44.5425324+07:00 0HLDUCQK70MT7:00000011 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:44.5426027+07:00 0HLDUCQK70MT8:0000000E [INF] Request finished in 18.417ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:44.5428238+07:00 0HLDUCQK70MT7:00000011 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 17.7121ms (afa2e885)
+2018-05-20T22:33:44.5429747+07:00 0HLDUCQK70MT7:00000011 [INF] Request finished in 18.782ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:49.7393851+07:00 0HLDUCQK70MT7:00000012 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:49.7393851+07:00 0HLDUCQK70MT8:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:49.7399375+07:00 0HLDUCQK70MT7:00000012 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:49.7399375+07:00 0HLDUCQK70MT8:0000000F [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:49.7401388+07:00 0HLDUCQK70MT7:00000012 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:49.7401454+07:00 0HLDUCQK70MT8:0000000F [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:49.7402472+07:00 0HLDUCQK70MT8:0000000F [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:49.7403700+07:00 0HLDUCQK70MT7:00000012 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["789aca41-541b-473e-f39f-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:49.7405816+07:00 0HLDUCQK70MT8:0000000F [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:49.7405896+07:00 0HLDUCQK70MT7:00000012 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:49.7439850+07:00 0HLDUCQK70MT8:0000000F [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:49.7447603+07:00 0HLDUCQK70MT8:0000000F [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:49.7457427+07:00 0HLDUCQK70MT8:0000000F [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 5.1447ms (afa2e885)
+2018-05-20T22:33:49.7460604+07:00 0HLDUCQK70MT8:0000000F [INF] Request finished in 6.6979ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:49.7462715+07:00 0HLDUCQK70MT7:00000012 [INF] Executed DbCommand ("4"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:49.7465556+07:00 0HLDUCQK70MT7:00000012 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:49.7468955+07:00 0HLDUCQK70MT7:00000012 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 6.7468ms (afa2e885)
+2018-05-20T22:33:49.7471277+07:00 0HLDUCQK70MT7:00000012 [INF] Request finished in 7.7656ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:55.6684060+07:00 0HLDUCQK70MT8:00000010 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7118 (ca22a1cb)
+2018-05-20T22:33:55.6689989+07:00 0HLDUCQK70MT8:00000010 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:55.6692156+07:00 0HLDUCQK70MT8:00000010 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:55.6712037+07:00 0HLDUCQK70MT8:00000010 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" with arguments (["System.Collections.Generic.List`1[ShopCoreApp.Application.ViewModels.System.PermissionViewModel]", "789aca41-541b-473e-f39f-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:55.6715998+07:00 0HLDUCQK70MT8:00000010 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:55.6741200+07:00 0HLDUCQK70MT8:00000010 [INF] Executed DbCommand ("1"ms) [Parameters=["@__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-05-20T22:33:55.7122921+07:00 0HLDUCQK70MT8:00000010 [INF] Executed DbCommand ("32"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?', @p15='?', @p16='?', @p17='?', @p18='?', @p19='?', @p20='?', @p21='?', @p22='?', @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?' (Size = 128), @p29='?', @p30='?', @p31='?', @p32='?', @p33='?', @p34='?' (Size = 128), @p35='?', @p36='?', @p37='?', @p38='?', @p39='?', @p40='?' (Size = 128), @p41='?', @p42='?', @p43='?', @p44='?', @p45='?', @p46='?' (Size = 128), @p47='?', @p48='?', @p49='?', @p50='?', @p51='?', @p52='?' (Size = 128), @p53='?', @p54='?', @p55='?', @p56='?', @p57='?', @p58='?' (Size = 128), @p59='?', @p60='?', @p61='?', @p62='?', @p63='?', @p64='?' (Size = 128), @p65='?', @p66='?', @p67='?', @p68='?', @p69='?', @p70='?' (Size = 128), @p71='?', @p72='?', @p73='?', @p74='?', @p75='?', @p76='?' (Size = 128), @p77='?', @p78='?', @p79='?', @p80='?', @p81='?', @p82='?' (Size = 128), @p83='?', @p84='?', @p85='?', @p86='?', @p87='?', @p88='?' (Size = 128), @p89='?', @p90='?', @p91='?', @p92='?', @p93='?', @p94='?' (Size = 128), @p95='?', @p96='?', @p97='?', @p98='?', @p99='?', @p100='?' (Size = 128), @p101='?', @p102='?', @p103='?', @p104='?', @p105='?', @p106='?' (Size = 128), @p107='?', @p108='?', @p109='?', @p110='?', @p111='?', @p112='?' (Size = 128), @p113='?', @p114='?', @p115='?', @p116='?', @p117='?', @p118='?' (Size = 128), @p119='?', @p120='?', @p121='?', @p122='?', @p123='?', @p124='?' (Size = 128), @p125='?', @p126='?', @p127='?', @p128='?', @p129='?', @p130='?' (Size = 128), @p131='?', @p132='?', @p133='?', @p134='?', @p135='?', @p136='?' (Size = 128), @p137='?', @p138='?', @p139='?', @p140='?', @p141='?', @p142='?' (Size = 128), @p143='?', @p144='?', @p145='?', @p146='?', @p147='?', @p148='?' (Size = 128), @p149='?', @p150='?', @p151='?', @p152='?', @p153='?', @p154='?' (Size = 128), @p155='?', @p156='?', @p157='?', @p158='?', @p159='?', @p160='?' (Size = 128), @p161='?', @p162='?', @p163='?', @p164='?', @p165='?', @p166='?' (Size = 128), @p167='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Permissions]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p10;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p16;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p18;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p19;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p20;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p22;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;
+
+DECLARE @inserted24 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, 0),
+(@p30, @p31, @p32, @p33, @p34, @p35, 1),
+(@p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, 4),
+(@p54, @p55, @p56, @p57, @p58, @p59, 5),
+(@p60, @p61, @p62, @p63, @p64, @p65, 6),
+(@p66, @p67, @p68, @p69, @p70, @p71, 7),
+(@p72, @p73, @p74, @p75, @p76, @p77, 8),
+(@p78, @p79, @p80, @p81, @p82, @p83, 9),
+(@p84, @p85, @p86, @p87, @p88, @p89, 10),
+(@p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, 12),
+(@p102, @p103, @p104, @p105, @p106, @p107, 13),
+(@p108, @p109, @p110, @p111, @p112, @p113, 14),
+(@p114, @p115, @p116, @p117, @p118, @p119, 15),
+(@p120, @p121, @p122, @p123, @p124, @p125, 16),
+(@p126, @p127, @p128, @p129, @p130, @p131, 17),
+(@p132, @p133, @p134, @p135, @p136, @p137, 18),
+(@p138, @p139, @p140, @p141, @p142, @p143, 19),
+(@p144, @p145, @p146, @p147, @p148, @p149, 20),
+(@p150, @p151, @p152, @p153, @p154, @p155, 21),
+(@p156, @p157, @p158, @p159, @p160, @p161, 22),
+(@p162, @p163, @p164, @p165, @p166, @p167, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted24;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted24 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-05-20T22:33:55.7153998+07:00 0HLDUCQK70MT8:00000010 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-05-20T22:33:55.7155398+07:00 0HLDUCQK70MT8:00000010 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.SavePermission (ShopCoreApp)" in 46.3239ms (afa2e885)
+2018-05-20T22:33:55.7156689+07:00 0HLDUCQK70MT8:00000010 [INF] Request finished in 47.3632ms 200  (791a596a)
+2018-05-20T22:33:57.1866822+07:00 0HLDUCQK70MT7:00000013 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-05-20T22:33:57.1866822+07:00 0HLDUCQK70MT8:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Function/GetAll   (ca22a1cb)
+2018-05-20T22:33:57.1872624+07:00 0HLDUCQK70MT8:00000011 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:57.1872624+07:00 0HLDUCQK70MT7:00000013 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-20T22:33:57.1875159+07:00 0HLDUCQK70MT7:00000013 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:57.1875192+07:00 0HLDUCQK70MT8:00000011 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-20T22:33:57.1876271+07:00 0HLDUCQK70MT8:00000011 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:57.1877646+07:00 0HLDUCQK70MT7:00000013 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" with arguments (["789aca41-541b-473e-f39f-08d5aa71b032"]) - ModelState is Valid (ba7f4ac2)
+2018-05-20T22:33:57.1880111+07:00 0HLDUCQK70MT8:00000011 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:57.1880151+07:00 0HLDUCQK70MT7:00000013 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-20T22:33:57.1893243+07:00 0HLDUCQK70MT7:00000013 [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_1='?', @__roleId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-05-20T22:33:57.1893243+07:00 0HLDUCQK70MT8:00000011 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-20T22:33:57.1896062+07:00 0HLDUCQK70MT7:00000013 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:57.1897266+07:00 0HLDUCQK70MT8:00000011 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-20T22:33:57.1899209+07:00 0HLDUCQK70MT7:00000013 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.RoleController.ListAllFunction (ShopCoreApp)" in 2.4155ms (afa2e885)
+2018-05-20T22:33:57.1899308+07:00 0HLDUCQK70MT8:00000011 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.FunctionController.GetAll (ShopCoreApp)" in 2.4491ms (afa2e885)
+2018-05-20T22:33:57.1900807+07:00 0HLDUCQK70MT8:00000011 [INF] Request finished in 3.4414ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-20T22:33:57.1900792+07:00 0HLDUCQK70MT7:00000013 [INF] Request finished in 3.488ms 200 application/json; charset=utf-8 (791a596a)

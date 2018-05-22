@@ -1,0 +1,635 @@
+2018-05-19T17:00:51.5038651+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:00:51.7136665+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-19T17:00:51.7316869+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-19T17:00:51.7498676+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-05-19T17:00:51.7732463+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-05-19T17:00:51.7773347+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-05-19T17:00:51.7816317+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-05-19T17:00:51.7859559+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-05-19T17:00:51.7910836+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-05-19T17:00:51.7958878+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-05-19T17:00:51.8040546+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-19T17:00:51.8087030+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-19T17:00:51.8139193+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-19T17:00:52.0226125+07:00 0HLDTDTJP84SI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-05-19T17:00:52.1854752+07:00 0HLDTDTJP84SI:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:00:55.9590935+07:00 0HLDTDTJP84SI:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-19T17:00:56.6954584+07:00 0HLDTDTJP84SI:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 4520.5204ms (afa2e885)
+2018-05-19T17:00:56.6980579+07:00 0HLDTDTJP84SI:00000001 [INF] Request finished in 4685.741ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-19T17:00:56.7195192+07:00 0HLDTDTJP84SI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-05-19T17:00:56.7226182+07:00 0HLDTDTJP84SL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-05-19T17:00:56.7227060+07:00 0HLDTDTJP84SI:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-05-19T17:00:56.7227184+07:00 0HLDTDTJP84SJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner1.svg   (ca22a1cb)
+2018-05-19T17:00:56.7229879+07:00 0HLDTDTJP84SL:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-05-19T17:00:56.7230444+07:00 0HLDTDTJP84SJ:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-05-19T17:00:56.7240098+07:00 0HLDTDTJP84SK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/css/site.css   (ca22a1cb)
+2018-05-19T17:00:56.7240145+07:00 0HLDTDTJP84SN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner4.svg   (ca22a1cb)
+2018-05-19T17:00:56.7240171+07:00 0HLDTDTJP84SM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-05-19T17:00:56.7242957+07:00 0HLDTDTJP84SM:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-05-19T17:00:56.7245728+07:00 0HLDTDTJP84SN:00000001 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner4.svg"' (27b0a520)
+2018-05-19T17:00:56.7255972+07:00 0HLDTDTJP84SP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner3.svg   (ca22a1cb)
+2018-05-19T17:00:56.7266598+07:00 0HLDTDTJP84SO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-05-19T17:00:56.7308652+07:00 0HLDTDTJP84SL:00000001 [INF] Request finished in 5.0893ms 200 application/javascript (791a596a)
+2018-05-19T17:00:56.7319665+07:00 0HLDTDTJP84SP:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-05-19T17:00:56.7325839+07:00 0HLDTDTJP84SQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/images/banner2.svg   (ca22a1cb)
+2018-05-19T17:00:56.7329067+07:00 0HLDTDTJP84SQ:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-05-19T17:00:56.7341203+07:00 0HLDTDTJP84SK:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-05-19T17:00:56.7344525+07:00 0HLDTDTJP84SO:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-05-19T17:00:56.7412409+07:00 0HLDTDTJP84SK:00000001 [INF] Request finished in 16.97ms 200 text/css (791a596a)
+2018-05-19T17:00:56.7476347+07:00 0HLDTDTJP84SO:00000001 [INF] Request finished in 20.7516ms 200 application/javascript (791a596a)
+2018-05-19T17:00:56.8232586+07:00 0HLDTDTJP84SP:00000001 [INF] Request finished in 97.6235ms 200 image/svg+xml (791a596a)
+2018-05-19T17:00:56.8232863+07:00 0HLDTDTJP84SJ:00000001 [INF] Request finished in 100.5496ms 200 image/svg+xml (791a596a)
+2018-05-19T17:00:56.8233155+07:00 0HLDTDTJP84SQ:00000001 [INF] Request finished in 96.8307ms 200 image/svg+xml (791a596a)
+2018-05-19T17:00:56.8428463+07:00 0HLDTDTJP84SM:00000001 [INF] Request finished in 118.3656ms 200 application/javascript (791a596a)
+2018-05-19T17:00:56.8461341+07:00 0HLDTDTJP84SN:00000001 [INF] Request finished in 122.1116ms 200 image/svg+xml (791a596a)
+2018-05-19T17:00:56.8548688+07:00 0HLDTDTJP84SI:00000002 [INF] Request finished in 135.6745ms 200 text/css (791a596a)
+2018-05-19T17:00:56.9140864+07:00 0HLDTDTJP84SL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-05-19T17:00:56.9143760+07:00 0HLDTDTJP84SL:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-05-19T17:00:56.9276147+07:00 0HLDTDTJP84SL:00000002 [INF] Request finished in 12.9316ms 200 font/woff2 (791a596a)
+2018-05-19T17:00:57.0810725+07:00 0HLDTDTJP84SK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/favicon.ico   (ca22a1cb)
+2018-05-19T17:00:57.0846463+07:00 0HLDTDTJP84SK:00000002 [INF] Request finished in 3.4786ms 404  (791a596a)
+2018-05-19T17:13:56.5884909+07:00 0HLDTDTJP84SR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin   (ca22a1cb)
+2018-05-19T17:13:56.9386343+07:00 0HLDTDTJP84SR:00000001 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:13:57.1707680+07:00 0HLDTDTJP84SR:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-05-19T17:13:57.2136133+07:00 0HLDTDTJP84SR:00000001 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Index (ShopCoreApp)" in 275.713ms (afa2e885)
+2018-05-19T17:13:57.2137938+07:00 0HLDTDTJP84SR:00000001 [INF] Request finished in 625.518ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-19T17:13:57.2281542+07:00 0HLDTDTJP84SR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-05-19T17:13:57.2285193+07:00 0HLDTDTJP84SR:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-05-19T17:13:57.2301574+07:00 0HLDTDTJP84SS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-05-19T17:13:57.2305363+07:00 0HLDTDTJP84SS:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-05-19T17:13:57.2309327+07:00 0HLDTDTJP84ST:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/animate.css/animate.css   (ca22a1cb)
+2018-05-19T17:13:57.2312711+07:00 0HLDTDTJP84ST:00000001 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-05-19T17:13:57.2313670+07:00 0HLDTDTJP84SU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-05-19T17:13:57.2317795+07:00 0HLDTDTJP84SU:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-05-19T17:13:57.2337648+07:00 0HLDTDTJP84T0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-05-19T17:13:57.2344342+07:00 0HLDTDTJP84T0:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-05-19T17:13:57.2345619+07:00 0HLDTDTJP84SV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/css/custom.css   (ca22a1cb)
+2018-05-19T17:13:57.2361242+07:00 0HLDTDTJP84T0:00000001 [INF] Request finished in 2.3182ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2361337+07:00 0HLDTDTJP84T1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-05-19T17:13:57.2366868+07:00 0HLDTDTJP84T1:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-05-19T17:13:57.2368885+07:00 0HLDTDTJP84SV:00000001 [INF] Sending file. Request path: '"/admin-site/css/custom.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\css\custom.css"' (27b0a520)
+2018-05-19T17:13:57.2372579+07:00 0HLDTDTJP84T1:00000001 [INF] Request finished in 1.2088ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2375117+07:00 0HLDTDTJP84T4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-05-19T17:13:57.2376652+07:00 0HLDTDTJP84T2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-05-19T17:13:57.2377323+07:00 0HLDTDTJP84T4:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-05-19T17:13:57.2378778+07:00 0HLDTDTJP84T2:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-05-19T17:13:57.2381634+07:00 0HLDTDTJP84T4:00000001 [INF] Request finished in 0.6418ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2383953+07:00 0HLDTDTJP84T1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-05-19T17:13:57.2385529+07:00 0HLDTDTJP84T2:00000001 [INF] Request finished in 1.0772ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2385864+07:00 0HLDTDTJP84T1:00000002 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-05-19T17:13:57.2387834+07:00 0HLDTDTJP84T1:00000002 [INF] Request finished in 0.4106ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2415100+07:00 0HLDTDTJP84T3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-05-19T17:13:57.2422711+07:00 0HLDTDTJP84T1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/login/index.js   (ca22a1cb)
+2018-05-19T17:13:57.2427102+07:00 0HLDTDTJP84T1:00000003 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-05-19T17:13:57.2421774+07:00 0HLDTDTJP84T3:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-05-19T17:13:57.2435387+07:00 0HLDTDTJP84T1:00000003 [INF] Request finished in 0.8792ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2435161+07:00 0HLDTDTJP84T3:00000001 [INF] Request finished in 2.1158ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2528283+07:00 0HLDTDTJP84T0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js   (ca22a1cb)
+2018-05-19T17:13:57.2545332+07:00 0HLDTDTJP84T0:00000002 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-05-19T17:13:57.2557625+07:00 0HLDTDTJP84T0:00000002 [INF] Request finished in 3.5861ms 200 application/javascript (791a596a)
+2018-05-19T17:13:57.2648779+07:00 0HLDTDTJP84SU:00000001 [INF] Request finished in 33.308ms 200 text/css (791a596a)
+2018-05-19T17:13:57.2664817+07:00 0HLDTDTJP84SV:00000001 [INF] Request finished in 32.8916ms 200 text/css (791a596a)
+2018-05-19T17:13:57.2720381+07:00 0HLDTDTJP84SS:00000001 [INF] Request finished in 42.132ms 200 text/css (791a596a)
+2018-05-19T17:13:57.2808075+07:00 0HLDTDTJP84SR:00000002 [INF] Request finished in 52.7316ms 200 text/css (791a596a)
+2018-05-19T17:13:57.2846365+07:00 0HLDTDTJP84ST:00000001 [INF] Request finished in 53.9357ms 200 text/css (791a596a)
+2018-05-19T17:13:57.3204907+07:00 0HLDTDTJP84T2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-05-19T17:13:57.3207504+07:00 0HLDTDTJP84T2:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-05-19T17:13:57.3711207+07:00 0HLDTDTJP84T2:00000002 [INF] Request finished in 50.5986ms 200 font/woff2 (791a596a)
+2018-05-19T17:13:59.5219401+07:00 0HLDTDTJP84T1:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-05-19T17:13:59.5955113+07:00 0HLDTDTJP84T1:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" with arguments (["ShopCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:13:59.6460191+07:00 0HLDTDTJP84T1:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:13:59.7132143+07:00 0HLDTDTJP84T1:00000004 [INF] Executed DbCommand ("32"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-19T17:13:59.8062156+07:00 0HLDTDTJP84T1:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-19T17:13:59.8353350+07:00 0HLDTDTJP84T1:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-19T17:13:59.8458784+07:00 0HLDTDTJP84T1:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-05-19T17:13:59.8634459+07:00 0HLDTDTJP84T1:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-05-19T17:13:59.8653699+07:00 0HLDTDTJP84T1:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-19T17:13:59.8689655+07:00 0HLDTDTJP84T1:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-05-19T17:13:59.8691938+07:00 0HLDTDTJP84T1:00000004 [INF] User logged in. (fdce0db4)
+2018-05-19T17:13:59.8728486+07:00 0HLDTDTJP84T1:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:13:59.9093719+07:00 0HLDTDTJP84T1:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.LoginController.Authen (ShopCoreApp)" in 346.7267ms (afa2e885)
+2018-05-19T17:13:59.9109885+07:00 0HLDTDTJP84T1:00000004 [INF] Request finished in 388.8861ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:13:59.9162132+07:00 0HLDTDTJP84T4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Home/Index   (ca22a1cb)
+2018-05-19T17:13:59.9200386+07:00 0HLDTDTJP84T4:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:13:59.9295001+07:00 0HLDTDTJP84T4:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:13:59.9302666+07:00 0HLDTDTJP84T4:00000002 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:00.0693963+07:00 0HLDTDTJP84T4:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-05-19T17:14:00.3521300+07:00 0HLDTDTJP84T4:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:00.3896228+07:00 0HLDTDTJP84T4:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-19T17:14:00.8932188+07:00 0HLDTDTJP84T4:00000002 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.HomeController.Index (ShopCoreApp)" in 971.3991ms (afa2e885)
+2018-05-19T17:14:00.8940649+07:00 0HLDTDTJP84T4:00000002 [INF] Request finished in 977.9103ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-19T17:14:00.9131011+07:00 0HLDTDTJP84T3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-05-19T17:14:00.9136875+07:00 0HLDTDTJP84T3:00000002 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-05-19T17:14:00.9165596+07:00 0HLDTDTJP84SU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-05-19T17:14:00.9165600+07:00 0HLDTDTJP84T0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-05-19T17:14:00.9165891+07:00 0HLDTDTJP84SV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/images/img.jpg   (ca22a1cb)
+2018-05-19T17:14:00.9168255+07:00 0HLDTDTJP84SU:00000002 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2018-05-19T17:14:00.9179101+07:00 0HLDTDTJP84T0:00000003 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-05-19T17:14:00.9193931+07:00 0HLDTDTJP84SU:00000002 [INF] Request finished in 2.8313ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9193935+07:00 0HLDTDTJP84T3:00000002 [INF] Request finished in 6.1381ms 200 text/css (791a596a)
+2018-05-19T17:14:00.9196323+07:00 0HLDTDTJP84SS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-05-19T17:14:00.9198676+07:00 0HLDTDTJP84SS:00000002 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2018-05-19T17:14:00.9200791+07:00 0HLDTDTJP84SS:00000002 [INF] Request finished in 0.4696ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9202187+07:00 0HLDTDTJP84SV:00000002 [INF] Sending file. Request path: '"/admin-site/images/img.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\images\img.jpg"' (27b0a520)
+2018-05-19T17:14:00.9215717+07:00 0HLDTDTJP84ST:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-05-19T17:14:00.9218861+07:00 0HLDTDTJP84ST:00000002 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-05-19T17:14:00.9222040+07:00 0HLDTDTJP84SR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-05-19T17:14:00.9226949+07:00 0HLDTDTJP84SR:00000003 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2018-05-19T17:14:00.9226946+07:00 0HLDTDTJP84SV:00000002 [INF] Request finished in 6.1895ms 200 image/jpeg (791a596a)
+2018-05-19T17:14:00.9256640+07:00 0HLDTDTJP84ST:00000002 [INF] Request finished in 2.3036ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9290818+07:00 0HLDTDTJP84T0:00000003 [INF] Request finished in 12.5826ms 200 text/css (791a596a)
+2018-05-19T17:14:00.9290821+07:00 0HLDTDTJP84T2:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/moment/moment.js   (ca22a1cb)
+2018-05-19T17:14:00.9290821+07:00 0HLDTDTJP84T4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-05-19T17:14:00.9294606+07:00 0HLDTDTJP84T1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-05-19T17:14:00.9295795+07:00 0HLDTDTJP84T3:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/mustache/mustache.js   (ca22a1cb)
+2018-05-19T17:14:00.9296003+07:00 0HLDTDTJP84T4:00000003 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2018-05-19T17:14:00.9296506+07:00 0HLDTDTJP84T1:00000005 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-05-19T17:14:00.9300617+07:00 0HLDTDTJP84T3:00000003 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2018-05-19T17:14:00.9309653+07:00 0HLDTDTJP84T2:00000003 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\moment\moment.js"' (27b0a520)
+2018-05-19T17:14:00.9310203+07:00 0HLDTDTJP84T4:00000003 [INF] Request finished in 1.9283ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9333612+07:00 0HLDTDTJP84T1:00000005 [INF] Request finished in 3.7455ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9346616+07:00 0HLDTDTJP84T2:00000003 [INF] Request finished in 5.8292ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9356240+07:00 0HLDTDTJP84SU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-05-19T17:14:00.9359525+07:00 0HLDTDTJP84SU:00000003 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-05-19T17:14:00.9364514+07:00 0HLDTDTJP84SU:00000003 [INF] Request finished in 0.8139ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9367425+07:00 0HLDTDTJP84T3:00000003 [INF] Request finished in 3.6058ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9372705+07:00 0HLDTDTJP84SR:00000003 [INF] Request finished in 16.6786ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9441077+07:00 0HLDTDTJP84SV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/gentelella/vendors/jszip/dist/jszip.min.js   (ca22a1cb)
+2018-05-19T17:14:00.9456776+07:00 0HLDTDTJP84SV:00000003 [INF] Sending file. Request path: '"/lib/gentelella/vendors/jszip/dist/jszip.min.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\gentelella\vendors\jszip\dist\jszip.min.js"' (27b0a520)
+2018-05-19T17:14:00.9470586+07:00 0HLDTDTJP84T4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/gentelella/vendors/pdfmake/build/pdfmake.min.js   (ca22a1cb)
+2018-05-19T17:14:00.9481928+07:00 0HLDTDTJP84T4:00000004 [INF] Sending file. Request path: '"/lib/gentelella/vendors/pdfmake/build/pdfmake.min.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\gentelella\vendors\pdfmake\build\pdfmake.min.js"' (27b0a520)
+2018-05-19T17:14:00.9524952+07:00 0HLDTDTJP84T3:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/gentelella/vendors/pdfmake/build/vfs_fonts.js   (ca22a1cb)
+2018-05-19T17:14:00.9535688+07:00 0HLDTDTJP84T3:00000004 [INF] Sending file. Request path: '"/lib/gentelella/vendors/pdfmake/build/vfs_fonts.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\gentelella\vendors\pdfmake\build\vfs_fonts.js"' (27b0a520)
+2018-05-19T17:14:00.9537099+07:00 0HLDTDTJP84SV:00000003 [INF] Request finished in 10.2987ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9604411+07:00 0HLDTDTJP84T0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2018-05-19T17:14:00.9650261+07:00 0HLDTDTJP84SU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/shared/app.js?v=cgfnhrnVYQI_T3mjJJqOVidXQEogrPjPBW6HD6I3k08   (ca22a1cb)
+2018-05-19T17:14:00.9652368+07:00 0HLDTDTJP84T3:00000004 [INF] Request finished in 12.8072ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9653838+07:00 0HLDTDTJP84T0:00000004 [INF] Sending file. Request path: '"/lib/ckeditor/ckeditor.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\ckeditor.js"' (27b0a520)
+2018-05-19T17:14:00.9653995+07:00 0HLDTDTJP84SU:00000004 [INF] Sending file. Request path: '"/app/shared/app.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\shared\app.js"' (27b0a520)
+2018-05-19T17:14:00.9656705+07:00 0HLDTDTJP84SU:00000004 [INF] Request finished in 0.7687ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9692756+07:00 0HLDTDTJP84SS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin-site/js/custom.js   (ca22a1cb)
+2018-05-19T17:14:00.9696100+07:00 0HLDTDTJP84SS:00000003 [INF] Sending file. Request path: '"/admin-site/js/custom.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\admin-site\js\custom.js"' (27b0a520)
+2018-05-19T17:14:00.9717422+07:00 0HLDTDTJP84SS:00000003 [INF] Request finished in 2.4407ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9731061+07:00 0HLDTDTJP84T4:00000004 [INF] Request finished in 26.2079ms 200 application/javascript (791a596a)
+2018-05-19T17:14:00.9758732+07:00 0HLDTDTJP84T0:00000004 [INF] Request finished in 16.4018ms 200 application/javascript (791a596a)
+2018-05-19T17:14:07.6404674+07:00 0HLDTDTJP84T2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/product/index   (ca22a1cb)
+2018-05-19T17:14:07.6417080+07:00 0HLDTDTJP84T2:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:07.6437369+07:00 0HLDTDTJP84T2:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:07.6453649+07:00 0HLDTDTJP84T2:00000004 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:07.7660324+07:00 0HLDTDTJP84T2:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-05-19T17:14:08.2687539+07:00 0HLDTDTJP84T2:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:08.2723197+07:00 0HLDTDTJP84T2:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-19T17:14:08.2819879+07:00 0HLDTDTJP84T2:00000004 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.Index (ShopCoreApp)" in 638.4894ms (afa2e885)
+2018-05-19T17:14:08.2829131+07:00 0HLDTDTJP84T2:00000004 [INF] Request finished in 642.3921ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-19T17:14:08.3002945+07:00 0HLDTDTJP84T1:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-05-19T17:14:08.3007025+07:00 0HLDTDTJP84T1:00000006 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/easyui.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\easyui.css"' (27b0a520)
+2018-05-19T17:14:08.3008699+07:00 0HLDTDTJP84SU:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-05-19T17:14:08.3010960+07:00 0HLDTDTJP84SU:00000005 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/jquery.easyui.min.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jQuery-EasyUI\jquery.easyui.min.js"' (27b0a520)
+2018-05-19T17:14:08.3011008+07:00 0HLDTDTJP84ST:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-05-19T17:14:08.3013145+07:00 0HLDTDTJP84ST:00000003 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icon.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jQuery-EasyUI\themes\icon.css"' (27b0a520)
+2018-05-19T17:14:08.3044196+07:00 0HLDTDTJP84SR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/product/quantity-management.js?v=PFSfAzt-kEHXP5OQgT3FjkYDNgfpKU67hddjejR_Mcw   (ca22a1cb)
+2018-05-19T17:14:08.3047996+07:00 0HLDTDTJP84SR:00000004 [INF] Sending file. Request path: '"/app/controllers/product/quantity-management.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\product\quantity-management.js"' (27b0a520)
+2018-05-19T17:14:08.3051103+07:00 0HLDTDTJP84SS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/product/image-management.js   (ca22a1cb)
+2018-05-19T17:14:08.3055305+07:00 0HLDTDTJP84SS:00000004 [INF] Sending file. Request path: '"/app/controllers/product/image-management.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\product\image-management.js"' (27b0a520)
+2018-05-19T17:14:08.3058907+07:00 0HLDTDTJP84SS:00000004 [INF] Request finished in 1.5276ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.3060250+07:00 0HLDTDTJP84SV:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/app/controllers/product/index.js?v=5AeNSESg7fP3MrVTPehcZzNULLrdSxUUpjh20Cj-Yrg   (ca22a1cb)
+2018-05-19T17:14:08.3060826+07:00 0HLDTDTJP84SR:00000004 [INF] Request finished in 1.8197ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.3062306+07:00 0HLDTDTJP84SV:00000004 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2018-05-19T17:14:08.3065241+07:00 0HLDTDTJP84SV:00000004 [INF] Request finished in 0.6677ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.3150104+07:00 0HLDTDTJP84T1:00000006 [INF] Request finished in 14.7032ms 200 text/css (791a596a)
+2018-05-19T17:14:08.3291097+07:00 0HLDTDTJP84ST:00000003 [INF] Request finished in 27.912ms 200 text/css (791a596a)
+2018-05-19T17:14:08.3418941+07:00 0HLDTDTJP84SU:00000005 [INF] Request finished in 40.9147ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.4752708+07:00 0HLDTDTJP84T4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/product/GetAllCategory   (ca22a1cb)
+2018-05-19T17:14:08.4760632+07:00 0HLDTDTJP84T4:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:08.4779296+07:00 0HLDTDTJP84T3:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/product/GetAllPaging?categoryId=--Ch%E1%BB%8Dn+danh+m%E1%BB%A5c--&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-19T17:14:08.4785357+07:00 0HLDTDTJP84T4:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:08.4785704+07:00 0HLDTDTJP84T3:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:08.4786809+07:00 0HLDTDTJP84T4:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategory (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:08.4812923+07:00 0HLDTDTJP84T4:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:08.4824348+07:00 0HLDTDTJP84T3:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:08.4868152+07:00 0HLDTDTJP84T0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Bill/GetColors   (ca22a1cb)
+2018-05-19T17:14:08.4875836+07:00 0HLDTDTJP84T2:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Bill/GetSizes   (ca22a1cb)
+2018-05-19T17:14:08.4877397+07:00 0HLDTDTJP84T0:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:08.4882630+07:00 0HLDTDTJP84T2:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:08.4901282+07:00 0HLDTDTJP84T0:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:08.4907709+07:00 0HLDTDTJP84T3:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (ShopCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Invalid (ba7f4ac2)
+2018-05-19T17:14:08.4913674+07:00 0HLDTDTJP84T0:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetColors (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:08.4920632+07:00 0HLDTDTJP84T2:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:08.4926186+07:00 0HLDTDTJP84T2:00000005 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.BillController.GetSizes (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:08.4926401+07:00 0HLDTDTJP84T0:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:08.4943183+07:00 0HLDTDTJP84T3:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:08.4950791+07:00 0HLDTDTJP84T2:00000005 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:08.5047517+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [p]" (0723d8ff)
+2018-05-19T17:14:08.5071599+07:00 0HLDTDTJP84T2:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name]
+FROM [Sizes] AS [dto]" (0723d8ff)
+2018-05-19T17:14:08.5134447+07:00 0HLDTDTJP84T2:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:08.5184108+07:00 0HLDTDTJP84T0:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Code]
+FROM [Colors] AS [dto]" (0723d8ff)
+2018-05-19T17:14:08.5197893+07:00 0HLDTDTJP84T0:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:08.5198206+07:00 0HLDTDTJP84T2:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetSizes (ShopCoreApp)" in 27.7924ms (afa2e885)
+2018-05-19T17:14:08.5199825+07:00 0HLDTDTJP84T2:00000005 [INF] Request finished in 32.5123ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:08.5212626+07:00 0HLDTDTJP84T4:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-19T17:14:08.5276476+07:00 0HLDTDTJP84T0:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.BillController.GetColors (ShopCoreApp)" in 37.6057ms (afa2e885)
+2018-05-19T17:14:08.5279434+07:00 0HLDTDTJP84T0:00000005 [INF] Request finished in 41.1569ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:08.5349137+07:00 0HLDTDTJP84SS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/config.js?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.5357189+07:00 0HLDTDTJP84SS:00000005 [INF] Sending file. Request path: '"/lib/ckeditor/config.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\config.js"' (27b0a520)
+2018-05-19T17:14:08.5366827+07:00 0HLDTDTJP84SS:00000005 [INF] Request finished in 1.7066ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.5471984+07:00 0HLDTDTJP84T4:00000005 [INF] Executed DbCommand ("6"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5620890+07:00 0HLDTDTJP84T4:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5631408+07:00 0HLDTDTJP84T4:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5640828+07:00 0HLDTDTJP84T4:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5644262+07:00 0HLDTDTJP84T4:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:08.5772824+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("12"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-19T17:14:08.5824421+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5841068+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5863397+07:00 0HLDTDTJP84SR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/skins/moono-lisa/editor.css?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.5867376+07:00 0HLDTDTJP84SR:00000005 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono-lisa/editor.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\skins\moono-lisa\editor.css"' (27b0a520)
+2018-05-19T17:14:08.5884388+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5892335+07:00 0HLDTDTJP84SV:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/lang/vi.js?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.5902542+07:00 0HLDTDTJP84SR:00000005 [INF] Request finished in 3.9727ms 200 text/css (791a596a)
+2018-05-19T17:14:08.5902655+07:00 0HLDTDTJP84SV:00000005 [INF] Sending file. Request path: '"/lib/ckeditor/lang/vi.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\lang\vi.js"' (27b0a520)
+2018-05-19T17:14:08.5905529+07:00 0HLDTDTJP84SV:00000005 [INF] Request finished in 1.8383ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.5919039+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5935205+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5942597+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5955433+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.5994957+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6015221+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6082058+07:00 0HLDTDTJP84T3:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6105398+07:00 0HLDTDTJP84T3:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:08.6264307+07:00 0HLDTDTJP84T1:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/styles.js?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.6266623+07:00 0HLDTDTJP84T1:00000007 [INF] Sending file. Request path: '"/lib/ckeditor/styles.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\styles.js"' (27b0a520)
+2018-05-19T17:14:08.6269748+07:00 0HLDTDTJP84T1:00000007 [INF] Request finished in 0.6155ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.6303830+07:00 0HLDTDTJP84T4:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAllCategory (ShopCoreApp)" in 151.8211ms (afa2e885)
+2018-05-19T17:14:08.6306777+07:00 0HLDTDTJP84T4:00000005 [INF] Request finished in 155.5152ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:08.6381929+07:00 0HLDTDTJP84T3:00000005 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (ShopCoreApp)" in 154.986ms (afa2e885)
+2018-05-19T17:14:08.6394375+07:00 0HLDTDTJP84T3:00000005 [INF] Request finished in 161.133ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:08.6417240+07:00 0HLDTDTJP84ST:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/colorbutton/plugin.js?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.6422265+07:00 0HLDTDTJP84SU:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/justify/plugin.js?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.6424654+07:00 0HLDTDTJP84ST:00000004 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/colorbutton/plugin.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\colorbutton\plugin.js"' (27b0a520)
+2018-05-19T17:14:08.6424789+07:00 0HLDTDTJP84SU:00000006 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/justify/plugin.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\justify\plugin.js"' (27b0a520)
+2018-05-19T17:14:08.6427896+07:00 0HLDTDTJP84ST:00000004 [INF] Request finished in 1.8656ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.6428723+07:00 0HLDTDTJP84SU:00000006 [INF] Request finished in 0.6866ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.6566639+07:00 0HLDTDTJP84T2:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-05-19T17:14:08.6566676+07:00 0HLDTDTJP84T0:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/uploaded/images/20180517/avatar.jpg   (ca22a1cb)
+2018-05-19T17:14:08.6569141+07:00 0HLDTDTJP84SS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-05-19T17:14:08.6569717+07:00 0HLDTDTJP84T0:00000006 [INF] Sending file. Request path: '"/uploaded/images/20180517/avatar.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\uploaded\images\20180517\avatar.jpg"' (27b0a520)
+2018-05-19T17:14:08.6571051+07:00 0HLDTDTJP84SS:00000006 [INF] Sending file. Request path: '"/client-side/images/products/product-1.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\products\product-1.jpg"' (27b0a520)
+2018-05-19T17:14:08.6572911+07:00 0HLDTDTJP84T2:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:08.6576204+07:00 0HLDTDTJP84T2:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:08.6578574+07:00 0HLDTDTJP84T2:00000006 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (ShopCoreApp)" with arguments (["", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:08.6581674+07:00 0HLDTDTJP84T0:00000006 [INF] Request finished in 1.5319ms 200 image/jpeg (791a596a)
+2018-05-19T17:14:08.6582436+07:00 0HLDTDTJP84T2:00000006 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:08.6590000+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [p]" (0723d8ff)
+2018-05-19T17:14:08.6608226+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+ORDER BY [DateCreated0] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-05-19T17:14:08.6614145+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6619976+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6626230+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6631908+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6637327+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6641546+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6645557+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6649402+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6653610+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6659113+07:00 0HLDTDTJP84T2:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:08.6661979+07:00 0HLDTDTJP84T2:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:08.6675253+07:00 0HLDTDTJP84T2:00000006 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetAllPaging (ShopCoreApp)" in 9.729ms (afa2e885)
+2018-05-19T17:14:08.6686178+07:00 0HLDTDTJP84T2:00000006 [INF] Request finished in 11.4605ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:08.6842247+07:00 0HLDTDTJP84SS:00000006 [INF] Request finished in 27.2526ms 200 image/jpeg (791a596a)
+2018-05-19T17:14:08.7148878+07:00 0HLDTDTJP84SR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/panelbutton/plugin.js?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.7152908+07:00 0HLDTDTJP84SR:00000006 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/panelbutton/plugin.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\panelbutton\plugin.js"' (27b0a520)
+2018-05-19T17:14:08.7156606+07:00 0HLDTDTJP84SR:00000006 [INF] Request finished in 0.8161ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.8137458+07:00 0HLDTDTJP84SV:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css   (ca22a1cb)
+2018-05-19T17:14:08.8137458+07:00 0HLDTDTJP84T1:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/scayt/dialogs/dialog.css   (ca22a1cb)
+2018-05-19T17:14:08.8141451+07:00 0HLDTDTJP84T1:00000008 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/scayt/dialogs/dialog.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\scayt\dialogs\dialog.css"' (27b0a520)
+2018-05-19T17:14:08.8142396+07:00 0HLDTDTJP84T4:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/tableselection/styles/tableselection.css   (ca22a1cb)
+2018-05-19T17:14:08.8144715+07:00 0HLDTDTJP84T4:00000006 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/tableselection/styles/tableselection.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\tableselection\styles\tableselection.css"' (27b0a520)
+2018-05-19T17:14:08.8151140+07:00 0HLDTDTJP84SV:00000006 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css"' (27b0a520)
+2018-05-19T17:14:08.8156829+07:00 0HLDTDTJP84T3:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css   (ca22a1cb)
+2018-05-19T17:14:08.8160081+07:00 0HLDTDTJP84T3:00000006 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\wsc\skins\moono-lisa\wsc.css"' (27b0a520)
+2018-05-19T17:14:08.8165140+07:00 0HLDTDTJP84SV:00000006 [INF] Request finished in 2.8017ms 200 text/css (791a596a)
+2018-05-19T17:14:08.8171999+07:00 0HLDTDTJP84T1:00000008 [INF] Request finished in 2.7722ms 200 text/css (791a596a)
+2018-05-19T17:14:08.8172663+07:00 0HLDTDTJP84SU:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/plugins/colorbutton/lang/vi.js?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.8184318+07:00 0HLDTDTJP84SU:00000007 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/colorbutton/lang/vi.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\plugins\colorbutton\lang\vi.js"' (27b0a520)
+2018-05-19T17:14:08.8252330+07:00 0HLDTDTJP84SU:00000007 [INF] Request finished in 4.3315ms 200 application/javascript (791a596a)
+2018-05-19T17:14:08.8289617+07:00 0HLDTDTJP84T4:00000006 [INF] Request finished in 14.4672ms 200 text/css (791a596a)
+2018-05-19T17:14:08.8390646+07:00 0HLDTDTJP84T3:00000006 [INF] Request finished in 23.044ms 200 text/css (791a596a)
+2018-05-19T17:14:08.8935733+07:00 0HLDTDTJP84ST:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/contents.css?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.8938136+07:00 0HLDTDTJP84ST:00000005 [INF] Sending file. Request path: '"/lib/ckeditor/contents.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\contents.css"' (27b0a520)
+2018-05-19T17:14:08.8947405+07:00 0HLDTDTJP84T0:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/ckeditor/skins/moono-lisa/icons.png?t=I2EK   (ca22a1cb)
+2018-05-19T17:14:08.8950064+07:00 0HLDTDTJP84T0:00000007 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono-lisa/icons.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\ckeditor\skins\moono-lisa\icons.png"' (27b0a520)
+2018-05-19T17:14:08.9075799+07:00 0HLDTDTJP84ST:00000005 [INF] Request finished in 13.9297ms 200 text/css (791a596a)
+2018-05-19T17:14:08.9098347+07:00 0HLDTDTJP84T0:00000007 [INF] Request finished in 15.0573ms 200 image/png (791a596a)
+2018-05-19T17:14:12.2320460+07:00 0HLDTDTJP84T2:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/Product/GetById?id=25   (ca22a1cb)
+2018-05-19T17:14:12.2326952+07:00 0HLDTDTJP84T2:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:12.2346203+07:00 0HLDTDTJP84T2:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:12.2348460+07:00 0HLDTDTJP84T2:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetById (ShopCoreApp)" with arguments (["25"]) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:12.2373954+07:00 0HLDTDTJP84T2:00000007 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:12.2468642+07:00 0HLDTDTJP84T2:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CategoryId], [x].[Content], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HotFlag], [x].[Image], [x].[Name], [x].[OriginalPrice], [x].[Price], [x].[PromotionPrice], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[Status], [x].[Tags], [x].[Unit], [x].[ViewCount]
+FROM [Products] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-05-19T17:14:12.3196852+07:00 0HLDTDTJP84T2:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:12.3199699+07:00 0HLDTDTJP84T2:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetById (ShopCoreApp)" in 85.3923ms (afa2e885)
+2018-05-19T17:14:12.3201723+07:00 0HLDTDTJP84T2:00000007 [INF] Request finished in 88.2098ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:12.3259958+07:00 0HLDTDTJP84SS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-05-19T17:14:12.3267128+07:00 0HLDTDTJP84SS:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:12.3284413+07:00 0HLDTDTJP84SS:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:12.3288173+07:00 0HLDTDTJP84SS:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:12.3293895+07:00 0HLDTDTJP84SS:00000007 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:12.3303317+07:00 0HLDTDTJP84SS:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-05-19T17:14:12.3309422+07:00 0HLDTDTJP84SS:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:12.3315304+07:00 0HLDTDTJP84SS:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:12.3320334+07:00 0HLDTDTJP84SS:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:12.3324144+07:00 0HLDTDTJP84SS:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:12.3326329+07:00 0HLDTDTJP84SS:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:12.3331194+07:00 0HLDTDTJP84SS:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (ShopCoreApp)" in 4.721ms (afa2e885)
+2018-05-19T17:14:12.3332725+07:00 0HLDTDTJP84SS:00000007 [INF] Request finished in 7.4017ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:12.3501692+07:00 0HLDTDTJP84SR:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/lib/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png   (ca22a1cb)
+2018-05-19T17:14:12.3504453+07:00 0HLDTDTJP84SR:00000007 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\images\combo_arrow.png"' (27b0a520)
+2018-05-19T17:14:12.3509358+07:00 0HLDTDTJP84SR:00000007 [INF] Request finished in 0.8041ms 200 image/png (791a596a)
+2018-05-19T17:14:17.1818227+07:00 0HLDTDTJP84T1:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Product/GetImages?productId=25   (ca22a1cb)
+2018-05-19T17:14:17.1824546+07:00 0HLDTDTJP84T1:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:17.1848932+07:00 0HLDTDTJP84T1:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:17.1850843+07:00 0HLDTDTJP84T1:00000009 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetImages (ShopCoreApp)" with arguments (["25"]) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:17.1879378+07:00 0HLDTDTJP84T1:00000009 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:17.2247340+07:00 0HLDTDTJP84T1:00000009 [INF] Executed DbCommand ("4"ms) [Parameters=["@__productId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[ProductId] AS [Id1], CASE
+    WHEN [x].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product].[Name], [x.Product].[CategoryId], [x.Product].[Image], [x.Product].[Price], [x.Product].[PromotionPrice], [x.Product].[OriginalPrice], [x.Product].[Description], [x.Product].[Content], [x.Product].[HomeFlag], [x.Product].[HotFlag], [x.Product].[ViewCount], [x.Product].[Tags], [x.Product].[Unit], CASE
+    WHEN [x.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product.ProductCategory].[Id] AS [Id0], [x.Product.ProductCategory].[Name] AS [Name0], [x.Product.ProductCategory].[Description] AS [Description0], [x.Product.ProductCategory].[ParentId], [x.Product.ProductCategory].[HomeOrder], [x.Product.ProductCategory].[Image] AS [Image0], [x.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.Product.ProductCategory].[DateCreated], [x.Product.ProductCategory].[DateModified], [x.Product.ProductCategory].[SortOrder], [x.Product.ProductCategory].[Status], [x.Product.ProductCategory].[SeoPageTitle], [x.Product.ProductCategory].[SeoAlias], [x.Product.ProductCategory].[SeoKeywords], [x.Product.ProductCategory].[SeoDescription], [x.Product].[SeoPageTitle] AS [SeoPageTitle0], [x.Product].[SeoAlias] AS [SeoAlias0], [x.Product].[SeoKeywords] AS [SeoKeywords0], [x.Product].[SeoDescription] AS [SeoDescription0], [x.Product].[DateCreated] AS [DateCreated0], [x.Product].[DateModified] AS [DateModified0], [x.Product].[Status] AS [Status0], [x].[Path], [x].[Caption]
+FROM [ProductImages] AS [x]
+INNER JOIN [Products] AS [x.Product] ON [x].[ProductId] = [x.Product].[Id]
+INNER JOIN [ProductCategories] AS [x.Product.ProductCategory] ON [x.Product].[CategoryId] = [x.Product.ProductCategory].[Id]
+WHERE [x].[ProductId] = @__productId_0" (0723d8ff)
+2018-05-19T17:14:17.2258396+07:00 0HLDTDTJP84T1:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:17.2327061+07:00 0HLDTDTJP84T1:00000009 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetImages (ShopCoreApp)" in 47.365ms (afa2e885)
+2018-05-19T17:14:17.2336933+07:00 0HLDTDTJP84T1:00000009 [INF] Request finished in 51.5201ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:22.6526630+07:00 0HLDTDTJP84SV:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Admin/Upload/UploadImage multipart/form-data; boundary=----WebKitFormBoundary7NfwvVhk9oLAMQi3 120118 (ca22a1cb)
+2018-05-19T17:14:22.6535306+07:00 0HLDTDTJP84SV:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:22.6569016+07:00 0HLDTDTJP84SV:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:22.6576754+07:00 0HLDTDTJP84SV:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.UploadController.UploadImage (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:22.6825476+07:00 0HLDTDTJP84SV:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:22.6828134+07:00 0HLDTDTJP84SV:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.UploadController.UploadImage (ShopCoreApp)" in 26.3468ms (afa2e885)
+2018-05-19T17:14:22.6840822+07:00 0HLDTDTJP84SV:00000007 [INF] Request finished in 31.5149ms 200 text/plain; charset=utf-8 (791a596a)
+2018-05-19T17:14:22.6941817+07:00 0HLDTDTJP84SU:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44340/uploaded/images/20180519/28407356_1596945207086184_981400075_o.png   (ca22a1cb)
+2018-05-19T17:14:22.6944031+07:00 0HLDTDTJP84SU:00000008 [INF] Sending file. Request path: '"/uploaded/images/20180519/28407356_1596945207086184_981400075_o.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\uploaded\images\20180519\28407356_1596945207086184_981400075_o.png"' (27b0a520)
+2018-05-19T17:14:22.6959259+07:00 0HLDTDTJP84SU:00000008 [INF] Request finished in 1.2081ms 200 image/png (791a596a)
+2018-05-19T17:14:24.4850050+07:00 0HLDTDTJP84T4:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:44340/admin/Product/SaveImages application/x-www-form-urlencoded; charset=UTF-8 101 (ca22a1cb)
+2018-05-19T17:14:24.4856818+07:00 0HLDTDTJP84T4:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:24.4933407+07:00 0HLDTDTJP84T4:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:24.4995215+07:00 0HLDTDTJP84T4:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.SaveImages (ShopCoreApp)" with arguments (["25", "System.String[]"]) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:24.5007742+07:00 0HLDTDTJP84T4:00000007 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:24.5073795+07:00 0HLDTDTJP84T4:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=["@__productId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Caption], [x].[Path], [x].[ProductId]
+FROM [ProductImages] AS [x]
+WHERE [x].[ProductId] = @__productId_0" (0723d8ff)
+2018-05-19T17:14:24.5489846+07:00 0HLDTDTJP84T4:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 250), @p1='?' (Size = 250), @p2='?'"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ProductImages] ([Caption], [Path], [ProductId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [ProductImages]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2018-05-19T17:14:24.5586739+07:00 0HLDTDTJP84T4:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:24.5596300+07:00 0HLDTDTJP84T4:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.SaveImages (ShopCoreApp)" in 66.3926ms (afa2e885)
+2018-05-19T17:14:24.5598485+07:00 0HLDTDTJP84T4:00000007 [INF] Request finished in 74.9346ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:27.0325291+07:00 0HLDTDTJP84T3:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Product/GetImages?productId=25   (ca22a1cb)
+2018-05-19T17:14:27.0332005+07:00 0HLDTDTJP84T3:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:27.0334780+07:00 0HLDTDTJP84T3:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:27.0336924+07:00 0HLDTDTJP84T3:00000007 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetImages (ShopCoreApp)" with arguments (["25"]) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:27.0340701+07:00 0HLDTDTJP84T3:00000007 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:27.0353444+07:00 0HLDTDTJP84T3:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@__productId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[ProductId] AS [Id1], CASE
+    WHEN [x].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product].[Name], [x.Product].[CategoryId], [x.Product].[Image], [x.Product].[Price], [x.Product].[PromotionPrice], [x.Product].[OriginalPrice], [x.Product].[Description], [x.Product].[Content], [x.Product].[HomeFlag], [x.Product].[HotFlag], [x.Product].[ViewCount], [x.Product].[Tags], [x.Product].[Unit], CASE
+    WHEN [x.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product.ProductCategory].[Id] AS [Id0], [x.Product.ProductCategory].[Name] AS [Name0], [x.Product.ProductCategory].[Description] AS [Description0], [x.Product.ProductCategory].[ParentId], [x.Product.ProductCategory].[HomeOrder], [x.Product.ProductCategory].[Image] AS [Image0], [x.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.Product.ProductCategory].[DateCreated], [x.Product.ProductCategory].[DateModified], [x.Product.ProductCategory].[SortOrder], [x.Product.ProductCategory].[Status], [x.Product.ProductCategory].[SeoPageTitle], [x.Product.ProductCategory].[SeoAlias], [x.Product.ProductCategory].[SeoKeywords], [x.Product.ProductCategory].[SeoDescription], [x.Product].[SeoPageTitle] AS [SeoPageTitle0], [x.Product].[SeoAlias] AS [SeoAlias0], [x.Product].[SeoKeywords] AS [SeoKeywords0], [x.Product].[SeoDescription] AS [SeoDescription0], [x.Product].[DateCreated] AS [DateCreated0], [x.Product].[DateModified] AS [DateModified0], [x.Product].[Status] AS [Status0], [x].[Path], [x].[Caption]
+FROM [ProductImages] AS [x]
+INNER JOIN [Products] AS [x.Product] ON [x].[ProductId] = [x.Product].[Id]
+INNER JOIN [ProductCategories] AS [x.Product.ProductCategory] ON [x.Product].[CategoryId] = [x.Product.ProductCategory].[Id]
+WHERE [x].[ProductId] = @__productId_0" (0723d8ff)
+2018-05-19T17:14:27.0406996+07:00 0HLDTDTJP84T3:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:27.0417417+07:00 0HLDTDTJP84T3:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:27.0449469+07:00 0HLDTDTJP84T3:00000007 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetImages (ShopCoreApp)" in 11.3814ms (afa2e885)
+2018-05-19T17:14:27.0452229+07:00 0HLDTDTJP84T3:00000007 [INF] Request finished in 12.7318ms 200 application/json; charset=utf-8 (791a596a)
+2018-05-19T17:14:34.9448105+07:00 0HLDTDTJP84ST:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44340/admin/Product/GetImages?productId=25   (ca22a1cb)
+2018-05-19T17:14:34.9455230+07:00 0HLDTDTJP84ST:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-19T17:14:34.9457651+07:00 0HLDTDTJP84ST:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-05-19T17:14:34.9459653+07:00 0HLDTDTJP84ST:00000006 [INF] Executing action method "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetImages (ShopCoreApp)" with arguments (["25"]) - ModelState is Valid (ba7f4ac2)
+2018-05-19T17:14:34.9463402+07:00 0HLDTDTJP84ST:00000006 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-05-19T17:14:34.9475080+07:00 0HLDTDTJP84ST:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__productId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[ProductId] AS [Id1], CASE
+    WHEN [x].[ProductId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product].[Name], [x.Product].[CategoryId], [x.Product].[Image], [x.Product].[Price], [x.Product].[PromotionPrice], [x.Product].[OriginalPrice], [x.Product].[Description], [x.Product].[Content], [x.Product].[HomeFlag], [x.Product].[HotFlag], [x.Product].[ViewCount], [x.Product].[Tags], [x.Product].[Unit], CASE
+    WHEN [x.Product].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.Product.ProductCategory].[Id] AS [Id0], [x.Product.ProductCategory].[Name] AS [Name0], [x.Product.ProductCategory].[Description] AS [Description0], [x.Product.ProductCategory].[ParentId], [x.Product.ProductCategory].[HomeOrder], [x.Product.ProductCategory].[Image] AS [Image0], [x.Product.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.Product.ProductCategory].[DateCreated], [x.Product.ProductCategory].[DateModified], [x.Product.ProductCategory].[SortOrder], [x.Product.ProductCategory].[Status], [x.Product.ProductCategory].[SeoPageTitle], [x.Product.ProductCategory].[SeoAlias], [x.Product.ProductCategory].[SeoKeywords], [x.Product.ProductCategory].[SeoDescription], [x.Product].[SeoPageTitle] AS [SeoPageTitle0], [x.Product].[SeoAlias] AS [SeoAlias0], [x.Product].[SeoKeywords] AS [SeoKeywords0], [x.Product].[SeoDescription] AS [SeoDescription0], [x.Product].[DateCreated] AS [DateCreated0], [x.Product].[DateModified] AS [DateModified0], [x.Product].[Status] AS [Status0], [x].[Path], [x].[Caption]
+FROM [ProductImages] AS [x]
+INNER JOIN [Products] AS [x.Product] ON [x].[ProductId] = [x.Product].[Id]
+INNER JOIN [ProductCategories] AS [x.Product.ProductCategory] ON [x.Product].[CategoryId] = [x.Product.ProductCategory].[Id]
+WHERE [x].[ProductId] = @__productId_0" (0723d8ff)
+2018-05-19T17:14:34.9480932+07:00 0HLDTDTJP84ST:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-05-19T17:14:34.9483058+07:00 0HLDTDTJP84ST:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-05-19T17:14:34.9485950+07:00 0HLDTDTJP84ST:00000006 [INF] Executed action "ShopCoreApp.Areas.Admin.Controllers.ProductController.GetImages (ShopCoreApp)" in 2.8068ms (afa2e885)
+2018-05-19T17:14:34.9488313+07:00 0HLDTDTJP84ST:00000006 [INF] Request finished in 4.1474ms 200 application/json; charset=utf-8 (791a596a)
