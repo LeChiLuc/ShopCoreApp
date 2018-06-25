@@ -8131,3 +8131,7 @@ a.jtv-m-logo-img {
 	margin-top: 12px;
 }
 .manufacturers-box{ margin-top:15px;}
+.brand-logo img {
+    height: 120px;
+    width: 100%;
+}

@@ -1,0 +1,417 @@
+2018-06-14T20:36:17.1460055+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-06-14T20:36:17.3987703+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-14T20:36:17.4213848+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-14T20:36:17.4421059+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-06-14T20:36:17.4629607+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-06-14T20:36:17.4709329+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-06-14T20:36:17.4780990+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-06-14T20:36:17.4824962+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-06-14T20:36:17.4907466+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-06-14T20:36:17.4955996+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-06-14T20:36:17.5045728+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-14T20:36:17.5098524+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-14T20:36:17.5141457+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-14T20:36:17.7882758+07:00 0HLEHVF7ABUU2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-06-14T20:36:18.1040739+07:00 0HLEHVF7ABUU2:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-14T20:36:22.8755488+07:00 0HLEHVF7ABUU2:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-06-14T20:36:23.5203390+07:00 0HLEHVF7ABUU2:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-06-14T20:36:23.6110086+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-14T20:36:23.6726320+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("33"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:23.6781965+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:23.6788810+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:23.6820398+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:23.6831181+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.4190746+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-14T20:36:24.4195727+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.4200246+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.4204400+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.4208331+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.4212039+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.6222926+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-14T20:36:24.6226934+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.6230912+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.6235091+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.6238319+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:24.6241615+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:25.4184270+07:00 0HLEHVF7ABUU3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/style.css   (ca22a1cb)
+2018-06-14T20:36:25.4204603+07:00 0HLEHVF7ABUU4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-default.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4216429+07:00 0HLEHVF7ABUU3:00000001 [INF] Sending file. Request path: '"/client-side/style.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\style.css"' (27b0a520)
+2018-06-14T20:36:25.4235535+07:00 0HLEHVF7ABUU5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-english.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4242486+07:00 0HLEHVF7ABUU6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-german.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4267065+07:00 0HLEHVF7ABUU7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-chile.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4267233+07:00 0HLEHVF7ABUU8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-brazil.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4392115+07:00 0HLEHVF7ABUU2:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 7332.0928ms (afa2e885)
+2018-06-14T20:36:25.4396538+07:00 0HLEHVF7ABUU9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-spain.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4418684+07:00 0HLEHVF7ABUUA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/logo.png   (ca22a1cb)
+2018-06-14T20:36:25.4502067+07:00 0HLEHVF7ABUU2:00000001 [INF] Request finished in 7677.2278ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-14T20:36:25.4538294+07:00 0HLEHVF7ABUUB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4696660+07:00 0HLEHVF7ABUU9:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-spain.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-spain.jpg"' (27b0a520)
+2018-06-14T20:36:25.4696707+07:00 0HLEHVF7ABUU4:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-default.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-default.jpg"' (27b0a520)
+2018-06-14T20:36:25.4699490+07:00 0HLEHVF7ABUUA:00000001 [INF] Sending file. Request path: '"/client-side/images/logo.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\logo.png"' (27b0a520)
+2018-06-14T20:36:25.4738003+07:00 0HLEHVF7ABUU5:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-english.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-english.jpg"' (27b0a520)
+2018-06-14T20:36:25.4738003+07:00 0HLEHVF7ABUU6:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-german.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-german.jpg"' (27b0a520)
+2018-06-14T20:36:25.4810525+07:00 0HLEHVF7ABUU8:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-brazil.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-brazil.jpg"' (27b0a520)
+2018-06-14T20:36:25.4824033+07:00 0HLEHVF7ABUUB:00000001 [INF] Sending file. Request path: '"/client-side/images/products/product-1.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\products\product-1.jpg"' (27b0a520)
+2018-06-14T20:36:25.4824033+07:00 0HLEHVF7ABUU7:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-chile.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-chile.jpg"' (27b0a520)
+2018-06-14T20:36:25.4869048+07:00 0HLEHVF7ABUUC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/slider/slide-3.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4871426+07:00 0HLEHVF7ABUUC:00000001 [INF] Sending file. Request path: '"/client-side/images/slider/slide-3.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\slider\slide-3.jpg"' (27b0a520)
+2018-06-14T20:36:25.4872662+07:00 0HLEHVF7ABUUD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/banner-left.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4874069+07:00 0HLEHVF7ABUUF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/sub1.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4874069+07:00 0HLEHVF7ABUUE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/slider/slide-1.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4876611+07:00 0HLEHVF7ABUUH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/banner-mob.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4876611+07:00 0HLEHVF7ABUU2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/banner-laptop.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4876676+07:00 0HLEHVF7ABUUG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/slider/slide-2.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4881144+07:00 0HLEHVF7ABUUI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/sub1a.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4885144+07:00 0HLEHVF7ABUUJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/blog-img1.jpg   (ca22a1cb)
+2018-06-14T20:36:25.4902809+07:00 0HLEHVF7ABUUE:00000001 [INF] Sending file. Request path: '"/client-side/images/slider/slide-1.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\slider\slide-1.jpg"' (27b0a520)
+2018-06-14T20:36:25.4902813+07:00 0HLEHVF7ABUUD:00000001 [INF] Sending file. Request path: '"/client-side/images/banner-left.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\banner-left.jpg"' (27b0a520)
+2018-06-14T20:36:25.4911801+07:00 0HLEHVF7ABUUF:00000001 [INF] Sending file. Request path: '"/client-side/images/sub1.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\sub1.jpg"' (27b0a520)
+2018-06-14T20:36:25.4914237+07:00 0HLEHVF7ABUUH:00000001 [INF] Sending file. Request path: '"/client-side/images/banner-mob.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\banner-mob.jpg"' (27b0a520)
+2018-06-14T20:36:25.4914303+07:00 0HLEHVF7ABUU2:00000002 [INF] Sending file. Request path: '"/client-side/images/banner-laptop.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\banner-laptop.jpg"' (27b0a520)
+2018-06-14T20:36:25.4914836+07:00 0HLEHVF7ABUUI:00000001 [INF] Sending file. Request path: '"/client-side/images/sub1a.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\sub1a.jpg"' (27b0a520)
+2018-06-14T20:36:25.4915656+07:00 0HLEHVF7ABUUJ:00000001 [INF] Sending file. Request path: '"/client-side/images/blog-img1.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\blog-img1.jpg"' (27b0a520)
+2018-06-14T20:36:25.4917797+07:00 0HLEHVF7ABUUN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand5.png   (ca22a1cb)
+2018-06-14T20:36:25.4917818+07:00 0HLEHVF7ABUUL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand3.png   (ca22a1cb)
+2018-06-14T20:36:25.4918026+07:00 0HLEHVF7ABUUM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand2.png   (ca22a1cb)
+2018-06-14T20:36:25.4918220+07:00 0HLEHVF7ABUUK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand1.png   (ca22a1cb)
+2018-06-14T20:36:25.4919438+07:00 0HLEHVF7ABUUG:00000001 [INF] Sending file. Request path: '"/client-side/images/slider/slide-2.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\slider\slide-2.jpg"' (27b0a520)
+2018-06-14T20:36:25.4920397+07:00 0HLEHVF7ABUUO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand6.png   (ca22a1cb)
+2018-06-14T20:36:25.4934273+07:00 0HLEHVF7ABUUM:00000001 [INF] Sending file. Request path: '"/client-side/images/brand2.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand2.png"' (27b0a520)
+2018-06-14T20:36:25.4934714+07:00 0HLEHVF7ABUUL:00000001 [INF] Sending file. Request path: '"/client-side/images/brand3.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand3.png"' (27b0a520)
+2018-06-14T20:36:25.4934812+07:00 0HLEHVF7ABUUN:00000001 [INF] Sending file. Request path: '"/client-side/images/brand5.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand5.png"' (27b0a520)
+2018-06-14T20:36:25.4934984+07:00 0HLEHVF7ABUUO:00000001 [INF] Sending file. Request path: '"/client-side/images/brand6.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand6.png"' (27b0a520)
+2018-06-14T20:36:25.4939141+07:00 0HLEHVF7ABUUP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand7.png   (ca22a1cb)
+2018-06-14T20:36:25.4961244+07:00 0HLEHVF7ABUUK:00000001 [INF] Sending file. Request path: '"/client-side/images/brand1.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand1.png"' (27b0a520)
+2018-06-14T20:36:25.4977932+07:00 0HLEHVF7ABUUP:00000001 [INF] Sending file. Request path: '"/client-side/images/brand7.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand7.png"' (27b0a520)
+2018-06-14T20:36:25.4980076+07:00 0HLEHVF7ABUUT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand9.png   (ca22a1cb)
+2018-06-14T20:36:25.4980076+07:00 0HLEHVF7ABUUQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand8.png   (ca22a1cb)
+2018-06-14T20:36:25.4980244+07:00 0HLEHVF7ABUUR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand4.png   (ca22a1cb)
+2018-06-14T20:36:25.4983729+07:00 0HLEHVF7ABUUS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand10.png   (ca22a1cb)
+2018-06-14T20:36:25.4983737+07:00 0HLEHVF7ABUUR:00000001 [INF] Sending file. Request path: '"/client-side/images/brand4.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand4.png"' (27b0a520)
+2018-06-14T20:36:25.4984524+07:00 0HLEHVF7ABUUU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/footer-logo.png   (ca22a1cb)
+2018-06-14T20:36:25.4984554+07:00 0HLEHVF7ABUUQ:00000001 [INF] Sending file. Request path: '"/client-side/images/brand8.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand8.png"' (27b0a520)
+2018-06-14T20:36:25.4985458+07:00 0HLEHVF7ABUUV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand11.png   (ca22a1cb)
+2018-06-14T20:36:25.4986384+07:00 0HLEHVF7ABUV1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/discover.png   (ca22a1cb)
+2018-06-14T20:36:25.4986877+07:00 0HLEHVF7ABUV0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/visa.png   (ca22a1cb)
+2018-06-14T20:36:25.5017177+07:00 0HLEHVF7ABUUU:00000001 [INF] Sending file. Request path: '"/client-side/images/footer-logo.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\footer-logo.png"' (27b0a520)
+2018-06-14T20:36:25.5017086+07:00 0HLEHVF7ABUUS:00000001 [INF] Sending file. Request path: '"/client-side/images/brand10.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand10.png"' (27b0a520)
+2018-06-14T20:36:25.5017130+07:00 0HLEHVF7ABUUV:00000001 [INF] Sending file. Request path: '"/client-side/images/brand11.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand11.png"' (27b0a520)
+2018-06-14T20:36:25.5017247+07:00 0HLEHVF7ABUUT:00000001 [INF] Sending file. Request path: '"/client-side/images/brand9.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\brand9.png"' (27b0a520)
+2018-06-14T20:36:25.5018600+07:00 0HLEHVF7ABUV2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/paypal.png   (ca22a1cb)
+2018-06-14T20:36:25.5151763+07:00 0HLEHVF7ABUV0:00000001 [INF] Sending file. Request path: '"/client-side/images/visa.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\visa.png"' (27b0a520)
+2018-06-14T20:36:25.5174924+07:00 0HLEHVF7ABUV1:00000001 [INF] Sending file. Request path: '"/client-side/images/discover.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\discover.png"' (27b0a520)
+2018-06-14T20:36:25.5176521+07:00 0HLEHVF7ABUV3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/jquery.min.js   (ca22a1cb)
+2018-06-14T20:36:25.5195736+07:00 0HLEHVF7ABUV2:00000001 [INF] Sending file. Request path: '"/client-side/images/paypal.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\paypal.png"' (27b0a520)
+2018-06-14T20:36:25.5197518+07:00 0HLEHVF7ABUV4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/owl.carousel.min.js   (ca22a1cb)
+2018-06-14T20:36:25.5197522+07:00 0HLEHVF7ABUV7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/master-card.png   (ca22a1cb)
+2018-06-14T20:36:25.5197708+07:00 0HLEHVF7ABUV6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/mobile-menu.js   (ca22a1cb)
+2018-06-14T20:36:25.5198127+07:00 0HLEHVF7ABUV8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/main.js   (ca22a1cb)
+2018-06-14T20:36:25.5198459+07:00 0HLEHVF7ABUVA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/revolution-slider.js   (ca22a1cb)
+2018-06-14T20:36:25.5199050+07:00 0HLEHVF7ABUV5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/bootstrap.min.js   (ca22a1cb)
+2018-06-14T20:36:25.5200290+07:00 0HLEHVF7ABUV9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/countdown.js   (ca22a1cb)
+2018-06-14T20:36:25.5217273+07:00 0HLEHVF7ABUV7:00000001 [INF] Sending file. Request path: '"/client-side/images/master-card.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\master-card.png"' (27b0a520)
+2018-06-14T20:36:25.5221893+07:00 0HLEHVF7ABUU3:00000001 [INF] Request finished in 104.2116ms 200 text/css (791a596a)
+2018-06-14T20:36:25.5224756+07:00 0HLEHVF7ABUU5:00000001 [INF] Request finished in 99.1452ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5227119+07:00 0HLEHVF7ABUVB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/js/jquery-ui.js   (ca22a1cb)
+2018-06-14T20:36:25.5718873+07:00 0HLEHVF7ABUVB:00000001 [INF] Sending file. Request path: '"/client-side/js/jquery-ui.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\jquery-ui.js"' (27b0a520)
+2018-06-14T20:36:25.5720736+07:00 0HLEHVF7ABUV3:00000001 [INF] Sending file. Request path: '"/client-side/js/jquery.min.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\jquery.min.js"' (27b0a520)
+2018-06-14T20:36:25.5722829+07:00 0HLEHVF7ABUVA:00000001 [INF] Sending file. Request path: '"/client-side/js/revolution-slider.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\revolution-slider.js"' (27b0a520)
+2018-06-14T20:36:25.5747587+07:00 0HLEHVF7ABUV8:00000001 [INF] Sending file. Request path: '"/client-side/js/main.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\main.js"' (27b0a520)
+2018-06-14T20:36:25.5747635+07:00 0HLEHVF7ABUV6:00000001 [INF] Sending file. Request path: '"/client-side/js/mobile-menu.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\mobile-menu.js"' (27b0a520)
+2018-06-14T20:36:25.5748120+07:00 0HLEHVF7ABUV4:00000001 [INF] Sending file. Request path: '"/client-side/js/owl.carousel.min.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\owl.carousel.min.js"' (27b0a520)
+2018-06-14T20:36:25.5797116+07:00 0HLEHVF7ABUV5:00000001 [INF] Sending file. Request path: '"/client-side/js/bootstrap.min.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\bootstrap.min.js"' (27b0a520)
+2018-06-14T20:36:25.5846092+07:00 0HLEHVF7ABUU7:00000001 [INF] Request finished in 157.914ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5846092+07:00 0HLEHVF7ABUUL:00000001 [INF] Request finished in 92.781ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5846092+07:00 0HLEHVF7ABUU8:00000001 [INF] Request finished in 157.9129ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5847227+07:00 0HLEHVF7ABUUO:00000001 [INF] Request finished in 92.5695ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5847974+07:00 0HLEHVF7ABUUN:00000001 [INF] Request finished in 93.0527ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5848091+07:00 0HLEHVF7ABUUH:00000001 [INF] Request finished in 97.1672ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5848572+07:00 0HLEHVF7ABUUK:00000001 [INF] Request finished in 93.0475ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5849403+07:00 0HLEHVF7ABUUR:00000001 [INF] Request finished in 87.0013ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5849433+07:00 0HLEHVF7ABUUQ:00000001 [INF] Request finished in 87.0082ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5849509+07:00 0HLEHVF7ABUV9:00000001 [INF] Sending file. Request path: '"/client-side/js/countdown.js"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\js\countdown.js"' (27b0a520)
+2018-06-14T20:36:25.5850716+07:00 0HLEHVF7ABUUB:00000001 [INF] Request finished in 131.3184ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5850855+07:00 0HLEHVF7ABUV0:00000001 [INF] Request finished in 86.4276ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5852270+07:00 0HLEHVF7ABUUU:00000001 [INF] Request finished in 86.8208ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5852284+07:00 0HLEHVF7ABUUT:00000001 [INF] Request finished in 87.2934ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5853207+07:00 0HLEHVF7ABUUS:00000001 [INF] Request finished in 86.8091ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5853645+07:00 0HLEHVF7ABUV2:00000001 [INF] Request finished in 83.5438ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5854206+07:00 0HLEHVF7ABUV1:00000001 [INF] Request finished in 86.7362ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5854804+07:00 0HLEHVF7ABUUV:00000001 [INF] Request finished in 86.9612ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5855070+07:00 0HLEHVF7ABUV7:00000001 [INF] Request finished in 65.7843ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5855745+07:00 0HLEHVF7ABUUD:00000001 [INF] Request finished in 98.3415ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5855792+07:00 0HLEHVF7ABUU4:00000001 [INF] Request finished in 165.3008ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5856095+07:00 0HLEHVF7ABUUM:00000001 [INF] Request finished in 93.1022ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5857003+07:00 0HLEHVF7ABUU3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/animate.css   (ca22a1cb)
+2018-06-14T20:36:25.5857156+07:00 0HLEHVF7ABUUP:00000001 [INF] Request finished in 91.8398ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5857371+07:00 0HLEHVF7ABUU5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/bootstrap.min.css   (ca22a1cb)
+2018-06-14T20:36:25.5857999+07:00 0HLEHVF7ABUVD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/font-awesome.min.css   (ca22a1cb)
+2018-06-14T20:36:25.5858779+07:00 0HLEHVF7ABUVE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/pe-icon-7-stroke.min.css   (ca22a1cb)
+2018-06-14T20:36:25.5864373+07:00 0HLEHVF7ABUU3:00000002 [INF] Sending file. Request path: '"/client-side/css/animate.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\animate.css"' (27b0a520)
+2018-06-14T20:36:25.5865255+07:00 0HLEHVF7ABUU5:00000002 [INF] Sending file. Request path: '"/client-side/css/bootstrap.min.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\bootstrap.min.css"' (27b0a520)
+2018-06-14T20:36:25.5866630+07:00 0HLEHVF7ABUVD:00000001 [INF] Sending file. Request path: '"/client-side/css/font-awesome.min.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\font-awesome.min.css"' (27b0a520)
+2018-06-14T20:36:25.5867950+07:00 0HLEHVF7ABUVC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/simple-line-icons.css   (ca22a1cb)
+2018-06-14T20:36:25.5871444+07:00 0HLEHVF7ABUVG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/owl.transitions.css   (ca22a1cb)
+2018-06-14T20:36:25.5871437+07:00 0HLEHVF7ABUVF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/owl.carousel.css   (ca22a1cb)
+2018-06-14T20:36:25.5873504+07:00 0HLEHVF7ABUVH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/flexslider.css   (ca22a1cb)
+2018-06-14T20:36:25.5874147+07:00 0HLEHVF7ABUU9:00000001 [INF] Request finished in 147.8151ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5875095+07:00 0HLEHVF7ABUVH:00000001 [INF] Sending file. Request path: '"/client-side/css/flexslider.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\flexslider.css"' (27b0a520)
+2018-06-14T20:36:25.5875153+07:00 0HLEHVF7ABUVC:00000001 [INF] Sending file. Request path: '"/client-side/css/simple-line-icons.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\simple-line-icons.css"' (27b0a520)
+2018-06-14T20:36:25.5875992+07:00 0HLEHVF7ABUVI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/jquery-ui.css   (ca22a1cb)
+2018-06-14T20:36:25.5876506+07:00 0HLEHVF7ABUVJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/revolution-slider.css   (ca22a1cb)
+2018-06-14T20:36:25.5877560+07:00 0HLEHVF7ABUVG:00000001 [INF] Sending file. Request path: '"/client-side/css/owl.transitions.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\owl.transitions.css"' (27b0a520)
+2018-06-14T20:36:25.5878421+07:00 0HLEHVF7ABUVE:00000001 [INF] Sending file. Request path: '"/client-side/css/pe-icon-7-stroke.min.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\pe-icon-7-stroke.min.css"' (27b0a520)
+2018-06-14T20:36:25.5885553+07:00 0HLEHVF7ABUVJ:00000001 [INF] Sending file. Request path: '"/client-side/css/revolution-slider.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\revolution-slider.css"' (27b0a520)
+2018-06-14T20:36:25.5885553+07:00 0HLEHVF7ABUVI:00000001 [INF] Sending file. Request path: '"/client-side/css/jquery-ui.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\jquery-ui.css"' (27b0a520)
+2018-06-14T20:36:25.5887183+07:00 0HLEHVF7ABUVF:00000001 [INF] Sending file. Request path: '"/client-side/css/owl.carousel.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\owl.carousel.css"' (27b0a520)
+2018-06-14T20:36:25.5887325+07:00 0HLEHVF7ABUVK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/quick_view_popup.css   (ca22a1cb)
+2018-06-14T20:36:25.5889203+07:00 0HLEHVF7ABUVK:00000001 [INF] Sending file. Request path: '"/client-side/css/quick_view_popup.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\quick_view_popup.css"' (27b0a520)
+2018-06-14T20:36:25.5889699+07:00 0HLEHVF7ABUVL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/blog.css   (ca22a1cb)
+2018-06-14T20:36:25.5889717+07:00 0HLEHVF7ABUVM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcode.css   (ca22a1cb)
+2018-06-14T20:36:25.5889852+07:00 0HLEHVF7ABUVN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/shortcodes.css   (ca22a1cb)
+2018-06-14T20:36:25.5891205+07:00 0HLEHVF7ABUVL:00000001 [INF] Sending file. Request path: '"/client-side/css/blog.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\blog.css"' (27b0a520)
+2018-06-14T20:36:25.5891358+07:00 0HLEHVF7ABUVM:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcode.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcode.css"' (27b0a520)
+2018-06-14T20:36:25.5898138+07:00 0HLEHVF7ABUVO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/featured-box.css   (ca22a1cb)
+2018-06-14T20:36:25.5899801+07:00 0HLEHVF7ABUVP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/pricing-table.css   (ca22a1cb)
+2018-06-14T20:36:25.5900261+07:00 0HLEHVF7ABUVQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/tooltip.css   (ca22a1cb)
+2018-06-14T20:36:25.5905767+07:00 0HLEHVF7ABUVR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/post.css   (ca22a1cb)
+2018-06-14T20:36:25.5906580+07:00 0HLEHVF7ABUVS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/style.css   (ca22a1cb)
+2018-06-14T20:36:25.5908597+07:00 0HLEHVF7ABUVT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/responsive.css   (ca22a1cb)
+2018-06-14T20:36:25.5908805+07:00 0HLEHVF7ABUVS:00000001 [INF] Sending file. Request path: '"/client-side/css/style.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\style.css"' (27b0a520)
+2018-06-14T20:36:25.5914311+07:00 0HLEHVF7ABUVN:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcodes/shortcodes.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\shortcodes.css"' (27b0a520)
+2018-06-14T20:36:25.5915832+07:00 0HLEHVF7ABUVT:00000001 [INF] Sending file. Request path: '"/client-side/css/responsive.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\responsive.css"' (27b0a520)
+2018-06-14T20:36:25.5917447+07:00 0HLEHVF7ABUVP:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcodes/pricing-table.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\pricing-table.css"' (27b0a520)
+2018-06-14T20:36:25.5917371+07:00 0HLEHVF7ABUVO:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcodes/featured-box.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\featured-box.css"' (27b0a520)
+2018-06-14T20:36:25.5917535+07:00 0HLEHVF7ABUUI:00000001 [INF] Request finished in 103.7106ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5918775+07:00 0HLEHVF7ABUVQ:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcodes/tooltip.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\tooltip.css"' (27b0a520)
+2018-06-14T20:36:25.5919778+07:00 0HLEHVF7ABUVR:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcodes/post.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\post.css"' (27b0a520)
+2018-06-14T20:36:25.5919829+07:00 0HLEHVF7ABUUJ:00000001 [INF] Request finished in 103.463ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5919968+07:00 0HLEHVF7ABUUF:00000001 [INF] Request finished in 104.6ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5919986+07:00 0HLEHVF7ABUU6:00000001 [INF] Request finished in 168.5548ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5921222+07:00 0HLEHVF7ABUU2:00000002 [INF] Request finished in 104.4818ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.5921419+07:00 0HLEHVF7ABUUA:00000001 [INF] Request finished in 150.4473ms 200 image/png (791a596a)
+2018-06-14T20:36:25.5922783+07:00 0HLEHVF7ABUV8:00000001 [INF] Request finished in 72.4651ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.5922830+07:00 0HLEHVF7ABUVH:00000001 [INF] Request finished in 4.9533ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6006493+07:00 0HLEHVF7ABUVB:00000001 [INF] Request finished in 77.4954ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.6363460+07:00 0HLEHVF7ABUV4:00000001 [INF] Request finished in 116.4934ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.6427850+07:00 0HLEHVF7ABUUE:00000001 [INF] Request finished in 153.6776ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.6440012+07:00 0HLEHVF7ABUUC:00000001 [INF] Request finished in 156.7408ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:25.6491442+07:00 0HLEHVF7ABUVL:00000001 [INF] Request finished in 59.5994ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6542492+07:00 0HLEHVF7ABUV3:00000001 [INF] Request finished in 136.2448ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.6599326+07:00 0HLEHVF7ABUVF:00000001 [INF] Request finished in 72.6693ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6599326+07:00 0HLEHVF7ABUVS:00000001 [INF] Request finished in 69.1451ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6634776+07:00 0HLEHVF7ABUVI:00000001 [INF] Request finished in 75.199ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6683358+07:00 0HLEHVF7ABUV5:00000001 [INF] Request finished in 148.1995ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.6712550+07:00 0HLEHVF7ABUVD:00000001 [INF] Request finished in 85.1965ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6742555+07:00 0HLEHVF7ABUV9:00000001 [INF] Request finished in 154.1353ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.6836980+07:00 0HLEHVF7ABUV6:00000001 [INF] Request finished in 163.0661ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.6849623+07:00 0HLEHVF7ABUVA:00000001 [INF] Request finished in 164.8275ms 200 application/javascript (791a596a)
+2018-06-14T20:36:25.6866499+07:00 0HLEHVF7ABUVN:00000001 [INF] Request finished in 97.1497ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6968553+07:00 0HLEHVF7ABUU3:00000002 [INF] Request finished in 111.0259ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6968553+07:00 0HLEHVF7ABUVC:00000001 [INF] Request finished in 109.9388ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6969031+07:00 0HLEHVF7ABUVE:00000001 [INF] Request finished in 111.0201ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6969031+07:00 0HLEHVF7ABUVG:00000001 [INF] Request finished in 109.7663ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6970687+07:00 0HLEHVF7ABUVM:00000001 [INF] Request finished in 108.1136ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6970654+07:00 0HLEHVF7ABUVT:00000001 [INF] Request finished in 106.2235ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6970687+07:00 0HLEHVF7ABUVO:00000001 [INF] Request finished in 107.2909ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6970898+07:00 0HLEHVF7ABUVK:00000001 [INF] Request finished in 108.3696ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6971938+07:00 0HLEHVF7ABUVR:00000001 [INF] Request finished in 106.6305ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6972353+07:00 0HLEHVF7ABUVJ:00000001 [INF] Request finished in 109.5997ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6973725+07:00 0HLEHVF7ABUVQ:00000001 [INF] Request finished in 107.4299ms 200 text/css (791a596a)
+2018-06-14T20:36:25.6974326+07:00 0HLEHVF7ABUVP:00000001 [INF] Request finished in 107.5805ms 200 text/css (791a596a)
+2018-06-14T20:36:25.7049430+07:00 0HLEHVF7ABUU5:00000002 [INF] Request finished in 118.1928ms 200 text/css (791a596a)
+2018-06-14T20:36:25.7086470+07:00 0HLEHVF7ABUUG:00000001 [INF] Request finished in 220.8025ms 200 image/jpeg (791a596a)
+2018-06-14T20:36:26.2053373+07:00 0HLEHVF7ABUV7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/select-arrow.png   (ca22a1cb)
+2018-06-14T20:36:26.2085730+07:00 0HLEHVF7ABUUV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-06-14T20:36:26.2088002+07:00 0HLEHVF7ABUUV:00000002 [INF] Sending file. Request path: '"/client-side/fonts/font-awesome/fontawesome-webfont.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\fonts\font-awesome\fontawesome-webfont.woff2"' (27b0a520)
+2018-06-14T20:36:26.2330290+07:00 0HLEHVF7ABUV1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0   (ca22a1cb)
+2018-06-14T20:36:26.2354873+07:00 0HLEHVF7ABUUT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff?d7yf1v   (ca22a1cb)
+2018-06-14T20:36:26.2357579+07:00 0HLEHVF7ABUUT:00000002 [INF] Sending file. Request path: '"/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\fonts\pe-icon-7-stroke\Pe-icon-7-stroke.woff"' (27b0a520)
+2018-06-14T20:36:26.3264417+07:00 0HLEHVF7ABUV1:00000002 [INF] Sending file. Request path: '"/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\fonts\simple-line-icons\Simple-Line-Icons.woff2"' (27b0a520)
+2018-06-14T20:36:26.3264384+07:00 0HLEHVF7ABUV7:00000002 [INF] Sending file. Request path: '"/client-side/images/select-arrow.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\select-arrow.png"' (27b0a520)
+2018-06-14T20:36:26.3267035+07:00 0HLEHVF7ABUUT:00000002 [INF] Request finished in 91.2278ms 200 application/font-woff (791a596a)
+2018-06-14T20:36:26.3310394+07:00 0HLEHVF7ABUV7:00000002 [INF] Request finished in 123.1046ms 200 image/png (791a596a)
+2018-06-14T20:36:26.3824473+07:00 0HLEHVF7ABUUV:00000002 [INF] Request finished in 173.1325ms 200 font/woff2 (791a596a)
+2018-06-14T20:36:26.3921531+07:00 0HLEHVF7ABUV1:00000002 [INF] Request finished in 159.1185ms 200 font/woff2 (791a596a)
+2018-06-14T20:36:26.5177297+07:00 0HLEHVF7ABUUR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-06-14T20:36:26.5193318+07:00 0HLEHVF7ABUUR:00000002 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-14T20:36:26.5197756+07:00 0HLEHVF7ABUUR:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-06-14T20:36:26.5219271+07:00 0HLEHVF7ABUUR:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-06-14T20:36:26.5230438+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-14T20:36:26.5236397+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5244123+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5255776+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5262850+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5282334+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5311260+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-14T20:36:26.5319487+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5329071+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5336131+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5343556+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5347862+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5361673+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-14T20:36:26.5367059+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5371500+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5376310+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5381394+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5387312+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-06-14T20:36:26.5422875+07:00 0HLEHVF7ABUUR:00000002 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 23.1636ms (afa2e885)
+2018-06-14T20:36:26.5426190+07:00 0HLEHVF7ABUUR:00000002 [INF] Request finished in 24.8713ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-14T20:36:30.5347224+07:00 0HLEHVF7ABUUN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/favicon.ico   (ca22a1cb)
+2018-06-14T20:36:30.5366661+07:00 0HLEHVF7ABUUN:00000002 [INF] Request finished in 1.9334ms 404  (791a596a)

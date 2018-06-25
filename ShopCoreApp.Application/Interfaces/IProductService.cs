@@ -1,4 +1,5 @@
 ﻿using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.Common;
 using ShopCoreApp.Application.ViewModels.Product;
 using ShopCoreApp.Utilities.Dtos;
 using System;
@@ -33,5 +34,20 @@ namespace ShopCoreApp.Application.Interfaces
 
         List<ProductViewModel> GetAllToExport(int? categoryId, string keyword);
         void Save();
+
+        //void AddWholePrice(int productId, List<WholePriceViewModel> wholePrices);
+
+        //List<WholePriceViewModel> GetWholePrices(int productId);
+
+        List<ProductViewModel> GetLastest(int top);
+
+        List<ProductViewModel> GetHotProduct(int top);
+        List<ProductViewModel> GetRelatedProducts(int id, int top);
+
+        List<ProductViewModel> GetUpsellProducts(int top);
+
+        List<TagViewModel> GetProductTags(int productId);
+
+        bool CheckAvailability(int productId, int size, int color);
     }
 }

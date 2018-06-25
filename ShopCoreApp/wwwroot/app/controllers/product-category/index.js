@@ -126,7 +126,7 @@
                         app.startLoading();
                     },
                     success: function (response) {
-                        app.notify('Update success', 'success');
+                        app.notify('Cập nhật thành công.', 'success');
                         $('#modal-add-edit').modal('hide');
 
                         resetFormMaintainance();
@@ -135,7 +135,7 @@
                         loadData(true);
                     },
                     error: function () {
-                        app.notify('Has an error in update progress', 'error');
+                        app.notify('Có lỗi trong quá trình cập nhật', 'error');
                         app.stopLoading();
                     }
                 });
@@ -160,10 +160,10 @@
                 data: data,
                 success: function (path) {
                     $('#txtImage').val(path);
-                    app.notify('Upload image successful!', 'success');
+                    app.notify('Tải ảnh thành công!', 'success');
                 },
                 error: function () {
-                    app.notify('There was error uploading files!', 'error');
+                    app.notify('Có lỗi trong quá trình tải ảnh!', 'error');
                 }
             });
         });

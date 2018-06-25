@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ShopCoreApp.Application.ViewModels;
+using ShopCoreApp.Application.ViewModels.Common;
 using ShopCoreApp.Application.ViewModels.Product;
 using ShopCoreApp.Application.ViewModels.System;
 using ShopCoreApp.Data.Entities;
@@ -24,6 +25,12 @@ namespace ShopCoreApp.Application.AutoMapper
             CreateMap<Color, ColorViewModel>().MaxDepth(2);
             CreateMap<Size, SizeViewModel>().MaxDepth(2);
             CreateMap<ProductQuantity, ProductQuantityViewModel>().MaxDepth(2);
+
+            CreateMap<Blog, BlogViewModel>().MaxDepth(2);
+            CreateMap<BlogTag, BlogTagViewModel>().MaxDepth(2);
+            CreateMap<Slide, SlideViewModel>().MaxDepth(2);
+            CreateMap<SystemConfig, SystemConfigViewModel>().MaxDepth(2);
+            CreateMap<Footer, FooterViewModel>().MaxDepth(2);
         }
     }
 }
