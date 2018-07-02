@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
 using ShopCoreApp.Application.Interfaces;
 using ShopCoreApp.Models.ProductViewModels;
-using ShopCoreApp.Views.Product;
 
 namespace ShopCoreApp.Controllers
 {

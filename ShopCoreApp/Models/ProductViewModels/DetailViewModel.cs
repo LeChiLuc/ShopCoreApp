@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ShopCoreApp.Views.Product
+namespace ShopCoreApp.Models.ProductViewModels
 {
     public class DetailViewModel
     {
