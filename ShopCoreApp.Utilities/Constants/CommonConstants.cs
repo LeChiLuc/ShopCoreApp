@@ -8,6 +8,8 @@ namespace ShopCoreApp.Utilities.Constants
     {
         public const string DefaultFooterId = "DefaultFooterId";
 
+        public const string CartSession = "CartSession";
+
         public const string AdminRole = "Admin";
 
         public const string ProductTag = "Product";

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ShopCoreApp.Application.Interfaces;
 using ShopCoreApp.Application.ViewModels.System;
+using ShopCoreApp.Data.EF;
 using ShopCoreApp.Data.Entities;
 using ShopCoreApp.Utilities.Dtos;
 using System;
@@ -17,9 +18,13 @@ namespace ShopCoreApp.Application.Implementation
     public class UserService : IUserService
     {
         private readonly UserManager<AppUser> _userManager;
-        public UserService(UserManager<AppUser> userManager)
+        private RoleManager<AppRole> _roleManager;
+        private readonly AppDbContext _context;
+        public UserService(AppDbContext context, RoleManager<AppRole> roleManager, UserManager<AppUser> userManager)
         {
             _userManager = userManager;
+            _roleManager = roleManager;
+            _context = context;
         }
 
         public async Task<bool> AddAsync(AppUserViewModel userVm)
@@ -113,7 +118,7 @@ namespace ShopCoreApp.Application.Implementation
             if (result.Succeeded)
             {
                 string[] needRemoveRoles = currentRoles.Except(userVm.Roles).ToArray();
-                await _userManager.RemoveFromRolesAsync(user, needRemoveRoles);
+                await RemoveRolesFromUser(user.ToString(), needRemoveRoles);
 
                 //Update user detail
                 user.FullName = userVm.FullName;
@@ -122,6 +127,19 @@ namespace ShopCoreApp.Application.Implementation
                 user.PhoneNumber = userVm.PhoneNumber;
                 await _userManager.UpdateAsync(user);
             }
+
+        }
+        public async Task RemoveRolesFromUser(string userId, string[] roles)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            var roleIds = _roleManager.Roles.Where(x => roles.Contains(x.Name)).Select(x => x.Id).ToList();
+            List<IdentityUserRole<Guid>> userRoles = new List<IdentityUserRole<Guid>>();
+            foreach (var roleId in roleIds)
+            {
+                userRoles.Add(new IdentityUserRole<Guid> { RoleId = roleId, UserId = user.Id });
+            }
+            _context.UserRoles.RemoveRange(userRoles);
+            await _context.SaveChangesAsync();
 
         }
     }

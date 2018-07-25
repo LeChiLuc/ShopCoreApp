@@ -23,6 +23,7 @@ using Newtonsoft.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using ShopCoreApp.Helpers;
 using ShopCoreApp.Infrastructure.Interfaces;
+using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace ShopCoreApp
 {
@@ -63,7 +64,14 @@ namespace ShopCoreApp
                 // User settings
                 options.User.RequireUniqueEmail = true;
             });
-
+            services.AddRecaptcha(new RecaptchaOptions() {
+                SiteKey = Configuration["Recaptcha:SiteKey"],
+                SecretKey = Configuration["Recaptcha:SecretKey"],
+            });
+            services.AddSession(options =>{
+                options.IdleTimeout = TimeSpan.FromHours(2);
+                options.Cookie.HttpOnly = true;
+            });
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
@@ -132,7 +140,7 @@ namespace ShopCoreApp
             app.UseStaticFiles();
 
             app.UseAuthentication();
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

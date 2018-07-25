@@ -59,11 +59,11 @@
                             {
                                 <p class="special-price">
                                     <span class="price-label">Special Price</span>
-                                    <span class="price"> @product.PromotionPrice.Value.ToString("N0") </span>
+                                    <span class="price"> @product.PromotionPrice.Value.ToString("N0") VNĐ</span>
                                 </p>
                                 <p class="old-price">
                                     <span class="price-label">Regular Price:</span>
-                                    <span class="price"> @product.Price.ToString("N0") </span>
+                                    <span class="price"> @product.Price.ToString("N0") VNĐ</span>
                                 </p>
 
                             }
@@ -71,7 +71,7 @@
                             {
                                 <p class="special-price">
                                     <span class="price-label">Special Price</span>
-                                    <span class="price"> @product.Price.ToString("N0") </span>
+                                    <span class="price"> @product.Price.ToString("N0") VNĐ</span>
                                 </p>
                             }
 
@@ -89,15 +89,23 @@
                             <div class="color-area">
                                 <h2 class="saider-bar-title">Color</h2>
                                 <div class="color">
+                                    @*<ul>
+                                        @foreach (var item in Model.Colors)
+                                        {
+
+                                            <li><a href="#" id="ddlColorId" style="color: transparent">@item.Text</a></li>
+                                        }
+
+                                    </ul>*@
                                     <select asp-items="Model.Colors" id="ddlColorId"></select>
                                 </div>
                             </div>
-                            <div class="size-area">
-                                <h2 class="saider-bar-title">Size</h2>
-                                <div class="size">
-                                    <select asp-items="Model.Sizes" id="ddlSizeId"></select>
-                                </div>
-                            </div>
+                            @*<div class="size-area">
+                                    <h2 class="saider-bar-title">Size</h2>
+                                    <div class="size">
+                                        <select asp-items="Model.Sizes" id="ddlSizeId"></select>
+                                    </div>
+                                </div>*@
                         </div>
                         <div class="product-variation">
                             <form action="#" method="post">

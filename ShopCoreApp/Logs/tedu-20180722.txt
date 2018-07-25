@@ -1,0 +1,861 @@
+2018-07-22T21:43:02.4088457+07:00  [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-07-22T21:43:02.5746961+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-22T21:43:02.5905010+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-22T21:43:02.6056465+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-07-22T21:43:02.6222023+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-07-22T21:43:02.6262972+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-07-22T21:43:02.6312032+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-07-22T21:43:02.6344979+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-07-22T21:43:02.6376506+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-07-22T21:43:02.6409184+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-07-22T21:43:02.6456149+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-22T21:43:02.6506161+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-22T21:43:02.6540984+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-07-22T21:43:02.7747867+07:00 0HLFFS5MOJL2U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-07-22T21:43:02.8947708+07:00 0HLFFS5MOJL2U:00000001 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:43:02.8995862+07:00 0HLFFS5MOJL2U:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-07-22T21:43:02.9510477+07:00 0HLFFS5MOJL2U:00000001 [WRN] The Include operation for navigation '"[c].Products"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-07-22T21:43:03.0091663+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [c].[Id], [c].[Name], [c].[Description], [c].[ParentId], [c].[HomeOrder], [c].[Image], [c].[HomeFlag], [c].[DateCreated], [c].[DateModified], [c].[SortOrder], [c].[Status], [c].[SeoPageTitle], [c].[SeoAlias], [c].[SeoKeywords], [c].[SeoDescription]
+FROM [ProductCategories] AS [c]
+WHERE [c].[HomeFlag] = 1
+ORDER BY [c].[HomeOrder]" (0723d8ff)
+2018-07-22T21:43:03.0222176+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0277161+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0282219+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0286292+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0289939+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0667513+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ([x].[HotFlag] = 1)
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2018-07-22T21:43:03.0724344+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0732990+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0737210+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0740576+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0940503+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2018-07-22T21:43:03.0986204+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0989858+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0992513+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0995018+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.0997451+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:03.1184305+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id], [x].[Name], [x].[Image], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [Blogs] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[DateCreated] DESC" (0723d8ff)
+2018-07-22T21:43:03.1330082+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__groupAlias_0='?' (Size = 25)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[Image], [x].[Url], [x].[DisplayOrder], [x].[Status], [x].[Content], [x].[GroupAlias]
+FROM [Slides] AS [x]
+WHERE ([x].[Status] = 1) AND ([x].[GroupAlias] = @__groupAlias_0)" (0723d8ff)
+2018-07-22T21:43:05.8685636+07:00 0HLFFS5MOJL2U:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-22T21:43:06.2881450+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:06.2919241+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2927121+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2944049+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2953862+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2957739+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2961590+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2964733+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2967571+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2970397+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.2973303+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7295673+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:06.7301570+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7308495+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7315963+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7321441+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7327444+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7332006+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7336491+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7340623+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7344660+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.7348507+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9902102+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:06.9907667+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9913528+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9922170+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9932013+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9947865+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9954313+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9959006+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9963429+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9968090+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:06.9971124+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.3730950+07:00 0HLFFS5MOJL2V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-english.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3730950+07:00 0HLFFS5MOJL30:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-default.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3769726+07:00 0HLFFS5MOJL2V:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-english.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-english.jpg"' (27b0a520)
+2018-07-22T21:43:07.3769729+07:00 0HLFFS5MOJL30:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-default.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-default.jpg"' (27b0a520)
+2018-07-22T21:43:07.3788802+07:00 0HLFFS5MOJL31:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-german.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3788981+07:00 0HLFFS5MOJL32:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-brazil.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3792230+07:00 0HLFFS5MOJL31:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-german.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-german.jpg"' (27b0a520)
+2018-07-22T21:43:07.3807046+07:00 0HLFFS5MOJL32:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-brazil.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-brazil.jpg"' (27b0a520)
+2018-07-22T21:43:07.3849220+07:00 0HLFFS5MOJL33:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3853341+07:00 0HLFFS5MOJL33:00000001 [INF] Sending file. Request path: '"/client-side/images/products/product-1.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\products\product-1.jpg"' (27b0a520)
+2018-07-22T21:43:07.3877377+07:00 0HLFFS5MOJL34:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/slider/slide2.png   (ca22a1cb)
+2018-07-22T21:43:07.3904676+07:00 0HLFFS5MOJL2U:00000001 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 4497.491ms (afa2e885)
+2018-07-22T21:43:07.3908279+07:00 0HLFFS5MOJL34:00000001 [INF] The file "/client-side/images/slider/slide2.png" was not modified (f1f8d725)
+2018-07-22T21:43:07.3925412+07:00 0HLFFS5MOJL35:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/slider/slide1.png   (ca22a1cb)
+2018-07-22T21:43:07.3930393+07:00 0HLFFS5MOJL34:00000001 [INF] Request finished in 5.1623ms 304 image/png (791a596a)
+2018-07-22T21:43:07.3937041+07:00 0HLFFS5MOJL35:00000001 [INF] The file "/client-side/images/slider/slide1.png" was not modified (f1f8d725)
+2018-07-22T21:43:07.3944827+07:00 0HLFFS5MOJL35:00000001 [INF] Request finished in 1.8463ms 304 image/png (791a596a)
+2018-07-22T21:43:07.3969048+07:00 0HLFFS5MOJL37:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-spain.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3969048+07:00 0HLFFS5MOJL34:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/QC.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3969048+07:00 0HLFFS5MOJL36:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/slider/slide4.png   (ca22a1cb)
+2018-07-22T21:43:07.3970839+07:00 0HLFFS5MOJL38:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/flag-chile.jpg   (ca22a1cb)
+2018-07-22T21:43:07.3971846+07:00 0HLFFS5MOJL36:00000001 [INF] The file "/client-side/images/slider/slide4.png" was not modified (f1f8d725)
+2018-07-22T21:43:07.3971988+07:00 0HLFFS5MOJL39:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/slider/slide3.png   (ca22a1cb)
+2018-07-22T21:43:07.3972502+07:00 0HLFFS5MOJL38:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-chile.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-chile.jpg"' (27b0a520)
+2018-07-22T21:43:07.3972794+07:00 0HLFFS5MOJL36:00000001 [INF] Request finished in 0.4748ms 304 image/png (791a596a)
+2018-07-22T21:43:07.3973869+07:00 0HLFFS5MOJL39:00000001 [INF] The file "/client-side/images/slider/slide3.png" was not modified (f1f8d725)
+2018-07-22T21:43:07.3974489+07:00 0HLFFS5MOJL34:00000002 [INF] The file "/client-side/images/QC.jpg" was not modified (f1f8d725)
+2018-07-22T21:43:07.3974624+07:00 0HLFFS5MOJL37:00000001 [INF] Sending file. Request path: '"/client-side/images/flag-spain.jpg"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\flag-spain.jpg"' (27b0a520)
+2018-07-22T21:43:07.3975288+07:00 0HLFFS5MOJL34:00000002 [INF] Request finished in 0.7278ms 304 image/jpeg (791a596a)
+2018-07-22T21:43:07.3976123+07:00 0HLFFS5MOJL39:00000001 [INF] Request finished in 0.4084ms 304 image/png (791a596a)
+2018-07-22T21:43:07.3978796+07:00 0HLFFS5MOJL2V:00000001 [INF] Request finished in 24.9388ms 200 image/jpeg (791a596a)
+2018-07-22T21:43:07.4011248+07:00 0HLFFS5MOJL35:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/xiaomi.png   (ca22a1cb)
+2018-07-22T21:43:07.4016263+07:00 0HLFFS5MOJL35:00000002 [INF] The file "/client-side/images/brand/xiaomi.png" was not modified (f1f8d725)
+2018-07-22T21:43:07.4018097+07:00 0HLFFS5MOJL35:00000002 [INF] Request finished in 3.2488ms 304 image/png (791a596a)
+2018-07-22T21:43:07.4020963+07:00 0HLFFS5MOJL2V:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/nokia.png   (ca22a1cb)
+2018-07-22T21:43:07.4031393+07:00 0HLFFS5MOJL2U:00000001 [INF] Request finished in 4634.7478ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-22T21:43:07.4033825+07:00 0HLFFS5MOJL2V:00000002 [INF] The file "/client-side/images/brand/nokia.png" was not modified (f1f8d725)
+2018-07-22T21:43:07.4036881+07:00 0HLFFS5MOJL2V:00000002 [INF] Request finished in 1.498ms 304 image/png (791a596a)
+2018-07-22T21:43:07.4034674+07:00 0HLFFS5MOJL34:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/bootstrap.min.css   (ca22a1cb)
+2018-07-22T21:43:07.4053459+07:00 0HLFFS5MOJL34:00000003 [INF] Sending file. Request path: '"/client-side/css/bootstrap.min.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\bootstrap.min.css"' (27b0a520)
+2018-07-22T21:43:07.4097048+07:00 0HLFFS5MOJL36:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/animate.css   (ca22a1cb)
+2018-07-22T21:43:07.4099699+07:00 0HLFFS5MOJL36:00000002 [INF] Sending file. Request path: '"/client-side/css/animate.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\animate.css"' (27b0a520)
+2018-07-22T21:43:07.4107722+07:00 0HLFFS5MOJL35:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/font-awesome.min.css   (ca22a1cb)
+2018-07-22T21:43:07.4110286+07:00 0HLFFS5MOJL35:00000003 [INF] Sending file. Request path: '"/client-side/css/font-awesome.min.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\font-awesome.min.css"' (27b0a520)
+2018-07-22T21:43:07.4115213+07:00 0HLFFS5MOJL2V:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/pe-icon-7-stroke.min.css   (ca22a1cb)
+2018-07-22T21:43:07.4107685+07:00 0HLFFS5MOJL2U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/simple-line-icons.css   (ca22a1cb)
+2018-07-22T21:43:07.4123614+07:00 0HLFFS5MOJL30:00000001 [INF] Request finished in 39.3222ms 200 image/jpeg (791a596a)
+2018-07-22T21:43:07.4126185+07:00 0HLFFS5MOJL39:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/owl.carousel.css   (ca22a1cb)
+2018-07-22T21:43:07.4126182+07:00 0HLFFS5MOJL3A:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/owl.transitions.css   (ca22a1cb)
+2018-07-22T21:43:07.4127381+07:00 0HLFFS5MOJL2V:00000003 [INF] Sending file. Request path: '"/client-side/css/pe-icon-7-stroke.min.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\pe-icon-7-stroke.min.css"' (27b0a520)
+2018-07-22T21:43:07.4128826+07:00 0HLFFS5MOJL3A:00000001 [INF] Sending file. Request path: '"/client-side/css/owl.transitions.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\owl.transitions.css"' (27b0a520)
+2018-07-22T21:43:07.4147380+07:00 0HLFFS5MOJL2U:00000002 [INF] Sending file. Request path: '"/client-side/css/simple-line-icons.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\simple-line-icons.css"' (27b0a520)
+2018-07-22T21:43:07.4154269+07:00 0HLFFS5MOJL31:00000001 [INF] Request finished in 36.6207ms 200 image/jpeg (791a596a)
+2018-07-22T21:43:07.4155797+07:00 0HLFFS5MOJL3B:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/flexslider.css   (ca22a1cb)
+2018-07-22T21:43:07.4157405+07:00 0HLFFS5MOJL3C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/jquery-ui.css   (ca22a1cb)
+2018-07-22T21:43:07.4158623+07:00 0HLFFS5MOJL3B:00000001 [INF] Sending file. Request path: '"/client-side/css/flexslider.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\flexslider.css"' (27b0a520)
+2018-07-22T21:43:07.4159060+07:00 0HLFFS5MOJL3C:00000001 [INF] Sending file. Request path: '"/client-side/css/jquery-ui.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\jquery-ui.css"' (27b0a520)
+2018-07-22T21:43:07.4161945+07:00 0HLFFS5MOJL38:00000001 [INF] Request finished in 19.1008ms 200 image/jpeg (791a596a)
+2018-07-22T21:43:07.4164523+07:00 0HLFFS5MOJL39:00000002 [INF] Sending file. Request path: '"/client-side/css/owl.carousel.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\owl.carousel.css"' (27b0a520)
+2018-07-22T21:43:07.4205969+07:00 0HLFFS5MOJL3B:00000001 [INF] Request finished in 4.8395ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4241976+07:00 0HLFFS5MOJL30:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/blog.css   (ca22a1cb)
+2018-07-22T21:43:07.4241976+07:00 0HLFFS5MOJL38:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/revolution-slider.css   (ca22a1cb)
+2018-07-22T21:43:07.4248511+07:00 0HLFFS5MOJL38:00000002 [INF] Sending file. Request path: '"/client-side/css/revolution-slider.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\revolution-slider.css"' (27b0a520)
+2018-07-22T21:43:07.4266121+07:00 0HLFFS5MOJL3C:00000001 [INF] Request finished in 10.1528ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4266121+07:00 0HLFFS5MOJL39:00000002 [INF] Request finished in 13.945ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4271843+07:00 0HLFFS5MOJL31:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/LG.jpg   (ca22a1cb)
+2018-07-22T21:43:07.4286689+07:00 0HLFFS5MOJL31:00000002 [INF] The file "/client-side/images/brand/LG.jpg" was not modified (f1f8d725)
+2018-07-22T21:43:07.4294485+07:00 0HLFFS5MOJL31:00000002 [INF] Request finished in 2.5104ms 304 image/jpeg (791a596a)
+2018-07-22T21:43:07.4298340+07:00 0HLFFS5MOJL3B:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/apple.png   (ca22a1cb)
+2018-07-22T21:43:07.4302538+07:00 0HLFFS5MOJL3B:00000002 [INF] The file "/client-side/images/brand/apple.png" was not modified (f1f8d725)
+2018-07-22T21:43:07.4305127+07:00 0HLFFS5MOJL3B:00000002 [INF] Request finished in 0.7194ms 304 image/png (791a596a)
+2018-07-22T21:43:07.4308187+07:00 0HLFFS5MOJL3E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/oppo.jpg   (ca22a1cb)
+2018-07-22T21:43:07.4312128+07:00 0HLFFS5MOJL3E:00000001 [INF] The file "/client-side/images/brand/oppo.jpg" was not modified (f1f8d725)
+2018-07-22T21:43:07.4314072+07:00 0HLFFS5MOJL3E:00000001 [INF] Request finished in 0.6319ms 304 image/jpeg (791a596a)
+2018-07-22T21:43:07.4316745+07:00 0HLFFS5MOJL3E:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/sony.jpg   (ca22a1cb)
+2018-07-22T21:43:07.4323857+07:00 0HLFFS5MOJL3E:00000002 [INF] The file "/client-side/images/brand/sony.jpg" was not modified (f1f8d725)
+2018-07-22T21:43:07.4326274+07:00 0HLFFS5MOJL3E:00000002 [INF] Request finished in 0.9539ms 304 image/jpeg (791a596a)
+2018-07-22T21:43:07.4329264+07:00 0HLFFS5MOJL3I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcode.css   (ca22a1cb)
+2018-07-22T21:43:07.4331846+07:00 0HLFFS5MOJL3I:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcode.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcode.css"' (27b0a520)
+2018-07-22T21:43:07.4384450+07:00 0HLFFS5MOJL3D:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/Samsung-Logo-c613e.jpg   (ca22a1cb)
+2018-07-22T21:43:07.4386452+07:00 0HLFFS5MOJL3F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/footer-logo.png   (ca22a1cb)
+2018-07-22T21:43:07.4387320+07:00 0HLFFS5MOJL3D:00000001 [INF] The file "/client-side/images/brand/Samsung-Logo-c613e.jpg" was not modified (f1f8d725)
+2018-07-22T21:43:07.4387674+07:00 0HLFFS5MOJL30:00000002 [INF] Sending file. Request path: '"/client-side/css/blog.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\blog.css"' (27b0a520)
+2018-07-22T21:43:07.4388589+07:00 0HLFFS5MOJL3D:00000001 [INF] Request finished in 0.5145ms 304 image/jpeg (791a596a)
+2018-07-22T21:43:07.4390690+07:00 0HLFFS5MOJL3F:00000001 [INF] Sending file. Request path: '"/client-side/images/footer-logo.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\footer-logo.png"' (27b0a520)
+2018-07-22T21:43:07.4391134+07:00 0HLFFS5MOJL33:00000001 [INF] Request finished in 54.412ms 200 image/jpeg (791a596a)
+2018-07-22T21:43:07.4392112+07:00 0HLFFS5MOJL3G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/huewei.jpg   (ca22a1cb)
+2018-07-22T21:43:07.4393027+07:00 0HLFFS5MOJL3H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/brand/lenovo.jpg   (ca22a1cb)
+2018-07-22T21:43:07.4393428+07:00 0HLFFS5MOJL31:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/shortcodes.css   (ca22a1cb)
+2018-07-22T21:43:07.4393428+07:00 0HLFFS5MOJL39:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/featured-box.css   (ca22a1cb)
+2018-07-22T21:43:07.4395157+07:00 0HLFFS5MOJL3G:00000001 [INF] The file "/client-side/images/brand/huewei.jpg" was not modified (f1f8d725)
+2018-07-22T21:43:07.4395412+07:00 0HLFFS5MOJL39:00000003 [INF] Sending file. Request path: '"/client-side/css/shortcodes/featured-box.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\featured-box.css"' (27b0a520)
+2018-07-22T21:43:07.4446247+07:00 0HLFFS5MOJL3J:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/tooltip.css   (ca22a1cb)
+2018-07-22T21:43:07.4446995+07:00 0HLFFS5MOJL3H:00000001 [INF] The file "/client-side/images/brand/lenovo.jpg" was not modified (f1f8d725)
+2018-07-22T21:43:07.4448085+07:00 0HLFFS5MOJL3H:00000001 [INF] Request finished in 5.5207ms 304 image/jpeg (791a596a)
+2018-07-22T21:43:07.4448238+07:00 0HLFFS5MOJL3J:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcodes/tooltip.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\tooltip.css"' (27b0a520)
+2018-07-22T21:43:07.4450904+07:00 0HLFFS5MOJL35:00000003 [INF] Request finished in 34.2751ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4452429+07:00 0HLFFS5MOJL37:00000001 [INF] Request finished in 48.4434ms 200 image/jpeg (791a596a)
+2018-07-22T21:43:07.4452651+07:00 0HLFFS5MOJL3E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/responsive.css   (ca22a1cb)
+2018-07-22T21:43:07.4458387+07:00 0HLFFS5MOJL3E:00000003 [INF] Sending file. Request path: '"/client-side/css/responsive.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\responsive.css"' (27b0a520)
+2018-07-22T21:43:07.4463230+07:00 0HLFFS5MOJL3C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/discover.png   (ca22a1cb)
+2018-07-22T21:43:07.4466968+07:00 0HLFFS5MOJL3L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/style.css   (ca22a1cb)
+2018-07-22T21:43:07.4474554+07:00 0HLFFS5MOJL3D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/master-card.png   (ca22a1cb)
+2018-07-22T21:43:07.4480844+07:00 0HLFFS5MOJL3D:00000002 [INF] Sending file. Request path: '"/client-side/images/master-card.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\master-card.png"' (27b0a520)
+2018-07-22T21:43:07.4482952+07:00 0HLFFS5MOJL3N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/paypal.png   (ca22a1cb)
+2018-07-22T21:43:07.4485931+07:00 0HLFFS5MOJL3N:00000001 [INF] Sending file. Request path: '"/client-side/images/paypal.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\paypal.png"' (27b0a520)
+2018-07-22T21:43:07.4492361+07:00 0HLFFS5MOJL3M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/images/visa.png   (ca22a1cb)
+2018-07-22T21:43:07.4492361+07:00 0HLFFS5MOJL3B:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/pricing-table.css   (ca22a1cb)
+2018-07-22T21:43:07.4492437+07:00 0HLFFS5MOJL3K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/shortcodes/post.css   (ca22a1cb)
+2018-07-22T21:43:07.4493309+07:00 0HLFFS5MOJL3G:00000001 [INF] Request finished in 0.4427ms 304 image/jpeg (791a596a)
+2018-07-22T21:43:07.4493447+07:00 0HLFFS5MOJL3C:00000002 [INF] Sending file. Request path: '"/client-side/images/discover.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\discover.png"' (27b0a520)
+2018-07-22T21:43:07.4494676+07:00 0HLFFS5MOJL3M:00000001 [INF] Sending file. Request path: '"/client-side/images/visa.png"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\images\visa.png"' (27b0a520)
+2018-07-22T21:43:07.4495274+07:00 0HLFFS5MOJL3H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-app/controllers/base/index.js   (ca22a1cb)
+2018-07-22T21:43:07.4495402+07:00 0HLFFS5MOJL3G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-app/shared/app.js   (ca22a1cb)
+2018-07-22T21:43:07.4495599+07:00 0HLFFS5MOJL2U:00000002 [INF] Request finished in 38.8897ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4497101+07:00 0HLFFS5MOJL3H:00000002 [INF] The file "/client-app/controllers/base/index.js" was not modified (f1f8d725)
+2018-07-22T21:43:07.4497513+07:00 0HLFFS5MOJL3O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-app/controllers/home/index.js   (ca22a1cb)
+2018-07-22T21:43:07.4497568+07:00 0HLFFS5MOJL3G:00000002 [INF] The file "/client-app/shared/app.js" was not modified (f1f8d725)
+2018-07-22T21:43:07.4498236+07:00 0HLFFS5MOJL3H:00000002 [INF] Request finished in 0.2855ms 304 application/javascript (791a596a)
+2018-07-22T21:43:07.4498403+07:00 0HLFFS5MOJL3G:00000002 [INF] Request finished in 0.3292ms 304 application/javascript (791a596a)
+2018-07-22T21:43:07.4499902+07:00 0HLFFS5MOJL3O:00000001 [INF] The file "/client-app/controllers/home/index.js" was not modified (f1f8d725)
+2018-07-22T21:43:07.4500660+07:00 0HLFFS5MOJL3O:00000001 [INF] Request finished in 0.3478ms 304 application/javascript (791a596a)
+2018-07-22T21:43:07.4502331+07:00 0HLFFS5MOJL36:00000002 [INF] Request finished in 40.7251ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4513143+07:00 0HLFFS5MOJL31:00000003 [INF] Sending file. Request path: '"/client-side/css/shortcodes/shortcodes.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\shortcodes.css"' (27b0a520)
+2018-07-22T21:43:07.4522938+07:00 0HLFFS5MOJL3K:00000001 [INF] Sending file. Request path: '"/client-side/css/shortcodes/post.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\post.css"' (27b0a520)
+2018-07-22T21:43:07.4529342+07:00 0HLFFS5MOJL3L:00000001 [INF] Sending file. Request path: '"/client-side/css/style.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\style.css"' (27b0a520)
+2018-07-22T21:43:07.4544702+07:00 0HLFFS5MOJL2V:00000003 [INF] Request finished in 42.8679ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4544742+07:00 0HLFFS5MOJL3A:00000001 [INF] Request finished in 41.8454ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4547936+07:00 0HLFFS5MOJL3E:00000003 [INF] Request finished in 11.9506ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4550270+07:00 0HLFFS5MOJL3I:00000001 [INF] Request finished in 22.1574ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4551368+07:00 0HLFFS5MOJL38:00000002 [INF] Request finished in 31.0131ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4552123+07:00 0HLFFS5MOJL39:00000003 [INF] Request finished in 15.8665ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4554894+07:00 0HLFFS5MOJL3J:00000001 [INF] Request finished in 13.6737ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4569003+07:00 0HLFFS5MOJL3K:00000001 [INF] Request finished in 7.5837ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4641073+07:00 0HLFFS5MOJL3N:00000001 [INF] Request finished in 15.4905ms 200 image/png (791a596a)
+2018-07-22T21:43:07.4650657+07:00 0HLFFS5MOJL34:00000003 [INF] Request finished in 61.5391ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4654928+07:00 0HLFFS5MOJL31:00000003 [INF] Request finished in 25.9996ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4656678+07:00 0HLFFS5MOJL32:00000001 [INF] Request finished in 85.2873ms 200 image/jpeg (791a596a)
+2018-07-22T21:43:07.4665868+07:00 0HLFFS5MOJL3B:00000003 [INF] Sending file. Request path: '"/client-side/css/shortcodes/pricing-table.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\shortcodes\pricing-table.css"' (27b0a520)
+2018-07-22T21:43:07.4670696+07:00 0HLFFS5MOJL3C:00000002 [INF] Request finished in 21.0437ms 200 image/png (791a596a)
+2018-07-22T21:43:07.4680024+07:00 0HLFFS5MOJL3B:00000003 [INF] Request finished in 27.1356ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4722461+07:00 0HLFFS5MOJL3F:00000001 [INF] Request finished in 33.3157ms 200 image/png (791a596a)
+2018-07-22T21:43:07.4727064+07:00 0HLFFS5MOJL3M:00000001 [INF] Request finished in 23.4662ms 200 image/png (791a596a)
+2018-07-22T21:43:07.4802755+07:00 0HLFFS5MOJL30:00000002 [INF] Request finished in 56.0107ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4864760+07:00 0HLFFS5MOJL37:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/quick_view_popup.css   (ca22a1cb)
+2018-07-22T21:43:07.4873093+07:00 0HLFFS5MOJL37:00000002 [INF] Sending file. Request path: '"/client-side/css/quick_view_popup.css"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\css\quick_view_popup.css"' (27b0a520)
+2018-07-22T21:43:07.4885127+07:00 0HLFFS5MOJL37:00000002 [INF] Request finished in 2.0479ms 200 text/css (791a596a)
+2018-07-22T21:43:07.4986732+07:00 0HLFFS5MOJL3L:00000001 [INF] Request finished in 54.1286ms 200 text/css (791a596a)
+2018-07-22T21:43:07.5012675+07:00 0HLFFS5MOJL3D:00000002 [INF] Request finished in 53.7818ms 200 image/png (791a596a)
+2018-07-22T21:43:07.6608448+07:00 0HLFFS5MOJL3H:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0   (ca22a1cb)
+2018-07-22T21:43:07.6608451+07:00 0HLFFS5MOJL3G:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-22T21:43:07.6612529+07:00 0HLFFS5MOJL3G:00000003 [INF] Sending file. Request path: '"/client-side/fonts/font-awesome/fontawesome-webfont.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\fonts\font-awesome\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-22T21:43:07.6620110+07:00 0HLFFS5MOJL3H:00000003 [INF] Sending file. Request path: '"/client-side/fonts/simple-line-icons/Simple-Line-Icons.woff2"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\fonts\simple-line-icons\Simple-Line-Icons.woff2"' (27b0a520)
+2018-07-22T21:43:07.6633476+07:00 0HLFFS5MOJL3O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff?d7yf1v   (ca22a1cb)
+2018-07-22T21:43:07.6637228+07:00 0HLFFS5MOJL3O:00000002 [INF] Sending file. Request path: '"/client-side/fonts/pe-icon-7-stroke/Pe-icon-7-stroke.woff"'. Physical path: '"D:\_Project\git\ShopCoreApp\ShopCoreApp\wwwroot\client-side\fonts\pe-icon-7-stroke\Pe-icon-7-stroke.woff"' (27b0a520)
+2018-07-22T21:43:07.6659680+07:00 0HLFFS5MOJL3G:00000003 [INF] Request finished in 5.0846ms 200 font/woff2 (791a596a)
+2018-07-22T21:43:07.6702471+07:00 0HLFFS5MOJL3O:00000002 [INF] Request finished in 6.8346ms 200 application/font-woff (791a596a)
+2018-07-22T21:43:07.6953093+07:00 0HLFFS5MOJL3H:00000003 [INF] Request finished in 34.886ms 200 font/woff2 (791a596a)
+2018-07-22T21:43:07.7996756+07:00 0HLFFS5MOJL33:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/   (ca22a1cb)
+2018-07-22T21:43:07.8021473+07:00 0HLFFS5MOJL33:00000002 [INF] Executing action method "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:43:07.8027709+07:00 0HLFFS5MOJL33:00000002 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-07-22T21:43:07.8046176+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [c].[Id], [c].[Name], [c].[Description], [c].[ParentId], [c].[HomeOrder], [c].[Image], [c].[HomeFlag], [c].[DateCreated], [c].[DateModified], [c].[SortOrder], [c].[Status], [c].[SeoPageTitle], [c].[SeoAlias], [c].[SeoKeywords], [c].[SeoDescription]
+FROM [ProductCategories] AS [c]
+WHERE [c].[HomeFlag] = 1
+ORDER BY [c].[HomeOrder]" (0723d8ff)
+2018-07-22T21:43:07.8059763+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8070995+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8082869+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8091202+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8108706+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8126429+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE ([x].[Status] = 1) AND ([x].[HotFlag] = 1)
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2018-07-22T21:43:07.8132978+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8139991+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8146286+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8151985+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8167684+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id] AS [Id1], [x].[Name], [x].[CategoryId] AS [Id0], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x.ProductCategory].[Id], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC" (0723d8ff)
+2018-07-22T21:43:07.8175657+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8181662+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8188255+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8197475+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8205855+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8221033+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [x].[Id], [x].[Name], [x].[Image], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [Blogs] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[DateCreated] DESC" (0723d8ff)
+2018-07-22T21:43:07.8235196+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__groupAlias_0='?' (Size = 25)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[Image], [x].[Url], [x].[DisplayOrder], [x].[Status], [x].[Content], [x].[GroupAlias]
+FROM [Slides] AS [x]
+WHERE ([x].[Status] = 1) AND ([x].[GroupAlias] = @__groupAlias_0)" (0723d8ff)
+2018-07-22T21:43:07.8242964+07:00 0HLFFS5MOJL33:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-07-22T21:43:07.8314253+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:07.8323491+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8329548+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8335218+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8341604+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8346852+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8351520+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8356005+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8360214+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8365107+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8369899+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8390098+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:07.8395047+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8399252+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8402942+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8407129+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8413919+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8437914+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8448055+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8462052+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8471497+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8476971+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8492702+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:07.8500182+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8507720+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8513945+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8520866+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8527149+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8534866+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8540890+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8545566+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8551896+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8560061+07:00 0HLFFS5MOJL33:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:07.8618288+07:00 0HLFFS5MOJL33:00000002 [INF] Executed action "ShopCoreApp.Controllers.HomeController.Index (ShopCoreApp)" in 60.2569ms (afa2e885)
+2018-07-22T21:43:07.8625107+07:00 0HLFFS5MOJL33:00000002 [INF] Request finished in 62.8527ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-22T21:43:30.2858183+07:00 0HLFFS5MOJL3I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-side/css/grabbing.png   (ca22a1cb)
+2018-07-22T21:43:30.2902564+07:00 0HLFFS5MOJL3I:00000002 [INF] Request finished in 4.4821ms 404  (791a596a)
+2018-07-22T21:43:30.4809960+07:00 0HLFFS5MOJL35:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Cart/AddToCart application/x-www-form-urlencoded; charset=UTF-8 37 (ca22a1cb)
+2018-07-22T21:43:30.5417216+07:00 0HLFFS5MOJL35:00000004 [INF] Executing action method "ShopCoreApp.Controllers.CartController.AddToCart (ShopCoreApp)" with arguments (["4", "1", "1", "0"]) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:43:30.5449819+07:00 0HLFFS5MOJL35:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-07-22T21:43:30.5596862+07:00 0HLFFS5MOJL35:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CategoryId], [x].[Content], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HotFlag], [x].[Image], [x].[Name], [x].[OriginalPrice], [x].[Price], [x].[PromotionPrice], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[Status], [x].[Tags], [x].[Unit], [x].[ViewCount]
+FROM [Products] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-22T21:43:30.6497183+07:00 0HLFFS5MOJL35:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Code], [x].[Name]
+FROM [Colors] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-22T21:43:30.7192854+07:00 0HLFFS5MOJL35:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-22T21:43:30.7227089+07:00 0HLFFS5MOJL35:00000004 [INF] Executed action "ShopCoreApp.Controllers.CartController.AddToCart (ShopCoreApp)" in 214.1979ms (afa2e885)
+2018-07-22T21:43:30.7243229+07:00 0HLFFS5MOJL35:00000004 [INF] Session started; Key:"84337c17-c471-b75b-a81b-d9c0974f30b5", Id:"ba0d3499-db1a-c9a2-38d6-7a49d8ec59c1" (1d7cf8c0)
+2018-07-22T21:43:30.7268964+07:00 0HLFFS5MOJL35:00000004 [INF] Request finished in 245.9036ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-22T21:43:37.9789389+07:00 0HLFFS5MOJL2V:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/cart.html   (ca22a1cb)
+2018-07-22T21:43:37.9851227+07:00 0HLFFS5MOJL2V:00000004 [INF] Executing action method "ShopCoreApp.Controllers.CartController.Index (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:43:38.1125531+07:00 0HLFFS5MOJL2V:00000004 [INF] Executing ViewResult, running view at path "/Views/Cart/Index.cshtml". (9707eebe)
+2018-07-22T21:43:38.1275385+07:00 0HLFFS5MOJL2V:00000004 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-07-22T21:43:38.1288047+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:38.1292872+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1298798+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1303867+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1309934+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1320587+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1352134+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1369310+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1374697+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1378908+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1382555+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1407175+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:38.1412623+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1416940+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1420988+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1424723+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1429503+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1433686+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1437978+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1441829+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1446049+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1450337+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1470329+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-22T21:43:38.1476531+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1485936+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1504798+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1524344+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1536374+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1541122+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1545250+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1549892+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1553809+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1559352+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[DateCreated], [dto].[DateModified], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2018-07-22T21:43:38.1680070+07:00 0HLFFS5MOJL2V:00000004 [INF] Executed action "ShopCoreApp.Controllers.CartController.Index (ShopCoreApp)" in 184.0344ms (afa2e885)
+2018-07-22T21:43:38.1687651+07:00 0HLFFS5MOJL2V:00000004 [INF] Request finished in 189.8691ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-22T21:43:38.1916130+07:00 0HLFFS5MOJL3A:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/client-app/controllers/cart/index.js?v=qIhA9IiCluGT3bg-uNbz69AnydGN70LCjL1Eoxzg4u8   (ca22a1cb)
+2018-07-22T21:43:38.1920637+07:00 0HLFFS5MOJL3A:00000002 [INF] The file "/client-app/controllers/cart/index.js" was not modified (f1f8d725)
+2018-07-22T21:43:38.1922420+07:00 0HLFFS5MOJL3A:00000002 [INF] Request finished in 0.8784ms 304 application/javascript (791a596a)
+2018-07-22T21:43:38.2427666+07:00 0HLFFS5MOJL38:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Cart/GetColors   (ca22a1cb)
+2018-07-22T21:43:38.2448733+07:00 0HLFFS5MOJL38:00000003 [INF] Executing action method "ShopCoreApp.Controllers.CartController.GetColors (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:43:38.2460348+07:00 0HLFFS5MOJL38:00000003 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-07-22T21:43:38.2541382+07:00 0HLFFS5MOJL38:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Code]
+FROM [Colors] AS [dto]" (0723d8ff)
+2018-07-22T21:43:38.2550721+07:00 0HLFFS5MOJL38:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-22T21:43:38.2587170+07:00 0HLFFS5MOJL38:00000003 [INF] Executed action "ShopCoreApp.Controllers.CartController.GetColors (ShopCoreApp)" in 13.945ms (afa2e885)
+2018-07-22T21:43:38.2589946+07:00 0HLFFS5MOJL38:00000003 [INF] Request finished in 16.2333ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-22T21:43:38.2911261+07:00 0HLFFS5MOJL39:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Cart/GetCart   (ca22a1cb)
+2018-07-22T21:43:38.2945001+07:00 0HLFFS5MOJL39:00000004 [INF] Executing action method "ShopCoreApp.Controllers.CartController.GetCart (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:43:38.3131400+07:00 0HLFFS5MOJL39:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-22T21:43:38.3271682+07:00 0HLFFS5MOJL39:00000004 [INF] Executed action "ShopCoreApp.Controllers.CartController.GetCart (ShopCoreApp)" in 32.893ms (afa2e885)
+2018-07-22T21:43:38.3273163+07:00 0HLFFS5MOJL39:00000004 [INF] Request finished in 36.3629ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-22T21:45:47.9269990+07:00 0HLFFS5MOJL3P:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44340/Cart/UpdateCart application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2018-07-22T21:45:47.9314178+07:00 0HLFFS5MOJL3P:00000001 [INF] Executing action method "ShopCoreApp.Controllers.CartController.UpdateCart (ShopCoreApp)" with arguments (["4", "1", "2"]) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:45:47.9338870+07:00 0HLFFS5MOJL3P:00000001 [INF] Entity Framework Core "2.0.1-rtm-125" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ShopCoreApp.Data.EF " (9958f5bb)
+2018-07-22T21:45:47.9380151+07:00 0HLFFS5MOJL3P:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[CategoryId], [x].[Content], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HotFlag], [x].[Image], [x].[Name], [x].[OriginalPrice], [x].[Price], [x].[PromotionPrice], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[Status], [x].[Tags], [x].[Unit], [x].[ViewCount]
+FROM [Products] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-22T21:45:47.9416425+07:00 0HLFFS5MOJL3P:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Code], [x].[Name]
+FROM [Colors] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-22T21:45:47.9432266+07:00 0HLFFS5MOJL3P:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-22T21:45:47.9434114+07:00 0HLFFS5MOJL3P:00000001 [INF] Executed action "ShopCoreApp.Controllers.CartController.UpdateCart (ShopCoreApp)" in 13.1438ms (afa2e885)
+2018-07-22T21:45:47.9441335+07:00 0HLFFS5MOJL3P:00000001 [INF] Request finished in 17.1199ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-22T21:45:47.9547820+07:00 0HLFFS5MOJL3P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44340/Cart/GetCart   (ca22a1cb)
+2018-07-22T21:45:47.9553530+07:00 0HLFFS5MOJL3P:00000002 [INF] Executing action method "ShopCoreApp.Controllers.CartController.GetCart (ShopCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-07-22T21:45:47.9555474+07:00 0HLFFS5MOJL3P:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-07-22T21:45:47.9557607+07:00 0HLFFS5MOJL3P:00000002 [INF] Executed action "ShopCoreApp.Controllers.CartController.GetCart (ShopCoreApp)" in 0.5893ms (afa2e885)
+2018-07-22T21:45:47.9558880+07:00 0HLFFS5MOJL3P:00000002 [INF] Request finished in 1.2785ms 200 application/json; charset=utf-8 (791a596a)

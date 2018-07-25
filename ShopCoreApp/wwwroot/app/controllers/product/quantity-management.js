@@ -92,7 +92,7 @@
                 cachedObj.colors = response;
             },
             error: function () {
-                tedu.notify('Có lỗi xảy ra', 'error');
+                app.notify('Có lỗi xảy ra', 'error');
             }
         });
     }
@@ -106,7 +106,7 @@
                 cachedObj.sizes = response;
             },
             error: function () {
-                tedu.notify('Có lỗi xảy ra', 'error');
+                app.notify('Có lỗi xảy ra', 'error');
             }
         });
     }

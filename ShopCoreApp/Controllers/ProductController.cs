@@ -25,10 +25,11 @@ namespace ShopCoreApp.Controllers
             _configuration = configuration;
             _billService = billService;
         }
-        [Route("product.html")]
+        [Route("products.html")]
         public IActionResult Index()
         {
-            return View();
+            var categories = _productCategoryService.GetAll();
+            return View(categories);
         }
         [Route("{alias}-c.{id}.html")]
         public IActionResult Catalog(int id, int? pageSize, string sortBy, int page = 1)
@@ -45,21 +46,21 @@ namespace ShopCoreApp.Controllers
 
             return View(catalog);
         }
-        //[Route("search.html")]
-        //public IActionResult Search(string keyword, int? pageSize, string sortBy, int page = 1)
-        //{
-        //    var catalog = new SearchResultViewModel();
-        //    ViewData["BodyClass"] = "shop_grid_full_width_page";
-        //    if (pageSize == null)
-        //        pageSize = _configuration.GetValue<int>("PageSize");
+        [Route("search.html")]
+        public IActionResult Search(string keyword, int? pageSize, string sortBy, int page = 1)
+        {
+            var catalog = new SearchResultViewModel();
+            ViewData["BodyClass"] = "shop_grid_full_width_page";
+            if (pageSize == null)
+                pageSize = _configuration.GetValue<int>("PageSize");
 
-        //    catalog.PageSize = pageSize;
-        //    catalog.SortType = sortBy;
-        //    catalog.Data = _productService.GetAllPaging(null, keyword, page, pageSize.Value);
-        //    catalog.Keyword = keyword;
+            catalog.PageSize = pageSize;
+            catalog.SortType = sortBy;
+            catalog.Data = _productService.GetAllPaging(null, keyword, page, pageSize.Value);
+            catalog.Keyword = keyword;
 
-        //    return View(catalog);
-        //}
+            return View(catalog);
+        }
 
         [Route("{alias}-p.{id}.html", Name = "ProductDetail")]
         public IActionResult Details(int id)
@@ -77,11 +78,11 @@ namespace ShopCoreApp.Controllers
                 Text = x.Name,
                 Value = x.Id.ToString()
             }).ToList();
-            model.Sizes = _billService.GetSizes().Select(x => new SelectListItem()
-            {
-                Text = x.Name,
-                Value = x.Id.ToString()
-            }).ToList();
+            //model.Sizes = _billService.GetSizes().Select(x => new SelectListItem()
+            //{
+            //    Text = x.Name,
+            //    Value = x.Id.ToString()
+            //}).ToList();
 
             return View(model);
         }
